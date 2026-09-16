@@ -1,0 +1,9 @@
+# Template de qrels (relevância binária por pergunta e chunk).
+# Copie para data/annotations/qrels.yaml.
+# relevance: 1 = suporte EFETIVO à resposta; 0 = não relevante.
+# Coincidir artigo ou página NÃO basta — a relevância é sobre suporte à resposta.
+# Preencha os chunk_ids APÓS congelar os chunks (`rag-ptbr chunk`).
+qrels: []
+#   - question_id: q-001
+#     chunk_id: art-001-b0000-c000
+#     relevance: 1

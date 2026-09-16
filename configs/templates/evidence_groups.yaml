@@ -1,0 +1,11 @@
+# Template de grupos de evidência obrigatórios (perguntas multi-evidência).
+# Copie para data/annotations/evidence_groups.yaml.
+# - Cada grupo = UMA informação necessária para a resposta.
+# - chunk_ids contém ALTERNATIVAS (OR) que satisfazem o mesmo grupo.
+# - Cobertura completa = satisfazer TODOS os grupos obrigatórios.
+evidence_groups: []
+#   - group_id: q-002-g1
+#     question_id: q-002
+#     required: true
+#     description: "Exame laboratorial X necessário para o diagnóstico"
+#     chunk_ids: ["art-001-b0000-c000", "art-001-b0001-c000"]

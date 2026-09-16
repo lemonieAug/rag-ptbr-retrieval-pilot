@@ -1,0 +1,5 @@
+# Exemplo sintético de qrels (preencher chunk_ids após `rag-ptbr chunk`).
+qrels: []
+#   - question_id: q-syn-001
+#     chunk_id: art-syn-001-b0000-c000
+#     relevance: 1

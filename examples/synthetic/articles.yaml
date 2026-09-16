@@ -1,0 +1,11 @@
+# Exemplo sintético de metadados (NÃO é corpus real).
+articles:
+  - doc_id: art-syn-001
+    title: "Estudo sintético sobre anemia ferropriva em crianças (exemplo)"
+    authors: ["Autor Exemplo"]
+    year: 2024
+    venue: "Periódico Exemplo"
+    language: pt-BR
+    pdf_filename: art-syn-001.pdf   # não existe — use o markdown em examples/synthetic/extracted/
+    pages: 2
+    notes: "Conteúdo fabricado apenas para demonstração do formato."

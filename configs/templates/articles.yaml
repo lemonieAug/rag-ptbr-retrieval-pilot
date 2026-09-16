@@ -1,0 +1,14 @@
+# Template de metadados de artigos.
+# Copie para data/metadata/articles.yaml e preencha UM item por artigo.
+# doc_id é estável (usado em chunks e evidências). pdf_filename é o arquivo em
+# data/raw/articles/.
+articles: []
+#   - doc_id: art-001
+#     title: "Título completo do artigo"
+#     authors: ["Autor A", "Autor B"]
+#     year: 2024
+#     venue: "Nome do periódico"
+#     language: pt-BR
+#     pdf_filename: art-001_slug-curto.pdf
+#     pages: null
+#     notes: ""

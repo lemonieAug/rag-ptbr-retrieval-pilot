@@ -1,0 +1,11 @@
+# Template de registros de revisão humana (opcional, para rastreabilidade).
+# Pode ser salvo como data/annotations/reviews/*.yaml ou em um único arquivo.
+# target_type: question | evidence | qrel | group | chunk | doc
+reviews: []
+#   - review_id: r-001
+#     target_type: question
+#     target_id: q-001
+#     status: approved   # draft | approved | rejected
+#     reviewer: "seu-nome"
+#     comments: "verifiquei a resposta e as evidências no PDF."
+#     date: "2025-09-16"

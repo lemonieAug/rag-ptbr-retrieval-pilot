@@ -1,0 +1,93 @@
+# Configuração padrão do piloto.
+# Todos os defaults do experimento estão registrados aqui e documentados em
+# docs/protocol.md. Edite este arquivo (ou crie outro com `-c`) para mudar
+# parâmetros; o hash da configuração é gravado no manifesto de cada execução.
+
+language: pt-BR
+
+paths:
+  articles_dir: data/raw/articles
+  metadata_path: data/metadata/articles.yaml
+  extracted_dir: data/processed/extracted
+  corrections_dir: data/processed/corrections
+  chunks_path: data/processed/chunks/chunks.jsonl
+  corpus_manifest_path: data/processed/chunks/corpus_manifest.json
+  annotations_dir: data/annotations
+  questions_path: data/annotations/questions.yaml
+  qrels_path: data/annotations/qrels.yaml
+  evidence_groups_path: data/annotations/evidence_groups.yaml
+  reviews_dir: data/annotations/reviews
+
+chunking:
+  target_tokens: 350
+  overlap_tokens: 50
+  reference_tokenizer: simple
+  max_block_tokens: 2000
+  table_row_group: 6
+  repeat_table_header: true
+  require_token_validation: true
+
+retrieval:
+  top_n: 50
+  bm25:
+    k1: 1.2
+    b: 0.75
+  rrf:
+    c: 60
+    weight_bm25: 1.0
+    weight_dense: 1.0
+  lexical:
+    lowercase: true
+    strip_accents: false        # NÃO remover acentos (decisão metodológica)
+    unicode_nfkc: true
+    token_pattern: '\w+'
+  normalize_embeddings: true
+  cosine_similarity: true
+
+models:
+  embeddings: [colibri, embeddinggemma, qwen_embedding, e5]
+  cache_dir: artifacts/models
+  device: auto                 # auto | cuda | cpu
+  dtype:
+    colibri: fp32
+    embeddinggemma: bf16        # NUNCA fp16 (incompatibilidade documentada)
+    qwen_embedding: fp16
+    e5: fp32
+  reranker:
+    checkpoint: Qwen/Qwen3-Reranker-0.6B
+    max_length: 8192
+    instruction: "Given a web search query, retrieve relevant passages that answer the query"
+    device: auto
+    dtype: fp16
+  generator:
+    backend: ollama
+    model: qwen3:14b
+    host: http://127.0.0.1:11434
+    temperature: 0.0
+    seed: null                  # quando suportado; determinismo absoluto NÃO é prometido
+    num_ctx: 8192
+    reasoning: false
+    tag: null                   # resolvido na preparação (ex.: tag/digest reais do Ollama)
+    digest: null
+
+metrics:
+  k_values: [1, 5, 10]
+  primary: ndcg@10              # métrica primária de ordenamento (protocolo)
+
+experiments:
+  select: null                  # null = todas; senão lista de padrões (substring do id)
+  embeddings: null              # sobrescreve models.embeddings
+  include_reranker: true
+  seed: 42
+
+generation:
+  prompt_template: prompts/generation.txt
+  top_k_context: 5
+  context_budget_tokens: 4000
+  response_reserve_tokens: 512
+  human_eval_shuffle_seed: 7
+
+reporting:
+  results_dir: results
+  artifacts_dir: artifacts
+  render_report: true

@@ -1,0 +1,23 @@
+# Template de perguntas do benchmark.
+# Copie para data/annotations/questions.yaml e preencha.
+# question_type: factual | multi_evidence
+# modality: text | table | visual | mixed
+# review_status: draft | approved | rejected  (draft fica fora da avaliação)
+# origin_doc_id é SÓ para anotação/avaliação — nunca é enviado aos métodos.
+questions: []
+#   - question_id: q-001
+#     text: "Qual foi a prevalência relatada para ...?"
+#     expected_answer: "20,9%"
+#     origin_doc_id: art-001
+#     question_type: factual
+#     modality: text
+#     review_status: draft
+#     evidence:
+#       - evidence_id: q-001-e1
+#         doc_id: art-001
+#         page: 3
+#         section: "Resultados"
+#         quote: "trecho literal do PDF que suporta a resposta"
+#         chunk_ids: []          # preencher após `rag-ptbr chunk` (congelar chunks)
+#         required_group: null   # usado em multi_evidence
+#     notes: ""

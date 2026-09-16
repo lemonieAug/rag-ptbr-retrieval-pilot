@@ -1,0 +1,12 @@
+# Exemplo sintético de grupos obrigatórios (preencher chunk_ids após chunk).
+evidence_groups: []
+#   - group_id: q-syn-002-g1
+#     question_id: q-syn-002
+#     required: true
+#     description: "Exame laboratorial 1 (hemoglobina)"
+#     chunk_ids: ["art-syn-001-b0001-c000"]
+#   - group_id: q-syn-002-g2
+#     question_id: q-syn-002
+#     required: true
+#     description: "Exame laboratorial 2 (ferritina)"
+#     chunk_ids: ["art-syn-001-b0002-c000"]
