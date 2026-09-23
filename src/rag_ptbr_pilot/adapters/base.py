@@ -119,5 +119,5 @@ def resolve_dtype(dtype: str, device: str) -> Any:
         if device == "cpu" and hasattr(torch, "bfloat16"):
             # CPU: bfloat16 é suportado em torch recente; caso contrário, fp32.
             return torch.bfloat16
-        return torch.float32  # fallback seguro para EmbeddingGemma (nunca FP16)
+        return torch.float32  # fallback sem reduzir a precisão para FP16
     return torch.float32

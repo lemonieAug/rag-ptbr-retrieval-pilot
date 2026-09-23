@@ -1,0 +1,133 @@
+question:
+  question_id: q-004-t18
+  text: Segundo a conclusão do artigo, em qual cenário o AMN alcança ganhos médios
+    de pelo menos 25,35% em PBR e 24,87% em RDB?
+  expected_answer: No cenário de baixa incidência de XT
+  origin_doc_id: art-004
+  evidence:
+  - evidence_id: q-004-t18-e1
+    doc_id: art-004
+    page: 12
+    section: Seção 6
+    quote: 'Ja´ no cena´rio de baixa incideˆncia de
+
+      XT,oAMNatingiuumganhome´diodepelomenos25,35%emtermosdePBRe24,87%
+
+      emtermosdeRDBemrelac¸a˜oaoutrosalgoritmos.'
+    chunk_ids:
+    - art-004-b0066-c000
+    required_group: null
+  - evidence_id: q-004-t18-e2
+    doc_id: art-004
+    page: 12
+    section: Tabela 4 / Seção 5
+    quote: '|  | PBR |  |  |  | RDB |  |  |  |
+
+      | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+      |  | NSFNet |  | EURO28 |  | NSFNet |  | EURO28 |  |
+
+      |  | AXT | BXT | AXT | BXT | AXT | BXT | AXT | BXT |
+
+      | CPRF | 94,52% | 99,94% | 88,70% | 89,10% | 92,40% | 99,90% | 85,81% | 89,01%
+      |
+
+      | ADEIN | 86,98% | 96,82% | 74,11% | 25,35% | 84,82% | 95,57% | 71,76% | 24,87%
+      |'
+    chunk_ids:
+    - art-004-b0067-c000
+    required_group: null
+  question_type: factual
+  modality: text
+  review_status: draft
+  notes: 'Pré-anotação A04-T18. Análise automática da redação original: SOURCE_CONTRADICTION.
+    Conflito interno da fonte: o resumo (p.1) registra 24,81% de RDB mínimo em baixa
+    incidência de XT; a conclusão e a Tabela 4 (p.12) registram 24,87%. Adjudicação
+    humana: Augusto Lemonie Gilioli aprovou explicitamente na conversa a reformulação
+    que atribui a afirmação à conclusão do artigo. A resposta permanece ''No cenário
+    de baixa incidência de XT''. A divergência com o resumo permanece documentada;
+    não se afirma que o valor do resumo foi corrigido ou que a fonte é consistente.
+    Citações literais, páginas, chunks e qrels preservados, com suporte na conclusão
+    e na Tabela 4.'
+qrels:
+- question_id: q-004-t18
+  chunk_id: art-004-b0066-c000
+  relevance: 1
+- question_id: q-004-t18
+  chunk_id: art-004-b0067-c000
+  relevance: 1
+evidence_groups: []
+chunks:
+- chunk_id: art-004-b0066-c000
+  doc_id: art-004
+  block_id: art-004-b0066
+  page: 12
+  section: 6. Conclusa˜o
+  modality: text
+  text: 'Neste artigo e´ proposto o algoritmo com aprendizado de ma´quina para escolha
+    de nu´cleo
+
+    (AMN)emSDM-EONs. OAMNutilizaumaredeneuralparaaprenderocomportamento
+
+    de outro algoritmo, o CBA-SBA, e extrair caracter´ısticas-chave e predizer qual
+    o melhor
+
+    nu´cleoparaseralocadoparacadarequisic¸a˜oemumdeterminadoestadodarede.
+
+    OAMNe´ avaliadoemtermosdeprobabilidadedebloqueioderequisic¸a˜oeraza˜o
+
+    de dados bloqueados. O AMN alcanc¸ou, em um cena´rio com alta incideˆncia de XT,
+
+    ganhosme´diosemrelac¸a˜oaoutrosalgoritmosXT-avoiddepelomenos8,16%emtermos
+
+    de PBR e de pelo menos 9,28% em termos de RDB. Ja´ no cena´rio de baixa incideˆncia
+    de
+
+    XT,oAMNatingiuumganhome´diodepelomenos25,35%emtermosdePBRe24,87%
+
+    emtermosdeRDBemrelac¸a˜oaoutrosalgoritmos.
+
+    Para trabalhos futuros pretende-se investigar o desempenho do AMN sendo trei-
+
+    nadoporoutrasbasesdedados,ale´mdabasegeradapeloalgoritmoCBA-SBA.Tambe´m
+
+    pretende-se estudar o uso de outras te´cnicas de ML para auxiliar na tomada de
+    decisa˜o
+
+    da escolha de nu´cleo. Por fim, pretende-se aprofundar a investigac¸a˜o e utilizar
+    a aborda-
+
+    gem de ML para tratar a alocac¸a˜o de nu´cleo em conjunto com outros subproblemas
+    do
+
+    RMSCA,comoalocac¸a˜odeespectroouroteamento.'
+  token_count_ref: 242
+  char_count: 1195
+  source_block_hash: afcedf7d32a7ed695df8818cf5918d324b953b5bb43e4dfe8fc84372cdd109fb
+- chunk_id: art-004-b0067-c000
+  doc_id: art-004
+  block_id: art-004-b0067
+  page: 12
+  section: 6. Conclusa˜o
+  modality: table
+  text: '|  | PBR |  |  |  | RDB |  |  |  |
+
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+    |  | NSFNet |  | EURO28 |  | NSFNet |  | EURO28 |  |
+
+    |  | AXT | BXT | AXT | BXT | AXT | BXT | AXT | BXT |
+
+    | CPRF | 94,52% | 99,94% | 88,70% | 89,10% | 92,40% | 99,90% | 85,81% | 89,01%
+    |
+
+    | ADEIN | 86,98% | 96,82% | 74,11% | 25,35% | 84,82% | 95,57% | 71,76% | 24,87%
+    |
+
+    | CBA-SBA | 1,17%* | 99,98% | 8,16% | 98,83% | 1,36%* | 99,97% | 9,28% | 98,72%
+    |'
+  token_count_ref: 214
+  char_count: 441
+  source_block_hash: 065716fc18a612dfd0b82411c488ac9d806f7952f658f8c15189df89c25956a3
+
+Registrado: q-004-t18 = approved; revisão: D:\rag-ptbr-retrieval-pilot\data\annotations\reviews\review-a43132bdf8464e8dbb106eb4e1cf7a1c.yaml

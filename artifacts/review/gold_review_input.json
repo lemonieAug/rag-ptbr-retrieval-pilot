@@ -1,0 +1,2807 @@
+{
+  "questions": [
+    {
+      "question_id": "q-001-t01",
+      "text": "Qual é a tarefa de processamento de linguagem natural investigada pelo artigo no domínio jurídico?",
+      "expected_answer": "Reconhecimento de entidades nomeadas (REN/NER) em textos jurídicos",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t01-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Resumo e Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T01 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t02",
+      "text": "Quais dois tipos de entidades o trabalho busca extrair das petições iniciais?",
+      "expected_answer": "Legislação e jurisprudência",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t02-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T02 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t03",
+      "text": "Que tipo de documento jurídico compõe exclusivamente a base proprietária proposta?",
+      "expected_answer": "Petições iniciais de processos da primeira instância da Justiça brasileira",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t03-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seções 1 e 5.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T03 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t04",
+      "text": "Quais são as duas bases de dados avaliadas pelos autores?",
+      "expected_answer": "LeNER-Br e uma base proprietária construída a partir de petições iniciais",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t04-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seções 1 e 5.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T04 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t05",
+      "text": "Qual biblioteca é apresentada como voltada à aplicação industrial de técnicas de PLN?",
+      "expected_answer": "spaCy",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t05-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 5",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T05 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t06",
+      "text": "Qual biblioteca é caracterizada como focada em facilitar experimentos científicos para pesquisadores?",
+      "expected_answer": "FLAIR",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t06-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 5",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T06 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t07",
+      "text": "Quais três arquiteturas ou implementações de redes neurais foram comparadas?",
+      "expected_answer": "A CNN do spaCy, uma BiLSTM-CRF implementada em TensorFlow e uma BiLSTM-CRF do FLAIR com FLAIR embeddings",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t07-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seções 3, 5 e 6",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T07 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t08",
+      "text": "Qual é a pergunta de pesquisa formulada pelos autores?",
+      "expected_answer": "Identificar qual arquitetura escolhida tem melhor precisão, recall e F1 na tarefa de REN no domínio jurídico",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t08-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T08 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t09",
+      "text": "Por que a arquitetura BiLSTM-CRF é considerada híbrida no artigo?",
+      "expected_answer": "Porque combina uma BiLSTM com o modelo probabilístico Conditional Random Fields (CRF)",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t09-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 4.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T09 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t10",
+      "text": "Qual arquitetura interna o artigo atribui ao modelo de NER treinado pelo spaCy?",
+      "expected_answer": "Uma CNN com conexões residuais",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t10-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seções 4.2 e 6",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T10 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t11",
+      "text": "Que recurso foi usado para extrair o conteúdo textual das páginas das petições da base proprietária?",
+      "expected_answer": "OCR",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t11-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 5.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T11 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t12",
+      "text": "Qual foi a proporção de divisão aleatória entre treinamento e teste?",
+      "expected_answer": "70% para treinamento e 30% para teste",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t12-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 5.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T12 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t13",
+      "text": "Quais métricas foram usadas para avaliar as arquiteturas?",
+      "expected_answer": "Precisão, recall e F1 score",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t13-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 5.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T13 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t14",
+      "text": "Por que o F1 score é considerado confiável para a avaliação da base proposta?",
+      "expected_answer": "Porque a base é desbalanceada e o F1 equilibra precisão e recall",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t14-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seções 5.1 e 5.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T14 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t15",
+      "text": "Qual modelo apresentou desempenho superior em precisão e F1 score nas duas categorias de entidades?",
+      "expected_answer": "BiLSTM-CRF com FLAIR embeddings, treinado com a biblioteca FLAIR",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t15-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 6",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T15 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t16",
+      "text": "Qual modelo obteve o melhor recall segundo a discussão dos resultados?",
+      "expected_answer": "A BiLSTM-CRF implementada em TensorFlow, reproduzida a partir de Luz de Araujo et al",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t16-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 6",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T16 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t17",
+      "text": "Qual foi o modelo de pior desempenho geral entre os comparados?",
+      "expected_answer": "A CNN com conexões residuais do spaCy",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t17-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seções 6 e 7",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T17 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t18",
+      "text": "Qual característica dos FLAIR embeddings é citada como capaz de melhorar os scores do modelo?",
+      "expected_answer": "A geração de vetores de palavras usados como entrada para a rede neural",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t18-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 6",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T18 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t19",
+      "text": "Qual sistema operacional foi usado nos experimentos?",
+      "expected_answer": "Ubuntu 18.04",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t19-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 5.3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T19 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-t20",
+      "text": "Qual foi uma das duas contribuições declaradas do artigo além da avaliação das arquiteturas?",
+      "expected_answer": "A produção de uma nova base de petições iniciais anotada manualmente",
+      "origin_doc_id": "art-001",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-t20-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-T20 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-m01",
+      "text": "Considerando a descrição da BiLSTM-CRF e a Figura 1, qual é o papel da camada CRF após o processamento da BiLSTM?",
+      "expected_answer": "Rotular as sequências de palavras, capturando dependências entre rótulos a partir das saídas da BiLSTM",
+      "origin_doc_id": "art-001",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-m01-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 4.1 + Figura 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-001-m01-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-M01 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-m02",
+      "text": "Comparando a Tabela 1 com a explicação da Seção 5.1, qual base possui mais trechos e qual possui menos classes?",
+      "expected_answer": "LeNER-Br possui mais trechos (10.392); a base proposta possui menos classes (2)",
+      "origin_doc_id": "art-001",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-m02-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 5.1 + Tabela 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-001-m02-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-M02 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-m03",
+      "text": "Como a distribuição mostrada na Tabela 2 sustenta a escolha do F1 score explicada na Seção 5.2?",
+      "expected_answer": "Há muito mais ocorrências de jurisprudência que de legislação nos conjuntos de treino e teste, caracterizando desbalanceamento; por isso o F1 é usado para equilibrar precisão e recall",
+      "origin_doc_id": "art-001",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-m03-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seções 5.1-5.2 + Tabela 2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-001-m03-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-M03 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-m04",
+      "text": "Com base na Tabela 3 e na discussão dos resultados, qual modelo deve ser escolhido se o objetivo for o melhor equilíbrio entre precisão e recall para jurisprudência?",
+      "expected_answer": "FLAIR BiLSTM-CRF, pois apresenta F1 de 0,63 e também o maior recall para jurisprudência entre os modelos listados",
+      "origin_doc_id": "art-001",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-m04-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seção 6 + Tabela 3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-001-m04-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-M04 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-001-m05",
+      "text": "Usando a Tabela 3 e a conclusão, qual diferença de desempenho explica a afirmação de que o spaCy foi inferior ao FLAIR para legislação?",
+      "expected_answer": "O spaCy tem F1 de 0,56 e recall de 0,44, enquanto o FLAIR tem F1 de 0,89 e recall de 0,85 para legislação",
+      "origin_doc_id": "art-001",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-001-m05-e1",
+          "doc_id": "art-001",
+          "page": null,
+          "section": "Seções 6-7 + Tabela 3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-001-m05-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A01-M05 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t01",
+      "text": "Qual desfecho clínico a abordagem proposta busca prever?",
+      "expected_answer": "Mortalidade hospitalar de pacientes internados em UTIs",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t01-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Resumo e Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T01 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t02",
+      "text": "Qual banco de dados foi usado para formar a coorte do estudo?",
+      "expected_answer": "MIMIC-III",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t02-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Resumo e Seção 3.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T02 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t03",
+      "text": "Quantos pacientes compõem a coorte inicial utilizada no desenvolvimento do modelo?",
+      "expected_answer": "17.734 pacientes",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t03-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Resumo e Seção 3.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T03 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t04",
+      "text": "Quantas variáveis preditoras de entrada foram consideradas?",
+      "expected_answer": "12 variáveis",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t04-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Resumo e Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T04 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t05",
+      "text": "Quais janelas após a admissão na UTI foram comparadas?",
+      "expected_answer": "24 e 48 horas",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t05-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 3.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T05 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t06",
+      "text": "Quais critérios de inclusão foram aplicados aos pacientes da coorte?",
+      "expected_answer": "Ter 18 anos ou mais e permanência mínima de 48 horas na UTI",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t06-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 3.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T06 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t07",
+      "text": "Qual foi a taxa de mortalidade da coorte inicial?",
+      "expected_answer": "13,57%",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t07-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 3.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T07 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t08",
+      "text": "Por que os autores não imputaram valores ausentes?",
+      "expected_answer": "Para evitar a geração de viés no modelo",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t08-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 3.4.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T08 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t09",
+      "text": "Como as séries temporais foram agregadas para obter representação mais densa?",
+      "expected_answer": "Em intervalos de uma hora, calculando a mediana",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t09-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 3.4.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T09 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t10",
+      "text": "Quais estatísticas resumidas foram calculadas para cada variável na construção de recursos?",
+      "expected_answer": "Mínimo, máximo, desvio padrão, variância, média e mediana",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t10-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 3.5",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T10 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t11",
+      "text": "Qual estratégia de balanceamento de classes foi escolhida para o modelo?",
+      "expected_answer": "Random oversampling da classe minoritária",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t11-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 3.6",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T11 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t12",
+      "text": "Qual método de normalização foi utilizado?",
+      "expected_answer": "Min-max, transformando valores para a escala de zero a um",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t12-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 3.7",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T12 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t13",
+      "text": "O que a sensibilidade mede na avaliação dos classificadores?",
+      "expected_answer": "A capacidade de prever corretamente os pacientes que morreram, a classe positiva",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t13-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T13 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t14",
+      "text": "O que a especificidade mede na avaliação dos classificadores?",
+      "expected_answer": "A capacidade de prever corretamente os pacientes que sobreviveram, a classe negativa",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t14-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T14 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t15",
+      "text": "Por que a AUC foi escolhida para a comparação com trabalhos relacionados?",
+      "expected_answer": "Porque a literatura a aponta como métrica relevante para medir desempenho na predição de mortalidade hospitalar",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t15-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T15 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t16",
+      "text": "Qual método obteve a melhor performance na janela de 24 horas?",
+      "expected_answer": "MLP",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t16-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T16 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t17",
+      "text": "Qual método obteve a melhor performance na janela de 48 horas?",
+      "expected_answer": "Gradient Boosting Classifier (GBC)",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t17-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Resumo e Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T17 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t18",
+      "text": "Quais sinais vitais fazem parte das 12 variáveis usadas pela abordagem proposta?",
+      "expected_answer": "DBP, SBP, MAP, temperatura corporal, frequência respiratória, frequência cardíaca e SpO2",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t18-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T18 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t19",
+      "text": "Quantas observações extremas foram removidas pelas regras de limpeza?",
+      "expected_answer": "7.471 observações, equivalentes a 0,51%",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t19-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 3.4.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T19 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-t20",
+      "text": "Qual perspectiva de continuidade é apontada ao final do artigo?",
+      "expected_answer": "Otimizar a performance preditiva para possibilitar uso em ambiente clínico real como apoio à decisão",
+      "origin_doc_id": "art-002",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-t20-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 5",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-T20 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-m01",
+      "text": "Usando a Tabela 2 e a explicação sobre dados ausentes, quais três variáveis apresentam as menores incidências e quais são seus percentuais?",
+      "expected_answer": "pH (8%), GCS (11%) e glicose (17%)",
+      "origin_doc_id": "art-002",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-m01-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 3.4.2 + Tabela 2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-002-m01-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-M01 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-m02",
+      "text": "Com base na Tabela 3 e na discussão da Seção 4, qual método lidera em F1 e AUC após 48 horas e quais são os valores?",
+      "expected_answer": "GBC, com F1 de 0,53 e AUC de 0,85",
+      "origin_doc_id": "art-002",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-m02-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 4 + Tabela 3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-002-m02-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-M02 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-m03",
+      "text": "Relacione a Figura 2 à Tabela 3: por que modelos com AUC semelhante ainda podem levar a escolhas diferentes de classificador?",
+      "expected_answer": "Porque as curvas ROC mostram comportamentos distintos conforme o limiar de decisão; a escolha depende do equilíbrio desejado entre especificidade e sensibilidade",
+      "origin_doc_id": "art-002",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-m03-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 4 + Figura 2 + Tabela 3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-002-m03-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-M03 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-m04",
+      "text": "Comparando a linha da abordagem proposta na Tabela 1 com a descrição da Seção 4, quais recursos tornam o GBC mais simples de implementar do que alguns trabalhos com AUC maior?",
+      "expected_answer": "Usa 12 variáveis, com sete sinais vitais geralmente registrados automaticamente, dois dados demográficos, dois exames e GCS total; trabalhos com AUC maior usam 17 variáveis, mais exames ou componentes individuais de GCS",
+      "origin_doc_id": "art-002",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-m04-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seção 4 + Tabela 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-002-m04-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-M04 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-002-m05",
+      "text": "Considerando a Figura 1 e as Seções 3.4 a 3.7, quais etapas de preparação ocorrem antes da comparação dos classificadores?",
+      "expected_answer": "Limpeza de dados, agregação horária e tratamento de ausentes, construção de recursos, balanceamento de classes e normalização",
+      "origin_doc_id": "art-002",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-002-m05-e1",
+          "doc_id": "art-002",
+          "page": null,
+          "section": "Seções 3.3-3.7 + Figura 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-002-m05-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A02-M05 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t01",
+      "text": "Qual fungo causa a ferrugem asiática abordada pelo artigo?",
+      "expected_answer": "Phakopsora pachyrhizi",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t01-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Resumo e Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T01 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t02",
+      "text": "Qual variável-alvo os modelos procuram prever?",
+      "expected_answer": "A severidade da ferrugem asiática em lavouras de soja",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t02-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Resumo e Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T02 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t03",
+      "text": "Como a severidade é quantificada no conjunto de dados principal?",
+      "expected_answer": "Como média percentual da área afetada nas folhas remanescentes, com 100% para copas completamente desfolhadas",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t03-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T03 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t04",
+      "text": "Qual é a principal fonte dos dados de plantação e fungicidas?",
+      "expected_answer": "Testes cooperativos de fungicidas coordenados pelo Consórcio Antiferrugem",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t04-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T04 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t05",
+      "text": "Em quantos estados brasileiros foram coletados os dados de plantação?",
+      "expected_answer": "Dez estados",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t05-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T05 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t06",
+      "text": "Quais safras são cobertas pelos dados de plantação?",
+      "expected_answer": "De 2014/15 até 2019/20",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t06-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T06 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t07",
+      "text": "Quais meses de dados climáticos foram selecionados e por quê?",
+      "expected_answer": "Novembro e dezembro, por corresponderem ao período de pré-colheita",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t07-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T07 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t08",
+      "text": "Qual pacote da linguagem R forneceu os dados climáticos usados no enriquecimento?",
+      "expected_answer": "brclimr",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t08-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T08 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t09",
+      "text": "Qual identificador foi utilizado na fusão dos dados do brclimr com a base de severidade?",
+      "expected_answer": "O código de município atribuído pelo IBGE",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t09-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T09 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t10",
+      "text": "Que formato de arquivo foi usado pelo IBGE para disponibilizar dados de características climáticas regionais?",
+      "expected_answer": "Arquivos .shp",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t10-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T10 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t11",
+      "text": "Quais três modelos baseados em árvores foram utilizados no estudo?",
+      "expected_answer": "Random Forest, XGBoost e CatBoost",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t11-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T11 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t12",
+      "text": "Que característica dos modelos foi priorizada além de encontrar padrões não lineares?",
+      "expected_answer": "Explicabilidade",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t12-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T12 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t13",
+      "text": "Qual técnica de explicabilidade é citada para observar o impacto dos atributos no resultado final?",
+      "expected_answer": "SHAP",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t13-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T13 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t14",
+      "text": "Qual tipo de modelo, além dos modelos de árvores, também foi testado?",
+      "expected_answer": "Rede neural",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t14-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T14 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t15",
+      "text": "Quais etapas de pré-processamento foram aplicadas antes do treinamento?",
+      "expected_answer": "Limpeza de duplicatas, normalização de colunas, eliminação de valores faltantes e combinação das fontes de dados",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t15-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T15 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t16",
+      "text": "Qual método de otimização de hiperparâmetros foi utilizado?",
+      "expected_answer": "Grid search",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t16-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T16 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t17",
+      "text": "Qual métrica foi usada para escolher a melhor combinação de hiperparâmetros?",
+      "expected_answer": "Erro Quadrático Médio (RMSE)",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t17-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T17 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t18",
+      "text": "O que um RMSE menor significa no contexto do trabalho?",
+      "expected_answer": "Que o modelo está melhor ajustado e as previsões estão mais próximas dos valores reais",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t18-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T18 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t19",
+      "text": "O que representa a letra B nas combinações de dados apresentadas nos gráficos?",
+      "expected_answer": "A base de dados sem acréscimos",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t19-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T19 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-t20",
+      "text": "Qual fonte de dados mostrou importância geral para reduzir o erro dos modelos?",
+      "expected_answer": "Os dados climáticos do pacote brclimr",
+      "origin_doc_id": "art-003",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-t20-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seções 4 e 5",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-T20 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-m01",
+      "text": "Considerando a explicação dos modelos e a Figura 1, qual modelo de árvores é ilustrado e o que a figura torna possível interpretar?",
+      "expected_answer": "CatBoost; a visualização de um weak learner permite observar caminhos de decisão do modelo",
+      "origin_doc_id": "art-003",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-m01-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 3.3 + Figura 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-003-m01-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-M01 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-m02",
+      "text": "Usando a legenda da Figura 2 e a explicação da Seção 4, o que o eixo Y mede e o que significam as letras T, S, C e A nas combinações?",
+      "expected_answer": "Mede RMSE; T são dados brclimr, S dados de solo do IBGE, C características climáticas do IBGE e A altitude da localidade",
+      "origin_doc_id": "art-003",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-m02-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 4 + Figura 2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-003-m02-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-M02 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-m03",
+      "text": "Comparando as Figuras 2 e 3 com a discussão textual, como o efeito da combinação de fontes de dados difere entre Campo Verde e Maracaju?",
+      "expected_answer": "Em uma localidade há melhora significativa, especialmente com dados brclimr, enquanto na outra a combinação de todas as fontes produz pouca melhora; o texto atribui a diferença a dificuldades de ajuste em partes dos dados",
+      "origin_doc_id": "art-003",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-m03-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 4 + Figuras 2 e 3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-003-m03-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-M03 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-m04",
+      "text": "Como a Figura 4 e a análise dos resultados demonstram que adicionar todas as bases não é sempre a melhor escolha?",
+      "expected_answer": "Embora brclimr melhore significativamente o erro em geral, em um caso os dados brclimr sozinhos superam a combinação de todas as bases, indicando que alguns dados podem prejudicar o ajuste",
+      "origin_doc_id": "art-003",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-m04-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seção 4 + Figura 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-003-m04-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-M04 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-003-m05",
+      "text": "Combinando a descrição das fontes de dados com os gráficos de resultados, qual é a cadeia de informação usada para explicar por que uma previsão pode variar entre cidades?",
+      "expected_answer": "Dados de severidade e fungicidas são enriquecidos por município/ano com dados meteorológicos, solo, clima regional e altitude; os gráficos mostram que essas combinações afetam o RMSE de forma diferente conforme a cidade",
+      "origin_doc_id": "art-003",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-003-m05-e1",
+          "doc_id": "art-003",
+          "page": null,
+          "section": "Seções 3.1-3.2 e 4 + Figuras 2-4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-003-m05-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A03-M05 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t01",
+      "text": "Qual tipo de rede óptica é o foco do artigo?",
+      "expected_answer": "Redes ópticas elásticas com multiplexação por divisão espacial, ou SDM-EONs, usando fibras multinúcleo",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t01-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Resumo e Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T01 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t02",
+      "text": "Que novo problema de alocação de recursos surge nas fibras multinúcleo?",
+      "expected_answer": "A alocação do núcleo da fibra",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t02-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Resumo e Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T02 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t03",
+      "text": "O que significa a sigla AMN?",
+      "expected_answer": "Algoritmo com aprendizado de máquina para escolha de núcleo",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t03-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Resumo e Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T03 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t04",
+      "text": "Qual fenômeno de interferência entre núcleos é um desafio central em SDM-EONs?",
+      "expected_answer": "Crosstalk inter-núcleo (XT)",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t04-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T04 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t05",
+      "text": "Quais são os quatro subproblemas do RMSCA apresentados no artigo?",
+      "expected_answer": "Roteamento, escolha de modulação, escolha de núcleo e alocação de espectro",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t05-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T05 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t06",
+      "text": "Qual largura tem cada slot de frequência do espectro óptico na rede descrita?",
+      "expected_answer": "12,5 GHz",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t06-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T06 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t07",
+      "text": "Qual é a diferença entre estratégias XT-aware e XT-avoid?",
+      "expected_answer": "XT-aware usa níveis de crosstalk em tempo real; XT-avoid tenta evitá-lo sem conhecer seus valores em tempo real",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t07-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T07 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t08",
+      "text": "Qual tipo de estratégia de crosstalk é adotada pelo artigo?",
+      "expected_answer": "XT-avoid",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t08-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T08 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t09",
+      "text": "Quais três fatores de limitação da camada física são considerados?",
+      "expected_answer": "Ruído ASE, efeitos não lineares e crosstalk inter-núcleo",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t09-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T09 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t10",
+      "text": "Qual relação é usada como critério de qualidade de transmissão além do XT?",
+      "expected_answer": "OSNR, relação sinal-ruído óptico",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t10-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T10 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t11",
+      "text": "De qual algoritmo o AMN aprende o comportamento para a escolha de núcleo?",
+      "expected_answer": "CBA-SBA",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t11-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seções 4 e 6",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T11 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t12",
+      "text": "Quais são os três passos do fluxo de funcionamento do AMN?",
+      "expected_answer": "Gerar a base de dados, treinar a rede neural e executar a rede treinada para escolher o núcleo",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t12-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T12 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t13",
+      "text": "Aproximadamente quantos registros são gerados na base de dados usada no treinamento do AMN?",
+      "expected_answer": "Aproximadamente 800.000 registros",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t13-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T13 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t14",
+      "text": "Quais topologias são consideradas nas simulações?",
+      "expected_answer": "NSFNet e EURO28",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t14-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 5",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T14 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t15",
+      "text": "Quais duas métricas de desempenho são usadas para avaliar o AMN?",
+      "expected_answer": "Probabilidade de bloqueio de requisição (PBR) e razão de dados bloqueados (RDB)",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t15-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Resumo e Seções 5-6",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T15 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t16",
+      "text": "Quais cinco pontos de carga são usados para calcular o ganho médio?",
+      "expected_answer": "900, 1000, 1100, 1200 e 1300 Erlangs",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t16-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 5",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T16 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t17",
+      "text": "Em qual cenário o AMN apresenta ganhos médios de pelo menos 8,16% em PBR e 9,28% em RDB?",
+      "expected_answer": "No cenário de alta incidência de XT",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t17-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Resumo e Seção 6",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T17 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t18",
+      "text": "Em qual cenário o AMN alcança ganhos médios de pelo menos 25,35% em PBR e 24,87% em RDB?",
+      "expected_answer": "No cenário de baixa incidência de XT",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t18-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 6",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T18 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t19",
+      "text": "Por que o desempenho do AMN e do CBA-SBA converge no cenário de alta incidência de XT na NSFNet?",
+      "expected_answer": "Porque o AMN foi treinado a partir do CBA-SBA, e seus resultados ficam sobrepostos pelo intervalo de confiança nesse cenário",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t19-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 5",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T19 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-t20",
+      "text": "Qual possibilidade de trabalho futuro é citada para aprimorar a tomada de decisão do AMN?",
+      "expected_answer": "Investigar outras bases de treinamento e outras técnicas de ML, além de integrá-lo a outros subproblemas do RMSCA",
+      "origin_doc_id": "art-004",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-t20-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 6",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-T20 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-m01",
+      "text": "Usando a Figura 1 e a descrição do algoritmo, em qual etapa a RNA é usada para escolher o núcleo durante a operação da rede?",
+      "expected_answer": "No terceiro passo, após o treinamento, quando a rede neural treinada é executada para escolher o núcleo",
+      "origin_doc_id": "art-004",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-m01-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 4 + Figura 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-004-m01-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-M01 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-m02",
+      "text": "Compare a Tabela 1 com a estratégia adotada pelo AMN: qual característica comum aos trabalhos XT-avoid justifica a escolha metodológica do artigo?",
+      "expected_answer": "Eles evitam crosstalk sem depender de seus valores em tempo real; o AMN segue essa abordagem para reduzir custo computacional",
+      "origin_doc_id": "art-004",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-m02-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 2 + Tabela 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-004-m02-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-M02 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-m03",
+      "text": "Considerando a Figura 3 e a Seção 5, quais topologias são representadas e para qual finalidade elas são usadas?",
+      "expected_answer": "NSFNet e EURO28; são as topologias usadas nas simulações de avaliação do AMN",
+      "origin_doc_id": "art-004",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-m03-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 5 + Figura 3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-004-m03-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-M03 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-m04",
+      "text": "Usando a Figura 4 e a explicação dos resultados, em qual carga são relatados os ganhos de 87,19% e 80,64% do AMN em PBR sobre o CPRF, e em quais topologias?",
+      "expected_answer": "Na carga de 1300 Erlangs, na NSFNet (87,19%) e na EURO28 (80,64%), no cenário de alta incidência de XT",
+      "origin_doc_id": "art-004",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-m04-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 5 + Figura 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-004-m04-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-M04 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-004-m05",
+      "text": "A partir da Tabela 4 e da discussão subsequente, em qual caso o ganho médio do AMN sobre CBA-SBA é marcado como equivalente pelo intervalo de confiança?",
+      "expected_answer": "Em PBR e RDB na topologia NSFNet sob alta incidência de XT, com 1,17% e 1,36% marcados por asterisco",
+      "origin_doc_id": "art-004",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-004-m05-e1",
+          "doc_id": "art-004",
+          "page": null,
+          "section": "Seção 5 + Tabela 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-004-m05-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A04-M05 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t01",
+      "text": "Qual problema clínico os modelos do artigo buscam classificar automaticamente?",
+      "expected_answer": "A presença de câncer peniano em imagens histopatológicas",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t01-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Resumo e Seção 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T01 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t02",
+      "text": "Qual projeto organizou o conjunto de imagens utilizado?",
+      "expected_answer": "Projeto Câncer de Pênis da Amazônia Legal (PCPAm)",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t02-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 3.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T02 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t03",
+      "text": "Quantas imagens compõem o conjunto de dados original?",
+      "expected_answer": "194 imagens RGB",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t03-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Resumo e Seção 3.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T03 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t04",
+      "text": "Quais duas ampliações estão presentes no conjunto original?",
+      "expected_answer": "40× e 100×",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t04-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Resumo e Seção 3.1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T04 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t05",
+      "text": "Qual ampliação foi usada nos treinamentos reportados?",
+      "expected_answer": "100×",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t05-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seções 3.1, 4 e 5",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T05 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t06",
+      "text": "Qual método de pré-processamento foi usado para corrigir variações de cor das imagens?",
+      "expected_answer": "Normalização Vahadane",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t06-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seções 1 e 3.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T06 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t07",
+      "text": "Para qual resolução as imagens foram redimensionadas após o pré-processamento?",
+      "expected_answer": "256 × 192 pixels",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t07-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 3.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T07 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t08",
+      "text": "Quais problemas do conjunto motivaram o uso de augmentation?",
+      "expected_answer": "Desbalanceamento de classes e escassez de imagens para treinamento",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t08-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 3.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T08 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t09",
+      "text": "Que transformações geométricas foram usadas como augmentation?",
+      "expected_answer": "Rotações de 90°, 180° e 270°, além de inversão horizontal e vertical",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t09-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 3.2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T09 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t10",
+      "text": "Quais são os dois modelos propostos pelos autores?",
+      "expected_answer": "DenseMSAG e DenseUSAG",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t10-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seções 3.3 e 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T10 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t11",
+      "text": "Qual arquitetura DenseNet foi usada como base?",
+      "expected_answer": "DenseNet201",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t11-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 3.3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T11 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t12",
+      "text": "Qual problema de treinamento foi associado à complexidade do DenseMSAG?",
+      "expected_answer": "Um número de parâmetros muito alto, que impediu o uso do mecanismo em todos os blocos densos",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t12-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 3.3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T12 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t13",
+      "text": "Qual convolução é mantida pelo USAG após a redução proposta em relação ao MSAG?",
+      "expected_answer": "A convolução 1×1, Point Wise",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t13-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 3.3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T13 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t14",
+      "text": "Quais frameworks foram usados para implementar DenseMSAG e DenseUSAG?",
+      "expected_answer": "Keras e TensorFlow",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t14-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T14 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t15",
+      "text": "Qual otimizador foi utilizado nos treinamentos?",
+      "expected_answer": "AdamW",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t15-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T15 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t16",
+      "text": "Quais métricas monitoraram o progresso do treinamento?",
+      "expected_answer": "Acurácia, precisão, sensibilidade e F1-Score",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t16-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T16 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t17",
+      "text": "Como o conjunto foi dividido na primeira sessão de treinamento?",
+      "expected_answer": "50% treino, 40% teste e 10% validação",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t17-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T17 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t18",
+      "text": "Qual método de validação cruzada foi usado na segunda fase de treinamento?",
+      "expected_answer": "Monte Carlo",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t18-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T18 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t19",
+      "text": "Quantas partições distintas foram realizadas na validação cruzada?",
+      "expected_answer": "Cinco",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t19-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T19 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-t20",
+      "text": "Qual limitação do DenseUSAG é destacada na conclusão?",
+      "expected_answer": "Sensibilidade inferior e desvios padrão elevados em suas métricas",
+      "origin_doc_id": "art-005",
+      "question_type": "factual",
+      "modality": "text",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-t20-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seções 4.1 e 5",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": null
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-T20 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-m01",
+      "text": "Com base na Tabela 2 e no texto da Seção 3.1, quantas imagens de câncer em 100× estão disponíveis e por que somente essa ampliação foi utilizada?",
+      "expected_answer": "Há 57 imagens de câncer em 100×; foi usada apenas 100× porque o método Vahadane requer número significativo de treinamentos",
+      "origin_doc_id": "art-005",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-m01-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 3.1 + Tabela 2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-005-m01-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-M01 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-m02",
+      "text": "Relacionando a Figura 1 às seções metodológicas, qual sequência de etapas forma a abordagem proposta?",
+      "expected_answer": "Aquisição da base, pré-processamento das imagens, desenvolvimento e treinamento das arquiteturas de redes neurais e avaliação dos resultados",
+      "origin_doc_id": "art-005",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-m02-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 3 + Figura 1",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-005-m02-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-M02 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-m03",
+      "text": "A Figura 2 é acompanhada de exemplos visuais do conjunto. De acordo com o texto, por quais dois critérios esses exemplos são organizados?",
+      "expected_answer": "Por classe/situação patológica e por ampliação",
+      "origin_doc_id": "art-005",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-m03-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 3.1 + Figura 2",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-005-m03-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-M03 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-m04",
+      "text": "Combinando a Figura 4 e o texto sobre DenseMSAG, quais três tipos de convolução compõem o MSAG e onde ele é inserido na DenseNet?",
+      "expected_answer": "Convolução 1×1 Point Wise, convolução padrão 3×3 e convolução dilatada 3×3 com dilatação 2; ele é inserido nas concatenações dos blocos densos",
+      "origin_doc_id": "art-005",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-m04-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seção 3.3 + Figura 4",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-005-m04-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-M04 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    },
+    {
+      "question_id": "q-005-m05",
+      "text": "Usando a Tabela 3 e a discussão dos resultados, qual configuração obteve o melhor F1-Score e qual aspecto do resultado ainda exige cautela?",
+      "expected_answer": "DenseUSAG na melhor época, com imagem P35 T, F1 de 93,16% ± 4,63%; a sensibilidade tem desvio padrão elevado e é inferior à de alguns trabalhos relacionados",
+      "origin_doc_id": "art-005",
+      "question_type": "multi_evidence",
+      "modality": "mixed",
+      "review_status": "draft",
+      "evidence": [
+        {
+          "evidence_id": "q-005-m05-e1",
+          "doc_id": "art-005",
+          "page": null,
+          "section": "Seções 4-4.1 + Tabela 3",
+          "quote": "",
+          "chunk_ids": [],
+          "required_group": "q-005-m05-g1"
+        }
+      ],
+      "notes": "Pre-anotacao derivada de A05-M05 (banco de perguntas v0). Resposta/evidencia NAO verificadas ainda no PDF -- validar quote, page e preencher chunk_ids apos `rag-ptbr chunk`."
+    }
+  ],
+  "qrels": [],
+  "evidence_groups": [
+    {
+      "group_id": "q-001-m01-g1",
+      "question_id": "q-001-m01",
+      "required": true,
+      "description": "Seção 4.1 + Figura 1",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-001-m02-g1",
+      "question_id": "q-001-m02",
+      "required": true,
+      "description": "Seção 5.1 + Tabela 1",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-001-m03-g1",
+      "question_id": "q-001-m03",
+      "required": true,
+      "description": "Seções 5.1-5.2 + Tabela 2",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-001-m04-g1",
+      "question_id": "q-001-m04",
+      "required": true,
+      "description": "Seção 6 + Tabela 3",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-001-m05-g1",
+      "question_id": "q-001-m05",
+      "required": true,
+      "description": "Seções 6-7 + Tabela 3",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-002-m01-g1",
+      "question_id": "q-002-m01",
+      "required": true,
+      "description": "Seção 3.4.2 + Tabela 2",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-002-m02-g1",
+      "question_id": "q-002-m02",
+      "required": true,
+      "description": "Seção 4 + Tabela 3",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-002-m03-g1",
+      "question_id": "q-002-m03",
+      "required": true,
+      "description": "Seção 4 + Figura 2 + Tabela 3",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-002-m04-g1",
+      "question_id": "q-002-m04",
+      "required": true,
+      "description": "Seção 4 + Tabela 1",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-002-m05-g1",
+      "question_id": "q-002-m05",
+      "required": true,
+      "description": "Seções 3.3-3.7 + Figura 1",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-003-m01-g1",
+      "question_id": "q-003-m01",
+      "required": true,
+      "description": "Seção 3.3 + Figura 1",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-003-m02-g1",
+      "question_id": "q-003-m02",
+      "required": true,
+      "description": "Seção 4 + Figura 2",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-003-m03-g1",
+      "question_id": "q-003-m03",
+      "required": true,
+      "description": "Seção 4 + Figuras 2 e 3",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-003-m04-g1",
+      "question_id": "q-003-m04",
+      "required": true,
+      "description": "Seção 4 + Figura 4",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-003-m05-g1",
+      "question_id": "q-003-m05",
+      "required": true,
+      "description": "Seções 3.1-3.2 e 4 + Figuras 2-4",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-004-m01-g1",
+      "question_id": "q-004-m01",
+      "required": true,
+      "description": "Seção 4 + Figura 1",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-004-m02-g1",
+      "question_id": "q-004-m02",
+      "required": true,
+      "description": "Seção 2 + Tabela 1",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-004-m03-g1",
+      "question_id": "q-004-m03",
+      "required": true,
+      "description": "Seção 5 + Figura 3",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-004-m04-g1",
+      "question_id": "q-004-m04",
+      "required": true,
+      "description": "Seção 5 + Figura 4",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-004-m05-g1",
+      "question_id": "q-004-m05",
+      "required": true,
+      "description": "Seção 5 + Tabela 4",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-005-m01-g1",
+      "question_id": "q-005-m01",
+      "required": true,
+      "description": "Seção 3.1 + Tabela 2",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-005-m02-g1",
+      "question_id": "q-005-m02",
+      "required": true,
+      "description": "Seção 3 + Figura 1",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-005-m03-g1",
+      "question_id": "q-005-m03",
+      "required": true,
+      "description": "Seção 3.1 + Figura 2",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-005-m04-g1",
+      "question_id": "q-005-m04",
+      "required": true,
+      "description": "Seção 3.3 + Figura 4",
+      "chunk_ids": []
+    },
+    {
+      "group_id": "q-005-m05-g1",
+      "question_id": "q-005-m05",
+      "required": true,
+      "description": "Seções 4-4.1 + Tabela 3",
+      "chunk_ids": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{"command": ["C:\\Python313\\python.exe", "-m", "pytest", "-o", "cache_dir=artifacts/review/.pytest_cache"], "started": "2026-09-23T14:07:12.181345", "returncode": 0, "output": "phase2_pytest_final.txt"}
+{"command": ["rag-ptbr", "validate"], "started": "2026-09-23T14:07:21.404417", "returncode": 0, "output": "phase2_validate_final.txt"}
+{"command": ["rag-ptbr", "matrix"], "started": "2026-09-23T14:07:22.346173", "returncode": 0, "output": "phase2_matrix_final.txt"}
+{"command": ["C:\\Python313\\python.exe", "artifacts/review/phase2_verify_gold.py"], "started": "2026-09-23T14:07:23.053684", "returncode": 0, "output": "phase2_gold_verify_final.txt"}
+{"command": ["rag-ptbr", "review-gold", "--question-id", "q-001-t01"], "started": "2026-09-23T14:07:24.153666", "returncode": 0, "output": "phase2_review_q001t01_final.txt"}
+{"command": ["rag-ptbr", "review-gold", "--next"], "started": "2026-09-23T14:07:25.009429", "returncode": 0, "output": "phase2_review_next_final.txt"}
+{"command": ["rag-ptbr", "review-gold", "--summary"], "started": "2026-09-23T14:07:25.929221", "returncode": 0, "output": "phase2_review_summary_final.txt"}
+{"command": ["git", "status", "--short"], "started": "2026-09-23T14:07:27.081537", "returncode": 0, "output": "phase2_git_status_final.txt"}
+{"command": ["git", "diff", "--stat"], "started": "2026-09-23T14:07:27.124849", "returncode": 0, "output": "phase2_git_diff_stat_final.txt"}
+{"command": ["git", "diff", "--check"], "started": "2026-09-23T14:07:27.190399", "returncode": 0, "output": "phase2_git_diff_check_final.txt"}
+PHASE2_FINAL_VERIFICATION_COMPLETE

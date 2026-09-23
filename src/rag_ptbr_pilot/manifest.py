@@ -65,6 +65,9 @@ class RunManifest:
     corpus_version: str = ""
     prompts_hash: str = ""
     qrels_hash: str = ""
+    questions_hash: str = ""
+    evidence_groups_hash: str = ""
+    ranking_hashes: dict = field(default_factory=dict)
     # Checkpoints/revisões reais (resolvidos na preparação dos modelos)
     model_revisions: dict = field(default_factory=dict)
     # Biblioteca e ambiente
@@ -86,6 +89,9 @@ class RunManifest:
             "corpus_version": self.corpus_version,
             "prompts_hash": self.prompts_hash,
             "qrels_hash": self.qrels_hash,
+            "questions_hash": self.questions_hash,
+            "evidence_groups_hash": self.evidence_groups_hash,
+            "ranking_hashes": self.ranking_hashes,
             "model_revisions": self.model_revisions,
             "package_version": self.package_version,
             "library_versions": self.library_versions,

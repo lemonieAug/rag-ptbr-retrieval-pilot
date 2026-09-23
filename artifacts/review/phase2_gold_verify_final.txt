@@ -1,0 +1,42 @@
+{
+  "total": 125,
+  "approved": 0,
+  "draft_ready": 119,
+  "draft_pending": 6,
+  "rejected": 0,
+  "evidence_refs": 176,
+  "evidence_with_quote": 176,
+  "evidence_with_quote_and_page": 176,
+  "evidence_with_chunks": 174,
+  "qrels": 157,
+  "positive_qrels": 157,
+  "questions_with_positive_qrels": 124,
+  "required_groups": 62,
+  "empty_required_groups": 2,
+  "pending": [
+    {
+      "question_id": "q-001-t15",
+      "classification": "SOURCE_CONTRADICTION"
+    },
+    {
+      "question_id": "q-001-t20",
+      "classification": "AMBIGUOUS_EVIDENCE"
+    },
+    {
+      "question_id": "q-001-m05",
+      "classification": "AMBIGUOUS_EVIDENCE"
+    },
+    {
+      "question_id": "q-003-t17",
+      "classification": "AMBIGUOUS_EVIDENCE"
+    },
+    {
+      "question_id": "q-003-m03",
+      "classification": "MANUAL_VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "question_id": "q-004-t18",
+      "classification": "SOURCE_CONTRADICTION"
+    }
+  ]
+}

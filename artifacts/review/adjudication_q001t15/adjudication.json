@@ -1,0 +1,134 @@
+{
+  "completed_at": "2026-09-23T18:29:34.517631+00:00",
+  "before": {
+    "question_id": "q-001-t15",
+    "text": "Qual modelo apresentou desempenho superior em precisão e F1 score nas duas categorias de entidades?",
+    "expected_answer": "BiLSTM-CRF com FLAIR embeddings, treinado com a biblioteca FLAIR",
+    "origin_doc_id": "art-001",
+    "question_type": "factual",
+    "modality": "text",
+    "review_status": "draft",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 8,
+        "section": "6. Resultados",
+        "quote": "Pode-se observar que, de acordo com os resultados apresentados na Tabela 3 o\nmodelo BiLSTM-CRF com FLAIR embeddings treinado com aux´ılio da biblioteca para\nPLN FLAIR apresentou resultados superiores com relac¸a˜o a` precisa˜o e F score em am-\n1\nbas as categorias de entidades anotadas na base de dados analisada. Entretanto, o melhor",
+        "chunk_ids": [
+          "art-001-b0023-c000"
+        ],
+        "required_group": null,
+        "evidence_id": "q-001-t15-e1"
+      }
+    ],
+    "notes": "Pré-anotação A01-T15. Análise automática: SOURCE_CONTRADICTION. A narrativa afirma superioridade em precisão e F1 nas duas classes, mas a Tabela 3 empata F1 de legislação (FLAIR/TensorFlow: 0,89) e precisão de jurisprudência (FLAIR/spaCy: 0,78). A resposta foi preservada para adjudicação humana; o qrel candidato sustenta a afirmação narrativa, não resolve a contradição. Candidato produzido por IA; aguarda revisão humana."
+  },
+  "after": {
+    "question_id": "q-001-t15",
+    "text": "Segundo a interpretação apresentada pelos autores na seção de resultados, qual modelo foi apontado como superior em precisão e F1 nas duas categorias de entidades?",
+    "expected_answer": "BiLSTM-CRF com FLAIR embeddings, treinado com a biblioteca FLAIR",
+    "origin_doc_id": "art-001",
+    "question_type": "factual",
+    "modality": "text",
+    "review_status": "approved",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 8,
+        "section": "6. Resultados",
+        "quote": "Pode-se observar que, de acordo com os resultados apresentados na Tabela 3 o\nmodelo BiLSTM-CRF com FLAIR embeddings treinado com aux´ılio da biblioteca para\nPLN FLAIR apresentou resultados superiores com relac¸a˜o a` precisa˜o e F score em am-\n1\nbas as categorias de entidades anotadas na base de dados analisada. Entretanto, o melhor",
+        "chunk_ids": [
+          "art-001-b0023-c000"
+        ],
+        "required_group": null,
+        "evidence_id": "q-001-t15-e1"
+      }
+    ],
+    "notes": "Pré-anotação A01-T15. Análise automática da redação original: SOURCE_CONTRADICTION. A narrativa afirma superioridade em precisão e F1 nas duas classes, mas a Tabela 3 empata F1 de legislação (FLAIR/TensorFlow: 0,89) e precisão de jurisprudência (FLAIR/spaCy: 0,78). Adjudicação humana: Augusto Lemonie Gilioli aprovou explicitamente na conversa a reformulação que atribui a conclusão à interpretação apresentada pelos autores. A nova pergunta recupera essa conclusão declarada; não estabelece superioridade absoluta a partir da tabela. A divergência permanece documentada. Resposta esperada, citação, página e qrel candidato preservados, com suporte na narrativa da seção 6."
+  },
+  "review_record": {
+    "review_id": "review-7e2e3ae2881745b0998a624c092de66f",
+    "target_type": "question",
+    "target_id": "q-001-t15",
+    "status": "approved",
+    "reviewer": "Augusto Lemonie Gilioli",
+    "comments": "Aprovação humana explícita na conversa: \"aprovo\", para a redação que pergunta qual modelo foi apontado como superior segundo a interpretação dos autores. Mantida a resposta BiLSTM-CRF com FLAIR; empates da Tabela 3 documentados nas notas.",
+    "date": "2026-09-23T18:29:33.689683+00:00"
+  },
+  "protected_hashes": {
+    "D:\\rag-ptbr-retrieval-pilot\\data\\annotations\\qrels.yaml": "08ea7c7aad1671c48e93313fb1980c217450a186b2b773ddb2b3727352c6b611",
+    "D:\\rag-ptbr-retrieval-pilot\\data\\annotations\\evidence_groups.yaml": "c3f2fb7475f9cb52643a66fe7f982c6e04b6336da601c0975a9efca91118876d",
+    "D:\\rag-ptbr-retrieval-pilot\\data\\processed\\chunks\\chunks.jsonl": "bd025e6b5b1ce93f203fa1de10c25ccd20add4ef989ff35fa8388b118c1d4607",
+    "D:\\rag-ptbr-retrieval-pilot\\data\\processed\\chunks\\corpus_manifest.json": "6bdb44775e458c10e59c11568b57b9ab63ec63f9ddfe2f622bc2abc92a3a5780",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\bm25.json": "c355db9cb2e2937d87425fccd067bf639b5a86efaca2ea95f86d1fa5b42d0ae9",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_colibri\\matrix.npy": "6f4777065cfb6a058219d3eb1afebe8fc46c6b4af798797ece494af89f0c70ca",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_colibri\\meta.json": "ceed76fad79cd11ea2859b74098d944ce410df99ea0cdfd500c711ebef0f26ef",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_e5\\matrix.npy": "3eabbae89e6b39efc5d292bec229e3c718ed40ec5d2e3542684abcdc2eb8301b",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_e5\\meta.json": "4ef35779982300bb4912c6f399351e2383c12466ab19d567729a54168fdba975",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_qwen_embedding\\matrix.npy": "0791d6a4203a55eb6a3914cc5dc4f4cd1749643e981b74963df112dc65552492",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_qwen_embedding\\meta.json": "f8d6b079d2cdaf613fe5c19ee3399da32281f60c2fb00016627186e83a041c09"
+  },
+  "protected_files_unchanged": true,
+  "other_questions_unchanged": true,
+  "audit": {
+    "total": 125,
+    "approved": 120,
+    "draft_ready": 0,
+    "draft_pending": 5,
+    "rejected": 0,
+    "evidence_refs": 176,
+    "evidence_with_quote": 176,
+    "evidence_with_quote_and_page": 176,
+    "evidence_with_chunks": 174,
+    "qrels": 157,
+    "positive_qrels": 157,
+    "questions_with_positive_qrels": 124,
+    "required_groups": 62,
+    "empty_required_groups": 2,
+    "pending": [
+      {
+        "question_id": "q-001-t20",
+        "classification": "AMBIGUOUS_EVIDENCE"
+      },
+      {
+        "question_id": "q-001-m05",
+        "classification": "AMBIGUOUS_EVIDENCE"
+      },
+      {
+        "question_id": "q-003-t17",
+        "classification": "AMBIGUOUS_EVIDENCE"
+      },
+      {
+        "question_id": "q-003-m03",
+        "classification": "MANUAL_VISUAL_REVIEW_REQUIRED"
+      },
+      {
+        "question_id": "q-004-t18",
+        "classification": "SOURCE_CONTRADICTION"
+      }
+    ],
+    "validation": {
+      "errors": [],
+      "warnings": [
+        "pergunta q-001-m05: grupo obrigatório q-001-m05-g2 vazio",
+        "pergunta q-003-m03: grupo obrigatório q-003-m03-g3 vazio",
+        "pergunta q-001-t20: draft — aguarda revisão humana; fora da avaliação",
+        "pergunta q-001-t20: evidência q-001-t20-e1 sem chunks de suporte",
+        "pergunta q-001-t20: draft sem relevância anotada — fora da avaliação",
+        "pergunta q-001-m05: draft — aguarda revisão humana; fora da avaliação",
+        "pergunta q-001-m05: evidência q-001-m05-e2 sem chunks de suporte",
+        "pergunta q-003-t17: draft — aguarda revisão humana; fora da avaliação",
+        "pergunta q-003-m03: draft — aguarda revisão humana; fora da avaliação",
+        "pergunta q-004-t18: draft — aguarda revisão humana; fora da avaliação"
+      ],
+      "valid": true,
+      "warning_counts": {
+        "empty_required_group": 2,
+        "draft": 5,
+        "missing_evidence_chunks": 2,
+        "missing_qrels": 1
+      }
+    }
+  }
+}

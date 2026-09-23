@@ -1,0 +1,41 @@
+ README.md                                  |   41 +-
+ data/annotations/evidence_groups.yaml      |  357 ++-
+ data/annotations/qrels.yaml                |  483 +++-
+ data/annotations/questions.yaml            | 3428 +++++++++++++++++++---------
+ docs/annotation_guide.md                   |   67 +-
+ docs/decisions.md                          |    6 +-
+ docs/protocol.md                           |    8 +
+ docs/review.md                             |   18 +-
+ src/rag_ptbr_pilot/adapters/base.py        |    2 +-
+ src/rag_ptbr_pilot/adapters/embeddings.py  |   40 +-
+ src/rag_ptbr_pilot/adapters/reranker.py    |   11 +-
+ src/rag_ptbr_pilot/adapters/specs.py       |   18 -
+ src/rag_ptbr_pilot/adapters/tokenizers.py  |    3 +-
+ src/rag_ptbr_pilot/benchmark/validation.py |   72 +-
+ src/rag_ptbr_pilot/cli.py                  |  197 +-
+ src/rag_ptbr_pilot/config.py               |   13 +-
+ src/rag_ptbr_pilot/indexing/dense.py       |   15 +-
+ src/rag_ptbr_pilot/manifest.py             |    6 +
+ src/rag_ptbr_pilot/persistence.py          |   18 +
+ src/rag_ptbr_pilot/reporting/report.py     |   18 +
+ src/rag_ptbr_pilot/retrieval/matrix.py     |    2 +-
+ src/rag_ptbr_pilot/retrieval/pipeline.py   |    4 +-
+ tests/conftest.py                          |    4 +-
+ 23 files changed, 3624 insertions(+), 1207 deletions(-)
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/annotation_guide.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/decisions.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/protocol.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/review.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/adapters/base.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/adapters/embeddings.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/benchmark/validation.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/cli.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/config.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/indexing/dense.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/manifest.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/persistence.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/reporting/report.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/retrieval/matrix.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/retrieval/pipeline.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/conftest.py', LF will be replaced by CRLF the next time Git touches it

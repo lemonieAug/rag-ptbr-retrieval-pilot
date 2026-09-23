@@ -1,0 +1,275 @@
+[
+  {
+    "embedding": "colibri",
+    "shape": [
+      224,
+      768
+    ],
+    "dimension": 768,
+    "checkpoint": "tardellirs/colibri-embed-ptbr",
+    "revision": "95a4d4f3a1c056ac19e0da196d0ab2b4289e3b3b",
+    "fingerprint": "f4324759214c5801eec5c9e570463da3c8b792e3420cbe2d764e9cddca4a46dc",
+    "corpus_version": "8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743",
+    "matrix_dtype": "float32",
+    "queries": [
+      "Qual é a tarefa de processamento de linguagem natural investigada pelo artigo no domínio jurídico?",
+      "Quais dois tipos de entidades o trabalho busca extrair das petições iniciais?",
+      "Que tipo de documento jurídico compõe exclusivamente a base proprietária proposta?"
+    ],
+    "query_shape": [
+      3,
+      768
+    ],
+    "rankings": [
+      [
+        [
+          "art-001-b0004-c000",
+          0.4982607662677765
+        ],
+        [
+          "art-001-b0004-c001",
+          0.4720343351364136
+        ],
+        [
+          "art-001-b0015-c000",
+          0.4527350664138794
+        ],
+        [
+          "art-001-b0006-c000",
+          0.4495772123336792
+        ],
+        [
+          "art-001-b0008-c000",
+          0.44685208797454834
+        ]
+      ],
+      [
+        [
+          "art-001-b0004-c002",
+          0.5270475745201111
+        ],
+        [
+          "art-001-b0006-c000",
+          0.45634201169013977
+        ],
+        [
+          "art-001-b0015-c000",
+          0.45444363355636597
+        ],
+        [
+          "art-001-b0004-c001",
+          0.4219540059566498
+        ],
+        [
+          "art-001-b0007-c000",
+          0.42018139362335205
+        ]
+      ],
+      [
+        [
+          "art-001-b0006-c000",
+          0.47363460063934326
+        ],
+        [
+          "art-001-b0004-c002",
+          0.43426451086997986
+        ],
+        [
+          "art-001-b0015-c000",
+          0.4013538360595703
+        ],
+        [
+          "art-001-b0004-c001",
+          0.35251638293266296
+        ],
+        [
+          "art-004-b0019-c001",
+          0.314250648021698
+        ]
+      ]
+    ],
+    "status": "VALID"
+  },
+  {
+    "embedding": "qwen_embedding",
+    "shape": [
+      224,
+      2560
+    ],
+    "dimension": 2560,
+    "checkpoint": "Qwen/Qwen3-Embedding-4B",
+    "revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+    "fingerprint": "689f2fe282ac056acc26c105287e2705f3c510bc84924a290af946a1eb847228",
+    "corpus_version": "8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743",
+    "matrix_dtype": "float32",
+    "queries": [
+      "Qual é a tarefa de processamento de linguagem natural investigada pelo artigo no domínio jurídico?",
+      "Quais dois tipos de entidades o trabalho busca extrair das petições iniciais?",
+      "Que tipo de documento jurídico compõe exclusivamente a base proprietária proposta?"
+    ],
+    "query_shape": [
+      3,
+      2560
+    ],
+    "rankings": [
+      [
+        [
+          "art-001-b0004-c001",
+          0.6724970936775208
+        ],
+        [
+          "art-001-b0006-c000",
+          0.6628637313842773
+        ],
+        [
+          "art-001-b0004-c000",
+          0.6610473394393921
+        ],
+        [
+          "art-001-b0002-c000",
+          0.6226780414581299
+        ],
+        [
+          "art-001-b0027-c000",
+          0.6071370840072632
+        ]
+      ],
+      [
+        [
+          "art-001-b0015-c000",
+          0.577548086643219
+        ],
+        [
+          "art-001-b0004-c002",
+          0.5510401725769043
+        ],
+        [
+          "art-001-b0006-c000",
+          0.4794008731842041
+        ],
+        [
+          "art-001-b0002-c000",
+          0.46159878373146057
+        ],
+        [
+          "art-001-b0004-c001",
+          0.4507293403148651
+        ]
+      ],
+      [
+        [
+          "art-001-b0004-c002",
+          0.49733343720436096
+        ],
+        [
+          "art-001-b0015-c000",
+          0.4659682512283325
+        ],
+        [
+          "art-001-b0006-c000",
+          0.396847665309906
+        ],
+        [
+          "art-001-b0004-c001",
+          0.38478612899780273
+        ],
+        [
+          "art-002-b0023-c000",
+          0.3735768496990204
+        ]
+      ]
+    ],
+    "status": "VALID"
+  },
+  {
+    "embedding": "e5",
+    "shape": [
+      224,
+      1024
+    ],
+    "dimension": 1024,
+    "checkpoint": "intfloat/multilingual-e5-large-instruct",
+    "revision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+    "fingerprint": "cdd660fc48aa8c3e26921406edf99e11a04cd5ccee0d9dfbd0d552c17eee9215",
+    "corpus_version": "8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743",
+    "matrix_dtype": "float32",
+    "queries": [
+      "Qual é a tarefa de processamento de linguagem natural investigada pelo artigo no domínio jurídico?",
+      "Quais dois tipos de entidades o trabalho busca extrair das petições iniciais?",
+      "Que tipo de documento jurídico compõe exclusivamente a base proprietária proposta?"
+    ],
+    "query_shape": [
+      3,
+      1024
+    ],
+    "rankings": [
+      [
+        [
+          "art-001-b0004-c000",
+          0.8854151964187622
+        ],
+        [
+          "art-001-b0008-c000",
+          0.8812779188156128
+        ],
+        [
+          "art-001-b0024-c000",
+          0.8764721155166626
+        ],
+        [
+          "art-001-b0004-c001",
+          0.8754683136940002
+        ],
+        [
+          "art-001-b0009-c000",
+          0.8697078227996826
+        ]
+      ],
+      [
+        [
+          "art-001-b0004-c002",
+          0.8618771433830261
+        ],
+        [
+          "art-001-b0006-c000",
+          0.8505358695983887
+        ],
+        [
+          "art-001-b0024-c000",
+          0.8482496738433838
+        ],
+        [
+          "art-001-b0015-c000",
+          0.8459993600845337
+        ],
+        [
+          "art-001-b0014-c000",
+          0.8372769355773926
+        ]
+      ],
+      [
+        [
+          "art-001-b0004-c002",
+          0.8565438389778137
+        ],
+        [
+          "art-001-b0015-c000",
+          0.8420242071151733
+        ],
+        [
+          "art-001-b0006-c000",
+          0.832351803779602
+        ],
+        [
+          "art-001-b0004-c001",
+          0.8321553468704224
+        ],
+        [
+          "art-002-b0023-c000",
+          0.8302950263023376
+        ]
+      ]
+    ],
+    "status": "VALID"
+  }
+]

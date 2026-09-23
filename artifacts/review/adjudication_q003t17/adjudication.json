@@ -1,0 +1,119 @@
+{
+  "completed_at": "2026-09-23T18:35:23.103198+00:00",
+  "before": {
+    "question_id": "q-003-t17",
+    "text": "Qual métrica foi usada para escolher a melhor combinação de hiperparâmetros?",
+    "expected_answer": "Erro Quadrático Médio (RMSE)",
+    "origin_doc_id": "art-003",
+    "question_type": "factual",
+    "modality": "text",
+    "review_status": "draft",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "3.4. Passo a passo do treinamento",
+        "quote": "utilizamos o me´todo de grid search, que nos permitiu explorar diversas combinac¸o˜es de\nhiperparaˆmetros e selecionar aquela que resultou no melhor desempenho. Vale ressaltar\nque a me´trica que utilizamos foi o Erro Quadra´tico Me´dio (RMSE), o qual nos forneceu\numamedidadaqualidadedonossomodeloempreverosvaloresdeseveridade.",
+        "chunk_ids": [
+          "art-003-b0011-c000"
+        ],
+        "required_group": null,
+        "evidence_id": "q-003-t17-e1"
+      }
+    ],
+    "notes": "Pré-anotação A03-T17. Análise automática: AMBIGUOUS_EVIDENCE. O artigo chama a métrica de Erro Quadrático Médio (RMSE), e a explicação da seção 4 descreve média de diferenças quadráticas sem raiz. RMSE e MSE são conceitualmente diferentes; preservada a resposta que reproduz o artigo, exigindo adjudicação da nomenclatura sem inferir código externo. Candidato produzido por IA; aguarda revisão humana."
+  },
+  "after": {
+    "question_id": "q-003-t17",
+    "text": "Qual nome e sigla os autores atribuem à métrica usada para selecionar a melhor combinação de hiperparâmetros?",
+    "expected_answer": "Erro Quadrático Médio (RMSE), conforme denominado no artigo.",
+    "origin_doc_id": "art-003",
+    "question_type": "factual",
+    "modality": "text",
+    "review_status": "approved",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "3.4. Passo a passo do treinamento",
+        "quote": "utilizamos o me´todo de grid search, que nos permitiu explorar diversas combinac¸o˜es de\nhiperparaˆmetros e selecionar aquela que resultou no melhor desempenho. Vale ressaltar\nque a me´trica que utilizamos foi o Erro Quadra´tico Me´dio (RMSE), o qual nos forneceu\numamedidadaqualidadedonossomodeloempreverosvaloresdeseveridade.",
+        "chunk_ids": [
+          "art-003-b0011-c000"
+        ],
+        "required_group": null,
+        "evidence_id": "q-003-t17-e1"
+      }
+    ],
+    "notes": "Pré-anotação A03-T17. Análise automática da redação original: AMBIGUOUS_EVIDENCE. O artigo chama a métrica de Erro Quadrático Médio (RMSE), e a explicação da seção 4 descreve média de diferenças quadráticas sem raiz. RMSE e MSE são conceitualmente diferentes. Adjudicação humana: Augusto Lemonie Gilioli aprovou explicitamente na conversa a nova pergunta sobre o nome e a sigla atribuídos pelos autores, com resposta qualificada por 'conforme denominado no artigo'. A inconsistência da fonte permanece documentada; não se infere qual métrica foi implementada nem se afirma equivalência matemática entre RMSE e MSE. Citação literal, página, chunk e qrel preservados."
+  },
+  "review_record": {
+    "review_id": "review-5e4575c5726641d298894e960ef788aa",
+    "target_type": "question",
+    "target_id": "q-003-t17",
+    "status": "approved",
+    "reviewer": "Augusto Lemonie Gilioli",
+    "comments": "Aprovação humana explícita na conversa: \"sim\", para a pergunta sobre nome e sigla atribuídos pelos autores e a resposta \"Erro Quadrático Médio (RMSE), conforme denominado no artigo.\" Inconsistência RMSE/MSE documentada nas notas; evidência e qrel preservados.",
+    "date": "2026-09-23T18:35:22.362045+00:00"
+  },
+  "protected_hashes": {
+    "D:\\rag-ptbr-retrieval-pilot\\data\\annotations\\qrels.yaml": "08ea7c7aad1671c48e93313fb1980c217450a186b2b773ddb2b3727352c6b611",
+    "D:\\rag-ptbr-retrieval-pilot\\data\\annotations\\evidence_groups.yaml": "c3f2fb7475f9cb52643a66fe7f982c6e04b6336da601c0975a9efca91118876d",
+    "D:\\rag-ptbr-retrieval-pilot\\data\\processed\\chunks\\chunks.jsonl": "bd025e6b5b1ce93f203fa1de10c25ccd20add4ef989ff35fa8388b118c1d4607",
+    "D:\\rag-ptbr-retrieval-pilot\\data\\processed\\chunks\\corpus_manifest.json": "6bdb44775e458c10e59c11568b57b9ab63ec63f9ddfe2f622bc2abc92a3a5780",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\bm25.json": "c355db9cb2e2937d87425fccd067bf639b5a86efaca2ea95f86d1fa5b42d0ae9",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_colibri\\matrix.npy": "6f4777065cfb6a058219d3eb1afebe8fc46c6b4af798797ece494af89f0c70ca",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_colibri\\meta.json": "ceed76fad79cd11ea2859b74098d944ce410df99ea0cdfd500c711ebef0f26ef",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_e5\\matrix.npy": "3eabbae89e6b39efc5d292bec229e3c718ed40ec5d2e3542684abcdc2eb8301b",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_e5\\meta.json": "4ef35779982300bb4912c6f399351e2383c12466ab19d567729a54168fdba975",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_qwen_embedding\\matrix.npy": "0791d6a4203a55eb6a3914cc5dc4f4cd1749643e981b74963df112dc65552492",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_qwen_embedding\\meta.json": "f8d6b079d2cdaf613fe5c19ee3399da32281f60c2fb00016627186e83a041c09"
+  },
+  "protected_files_unchanged": true,
+  "other_questions_unchanged": true,
+  "audit": {
+    "total": 125,
+    "approved": 121,
+    "draft_ready": 0,
+    "draft_pending": 2,
+    "rejected": 2,
+    "evidence_refs": 176,
+    "evidence_with_quote": 176,
+    "evidence_with_quote_and_page": 176,
+    "evidence_with_chunks": 174,
+    "qrels": 157,
+    "positive_qrels": 157,
+    "questions_with_positive_qrels": 124,
+    "required_groups": 62,
+    "empty_required_groups": 2,
+    "pending": [
+      {
+        "question_id": "q-003-m03",
+        "classification": "MANUAL_VISUAL_REVIEW_REQUIRED"
+      },
+      {
+        "question_id": "q-004-t18",
+        "classification": "SOURCE_CONTRADICTION"
+      }
+    ],
+    "validation": {
+      "errors": [],
+      "warnings": [
+        "pergunta q-001-m05: grupo obrigatório q-001-m05-g2 vazio",
+        "pergunta q-003-m03: grupo obrigatório q-003-m03-g3 vazio",
+        "pergunta q-001-t20: evidência q-001-t20-e1 sem chunks de suporte",
+        "pergunta q-001-t20: draft sem relevância anotada — fora da avaliação",
+        "pergunta q-001-m05: evidência q-001-m05-e2 sem chunks de suporte",
+        "pergunta q-003-m03: draft — aguarda revisão humana; fora da avaliação",
+        "pergunta q-004-t18: draft — aguarda revisão humana; fora da avaliação"
+      ],
+      "valid": true,
+      "warning_counts": {
+        "empty_required_group": 2,
+        "missing_evidence_chunks": 2,
+        "missing_qrels": 1,
+        "draft": 2
+      }
+    }
+  }
+}

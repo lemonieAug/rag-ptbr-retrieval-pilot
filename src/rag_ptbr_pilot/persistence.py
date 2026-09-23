@@ -30,3 +30,21 @@ def load_manifest(path: str | Path) -> CorpusManifest:
             f"Manifesto do corpus não encontrado: {path}. Rode: rag-ptbr chunk."
         )
     return CorpusManifest.model_validate(load_json(path))
+
+
+def load_frozen_corpus(cfg):
+    """Check the actual chunk content before trusting a manifest fingerprint."""
+    from .chunking.chunker import compute_corpus_version
+    from .errors import ConfigError
+
+    chunks = load_chunks(cfg.resolve(cfg.paths.chunks_path))
+    manifest = load_manifest(cfg.resolve(cfg.paths.corpus_manifest_path))
+    actual = compute_corpus_version(chunks)
+    if (not manifest.frozen or len(chunks) != manifest.chunk_count
+            or actual != manifest.corpus_version
+            or actual != manifest.hashes.get("chunks")
+            or sorted({c.doc_id for c in chunks}) != sorted(manifest.doc_ids)
+            or len({c.chunk_id for c in chunks}) != len(chunks)
+            or any(not c.text.strip() for c in chunks)):
+        raise ConfigError("Corpus congelado incompatível com o manifesto; restaure a versão verificada.")
+    return chunks, manifest

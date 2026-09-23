@@ -1,130 +1,383 @@
-# Grupos de evidencia obrigatorios (pre-anotacao v0) para as perguntas
-# multi_evidence do banco de perguntas v0. Cada grupo == 1 combinacao
-# texto+tabela/figura citada na coluna Evidencia original. chunk_ids fica
-# vazio ate o congelamento dos chunks (`rag-ptbr chunk`).
+# Grupos por informação necessária: chunks dentro de cada grupo são alternativas OR.
+# Grupos diferentes são requisitos AND; grupos vazios indicam informação não resolvida.
+# Análise automática documentada no pacote de revisão; não há campo review_status neste schema.
 evidence_groups:
 - group_id: q-001-m01-g1
   question_id: q-001-m01
   required: true
-  description: Seção 4.1 + Figura 1
-  chunk_ids: []
+  description: 'Função da CRF: rotular sequências e capturar dependências entre rótulos após o processamento
+    contextual.'
+  chunk_ids:
+  - art-001-b0011-c000
 - group_id: q-001-m02-g1
   question_id: q-001-m02
   required: true
-  description: Seção 5.1 + Tabela 1
-  chunk_ids: []
+  description: 'Comparação de trechos: proposta 1.676, LeNER-BR 10.392.'
+  chunk_ids:
+  - art-001-b0015-c000
+- group_id: q-001-m02-g2
+  question_id: q-001-m02
+  required: true
+  description: A base proposta usa duas classes, menos que LeNER-BR.
+  chunk_ids:
+  - art-001-b0015-c000
 - group_id: q-001-m03-g1
   question_id: q-001-m03
   required: true
-  description: Seções 5.1-5.2 + Tabela 2
-  chunk_ids: []
+  description: Contagens por classe/partição comprovam predominância de jurisprudência.
+  chunk_ids:
+  - art-001-b0016-c000
+- group_id: q-001-m03-g2
+  question_id: q-001-m03
+  required: true
+  description: F1 sintetiza harmonicamente precisão e recall.
+  chunk_ids:
+  - art-001-b0019-c000
 - group_id: q-001-m04-g1
   question_id: q-001-m04
   required: true
-  description: Seção 6 + Tabela 3
-  chunk_ids: []
+  description: 'FLAIR: jurisprudência F1 0,63 e recall 0,53; prosa explica equilíbrio.'
+  chunk_ids:
+  - art-001-b0023-c000
+- group_id: q-001-m04-g2
+  question_id: q-001-m04
+  required: true
+  description: 'Concorrentes em jurisprudência: TensorFlow F1 0,55/recall 0,44 e spaCy F1 0,20/recall
+    0,11.'
+  chunk_ids:
+  - art-001-b0022-c000
 - group_id: q-001-m05-g1
   question_id: q-001-m05
   required: true
-  description: Seções 6-7 + Tabela 3
+  description: 'spaCy em legislação: recall 0,44 e F1 0,56.'
+  chunk_ids:
+  - art-001-b0022-c000
+- group_id: q-001-m05-g2
+  question_id: q-001-m05
+  required: true
+  description: 'FLAIR em legislação: recall 0,85 e F1 0,89, associado inequivocamente ao modelo.'
   chunk_ids: []
+- group_id: q-001-m05-g3
+  question_id: q-001-m05
+  required: true
+  description: Conclusão identifica CNN/spaCy como modelo de pior desempenho.
+  chunk_ids:
+  - art-001-b0025-c000
 - group_id: q-002-m01-g1
   question_id: q-002-m01
   required: true
-  description: Seção 3.4.2 + Tabela 2
-  chunk_ids: []
+  description: 'Variáveis de menor incidência: pH 8%, GCS 11%, glicose 17%.'
+  chunk_ids:
+  - art-002-b0029-c000
 - group_id: q-002-m02-g1
   question_id: q-002-m02
   required: true
-  description: Seção 4 + Tabela 3
-  chunk_ids: []
+  description: GBC lidera em 48 horas com F1 0,53 e AUC 0,85.
+  chunk_ids:
+  - art-002-b0034-c000
 - group_id: q-002-m03-g1
   question_id: q-002-m03
   required: true
-  description: Seção 4 + Figura 2 + Tabela 3
-  chunk_ids: []
+  description: AUCs semelhantes podem acompanhar diferentes sensibilidades/especificidades conforme limiar.
+  chunk_ids:
+  - art-002-b0034-c000
+- group_id: q-002-m03-g2
+  question_id: q-002-m03
+  required: true
+  description: AUC resume a área da ROC independentemente do ponto de operação.
+  chunk_ids:
+  - art-002-b0033-c000
 - group_id: q-002-m04-g1
   question_id: q-002-m04
   required: true
-  description: Seção 4 + Tabela 1
-  chunk_ids: []
+  description: 'Proposta usa 12 variáveis: 7 sinais vitais, 2 dados demográficos, 2 exames e GCS; sinais
+    coletados automaticamente.'
+  chunk_ids:
+  - art-002-b0036-c000
+- group_id: q-002-m04-g2
+  question_id: q-002-m04
+  required: true
+  description: Comparadores com AUC maior requerem 17 variáveis, até 6 exames ou componentes de GCS.
+  chunk_ids:
+  - art-002-b0036-c000
 - group_id: q-002-m05-g1
   question_id: q-002-m05
   required: true
-  description: Seções 3.3-3.7 + Figura 1
-  chunk_ids: []
+  description: Limpeza de valores discrepantes.
+  chunk_ids:
+  - art-002-b0026-c000
+- group_id: q-002-m05-g2
+  question_id: q-002-m05
+  required: true
+  description: Agregação horária pela mediana e seleção por completude sem imputação.
+  chunk_ids:
+  - art-002-b0029-c000
+- group_id: q-002-m05-g3
+  question_id: q-002-m05
+  required: true
+  description: Construção de estatísticas resumidas.
+  chunk_ids:
+  - art-002-b0030-c000
+- group_id: q-002-m05-g4
+  question_id: q-002-m05
+  required: true
+  description: Balanceamento por random oversampling.
+  chunk_ids:
+  - art-002-b0031-c000
+- group_id: q-002-m05-g5
+  question_id: q-002-m05
+  required: true
+  description: Normalização min-max.
+  chunk_ids:
+  - art-002-b0032-c000
 - group_id: q-003-m01-g1
   question_id: q-003-m01
   required: true
-  description: Seção 3.3 + Figura 1
-  chunk_ids: []
+  description: A árvore ilustrada na Figura 1 é um weak learner do CatBoost.
+  chunk_ids:
+  - art-003-b0009-c000
+- group_id: q-003-m01-g2
+  question_id: q-003-m01
+  required: true
+  description: A visualização de weak learners permite interpretar caminhos até decisões.
+  chunk_ids:
+  - art-003-b0008-c000
 - group_id: q-003-m02-g1
   question_id: q-003-m02
   required: true
-  description: Seção 4 + Figura 2
-  chunk_ids: []
+  description: O eixo Y representa RMSE.
+  chunk_ids:
+  - art-003-b0013-c000
+- group_id: q-003-m02-g2
+  question_id: q-003-m02
+  required: true
+  description: T=brclimr, S=solo IBGE, C=clima IBGE, A=altitude.
+  chunk_ids:
+  - art-003-b0013-c000
 - group_id: q-003-m03-g1
   question_id: q-003-m03
   required: true
-  description: Seção 4 + Figuras 2 e 3
+  description: Duas localidades respondem de forma diferente ao enriquecimento, sobretudo brclimr.
+  chunk_ids:
+  - art-003-b0013-c000
+- group_id: q-003-m03-g2
+  question_id: q-003-m03
+  required: true
+  description: Dificuldade de ajuste em Campo Verde contrasta com erros mais baixos em Maracaju.
+  chunk_ids:
+  - art-003-b0014-c000
+- group_id: q-003-m03-g3
+  question_id: q-003-m03
+  required: true
+  description: Atribuição visual da melhora por combinação a Campo Verde versus Maracaju nas Figuras 2
+    e 3.
   chunk_ids: []
 - group_id: q-003-m04-g1
   question_id: q-003-m04
   required: true
-  description: Seção 4 + Figura 4
-  chunk_ids: []
+  description: brclimr reduz significativamente o erro dos modelos em geral.
+  chunk_ids:
+  - art-003-b0013-c000
+- group_id: q-003-m04-g2
+  question_id: q-003-m04
+  required: true
+  description: Em um caso brclimr sozinho supera todas as bases combinadas.
+  chunk_ids:
+  - art-003-b0014-c000
 - group_id: q-003-m05-g1
   question_id: q-003-m05
   required: true
-  description: Seções 3.1-3.2 e 4 + Figuras 2-4
-  chunk_ids: []
+  description: Severidade, agroquímicos, solo e clima são integrados mantendo localidade e ano.
+  chunk_ids:
+  - art-003-b0007-c000
+- group_id: q-003-m05-g2
+  question_id: q-003-m05
+  required: true
+  description: Dados meteorológicos brclimr são associados pelo código municipal e safra.
+  chunk_ids:
+  - art-003-b0007-c001
+- group_id: q-003-m05-g3
+  question_id: q-003-m05
+  required: true
+  description: Combinações também incluem altitude da localidade.
+  chunk_ids:
+  - art-003-b0013-c000
+- group_id: q-003-m05-g4
+  question_id: q-003-m05
+  required: true
+  description: Efeitos sobre RMSE variam entre localidades.
+  chunk_ids:
+  - art-003-b0013-c000
 - group_id: q-004-m01-g1
   question_id: q-004-m01
   required: true
-  description: Seção 4 + Figura 1
-  chunk_ids: []
+  description: 'Terceiro passo: execução da RNA treinada durante a operação para escolher o núcleo.'
+  chunk_ids:
+  - art-004-b0018-c000
+  - art-004-b0023-c000
 - group_id: q-004-m02-g1
   question_id: q-004-m02
   required: true
-  description: Seção 2 + Tabela 1
-  chunk_ids: []
+  description: XT-avoid evita crosstalk sem conhecer seus valores em tempo real.
+  chunk_ids:
+  - art-004-b0004-c000
+- group_id: q-004-m02-g2
+  question_id: q-004-m02
+  required: true
+  description: O artigo escolhe XT-avoid buscando eficiência e baixo custo computacional.
+  chunk_ids:
+  - art-004-b0005-c000
 - group_id: q-004-m03-g1
   question_id: q-004-m03
   required: true
-  description: Seção 5 + Figura 3
-  chunk_ids: []
+  description: As topologias representadas são NSFNet e EURO28.
+  chunk_ids:
+  - art-004-b0026-c000
+- group_id: q-004-m03-g2
+  question_id: q-004-m03
+  required: true
+  description: Essas topologias são usadas nas simulações de avaliação de desempenho do AMN.
+  chunk_ids:
+  - art-004-b0026-c000
 - group_id: q-004-m04-g1
   question_id: q-004-m04
   required: true
-  description: Seção 5 + Figura 4
-  chunk_ids: []
+  description: Os ganhos relatados são medidos na carga de 1300 Erlangs.
+  chunk_ids:
+  - art-004-b0039-c000
+- group_id: q-004-m04-g2
+  question_id: q-004-m04
+  required: true
+  description: O ganho de PBR do AMN sobre CPRF na NSFNet é 87,19%.
+  chunk_ids:
+  - art-004-b0039-c000
+- group_id: q-004-m04-g3
+  question_id: q-004-m04
+  required: true
+  description: O ganho de PBR do AMN sobre CPRF na EURO28 é 80,64%.
+  chunk_ids:
+  - art-004-b0039-c000
+- group_id: q-004-m04-g4
+  question_id: q-004-m04
+  required: true
+  description: Figura 4 apresenta PBR no cenário de alta incidência de XT (AXT).
+  chunk_ids:
+  - art-004-b0032-c001
 - group_id: q-004-m05-g1
   question_id: q-004-m05
   required: true
-  description: Seção 5 + Tabela 4
-  chunk_ids: []
+  description: Na NSFNet/AXT, o ganho médio de PBR sobre CBA-SBA é 1,17% com asterisco.
+  chunk_ids:
+  - art-004-b0067-c000
+- group_id: q-004-m05-g2
+  question_id: q-004-m05
+  required: true
+  description: Na NSFNet/AXT, o ganho médio de RDB sobre CBA-SBA é 1,36% com asterisco.
+  chunk_ids:
+  - art-004-b0067-c000
+- group_id: q-004-m05-g3
+  question_id: q-004-m05
+  required: true
+  description: O asterisco denota equivalência por sobreposição do intervalo de confiança.
+  chunk_ids:
+  - art-004-b0065-c000
 - group_id: q-005-m01-g1
   question_id: q-005-m01
   required: true
-  description: Seção 3.1 + Tabela 2
-  chunk_ids: []
+  description: 'Tabela 2: 57 imagens da classe Câncer na ampliação 100×.'
+  chunk_ids:
+  - art-005-b0011-c000
+- group_id: q-005-m01-g2
+  question_id: q-005-m01
+  required: true
+  description: Uso exclusivo de 100× decorre do número de treinamentos exigido pelo pré-processamento.
+  chunk_ids:
+  - art-005-b0011-c000
+- group_id: q-005-m01-g3
+  question_id: q-005-m01
+  required: true
+  description: O pré-processamento utilizado é Vahadane.
+  chunk_ids:
+  - art-005-b0013-c000
 - group_id: q-005-m02-g1
   question_id: q-005-m02
   required: true
-  description: Seção 3 + Figura 1
-  chunk_ids: []
+  description: 'Primeira etapa: aquisição da base de dados.'
+  chunk_ids:
+  - art-005-b0007-c000
+- group_id: q-005-m02-g2
+  question_id: q-005-m02
+  required: true
+  description: 'Segunda etapa: pré-processamento das imagens.'
+  chunk_ids:
+  - art-005-b0007-c000
+- group_id: q-005-m02-g3
+  question_id: q-005-m02
+  required: true
+  description: 'Terceira etapa: desenvolvimento e treinamento de arquiteturas neurais.'
+  chunk_ids:
+  - art-005-b0007-c000
+- group_id: q-005-m02-g4
+  question_id: q-005-m02
+  required: true
+  description: 'Etapa final: avaliação dos resultados.'
+  chunk_ids:
+  - art-005-b0007-c000
 - group_id: q-005-m03-g1
   question_id: q-005-m03
   required: true
-  description: Seção 3.1 + Figura 2
-  chunk_ids: []
+  description: Um critério de organização dos exemplos é classe ou situação patológica.
+  chunk_ids:
+  - art-005-b0009-c000
+  - art-005-b0011-c000
+- group_id: q-005-m03-g2
+  question_id: q-005-m03
+  required: true
+  description: Outro critério de organização dos exemplos é ampliação.
+  chunk_ids:
+  - art-005-b0009-c000
+  - art-005-b0011-c000
 - group_id: q-005-m04-g1
   question_id: q-005-m04
   required: true
-  description: Seção 3.3 + Figura 4
-  chunk_ids: []
+  description: O MSAG inclui convolução 1×1 Point Wise.
+  chunk_ids:
+  - art-005-b0015-c000
+- group_id: q-005-m04-g2
+  question_id: q-005-m04
+  required: true
+  description: O MSAG inclui convolução padrão 3×3.
+  chunk_ids:
+  - art-005-b0015-c000
+- group_id: q-005-m04-g3
+  question_id: q-005-m04
+  required: true
+  description: O MSAG inclui convolução dilatada 3×3 com taxa de dilatação 2.
+  chunk_ids:
+  - art-005-b0015-c000
+- group_id: q-005-m04-g4
+  question_id: q-005-m04
+  required: true
+  description: MSAG é inserido nas concatenações dos blocos densos da DenseNet.
+  chunk_ids:
+  - art-005-b0015-c000
 - group_id: q-005-m05-g1
   question_id: q-005-m05
   required: true
-  description: Seções 4-4.1 + Tabela 3
-  chunk_ids: []
+  description: Configuração DenseUSAG/Melhor época/P35 T obtém F1 de 93,16% ± 4,63%.
+  chunk_ids:
+  - art-005-b0020-c000
+- group_id: q-005-m05-g2
+  question_id: q-005-m05
+  required: true
+  description: Cabeçalhos e demais linhas da Tabela 3 estabelecem F1 inferior nas outras configurações
+    avaliadas.
+  chunk_ids:
+  - art-005-b0019-c000
+- group_id: q-005-m05-g3
+  question_id: q-005-m05
+  required: true
+  description: Sensibilidade de 92,1% ± 10,8% é inferior à dos trabalhos comparados e exige cuidado com
+    falsos negativos.
+  chunk_ids:
+  - art-005-b0021-c000

@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-09-23T14:07:27.319200",
+  "pid": 3164,
+  "rss": 4464578560,
+  "private": 8030302208,
+  "peak_rss": 8986324992,
+  "peak_private": 16354967552,
+  "available_ram": 5979525120,
+  "cpu_seconds": 93395.859375,
+  "last_event": {
+    "timestamp": "2026-09-23T14:06:51.721891",
+    "event": "complete",
+    "pid": 3164,
+    "rss": 1913176064,
+    "private": 4085166080,
+    "available_ram": 8238809088,
+    "cpu_seconds": 93508.125
+  },
+  "documents_done": {
+    "qwen_embedding": 224,
+    "e5": 224
+  },
+  "status": "complete",
+  "finalizer_returncode": 0,
+  "process_running": false,
+  "queries_done": {
+    "qwen_embedding": 3,
+    "e5": 3
+  },
+  "last_resource_sample_at": "2026-09-23T14:06:40.785154"
+}

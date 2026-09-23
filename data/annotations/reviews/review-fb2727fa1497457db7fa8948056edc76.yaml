@@ -1,0 +1,12 @@
+reviews:
+- review_id: review-fb2727fa1497457db7fa8948056edc76
+  target_type: question
+  target_id: q-001-m05
+  status: rejected
+  reviewer: Augusto Lemonie Gilioli
+  comments: 'Rejeicao explicitamente confirmada pelo revisor na conversa: Sim. No
+    corpus congelado, a extracao separou os valores da tabela do rotulo FLAIR, impedindo
+    associacao inequivoca modelo/linha nos chunks e deixando um grupo obrigatorio
+    sem suporte. Questao excluida deste benchmark, preservando corpus e anotacoes
+    de evidencia.'
+  date: '2026-09-23T18:32:37.432402+00:00'

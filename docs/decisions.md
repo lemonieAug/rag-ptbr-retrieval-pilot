@@ -93,9 +93,11 @@ resolvidos em `rag-ptbr prepare-models` e gravados no manifesto de execução.
   pergunta sem gold é **bloqueada**. Métricas primárias declaradas **antes** da
   execução (`docs/protocol.md`).
 
-## 5. A resolver na preparação (quando você executar)
+## 5. Preparação e pendências
 
-- Revisões/hashes reais dos checkpoints (`prepare-models` grava `revisions.json`).
+- Revisões dos quatro checkpoints ativos já registradas localmente em
+  `artifacts/models/revisions.json` e fixadas no carregamento offline. A auditoria
+  de 23/09/2026 preservou os arquivos existentes; não executou downloads.
 - Limite de entrada do colibri (marcado `None`); o limite vinculante é o do E5
   (512), então o chunking não depende dele.
 - Contagem exata de tokens na geração: o padrão usa o tokenizer de referência

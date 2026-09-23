@@ -1,0 +1,600 @@
+{
+  "completed_at": "2026-09-23T14:07:27.239268",
+  "corpus_version": "8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743",
+  "chunks": 224,
+  "indexes": [
+    {
+      "index": "bm25",
+      "checkpoint": null,
+      "revision": null,
+      "dimension": null,
+      "shape": [
+        224
+      ],
+      "fingerprint": "70f04c712b228d70a9106a52e2ab6a586e853bc7c61f97efb9c9a23ae48b6e2b",
+      "corpus_version": "8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743",
+      "status": "VALID",
+      "action": "reused"
+    },
+    {
+      "index": "colibri",
+      "checkpoint": "tardellirs/colibri-embed-ptbr",
+      "revision": "95a4d4f3a1c056ac19e0da196d0ab2b4289e3b3b",
+      "dimension": 768,
+      "shape": [
+        224,
+        768
+      ],
+      "fingerprint": "f4324759214c5801eec5c9e570463da3c8b792e3420cbe2d764e9cddca4a46dc",
+      "corpus_version": "8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743",
+      "matrix_dtype": "float32",
+      "encoding_config": null,
+      "status": "VALID",
+      "action": "reused"
+    },
+    {
+      "index": "qwen_embedding",
+      "checkpoint": "Qwen/Qwen3-Embedding-4B",
+      "revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+      "dimension": 2560,
+      "shape": [
+        224,
+        2560
+      ],
+      "fingerprint": "689f2fe282ac056acc26c105287e2705f3c510bc84924a290af946a1eb847228",
+      "corpus_version": "8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743",
+      "matrix_dtype": "float32",
+      "encoding_config": {
+        "spec": {
+          "name": "qwen_embedding",
+          "checkpoint": "Qwen/Qwen3-Embedding-4B",
+          "family": "qwen",
+          "query_template": "Instruct: {task}\nQuery:{query}",
+          "document_template": "{text}",
+          "task_instruction": "Given a web search query, retrieve relevant passages that answer the query",
+          "pooling": "last_token",
+          "uses_prompt_name": false,
+          "query_prompt_name": null,
+          "document_prompt_name": null,
+          "default_dtype": "fp16",
+          "max_document_tokens": 8192,
+          "max_document_tokens_note": "Exemplo oficial usa 8192; contexto nominal 32k.",
+          "gated": false,
+          "fp16_incompatible": false,
+          "dimension_note": "2560-dim."
+        },
+        "dtype": "fp16",
+        "normalize": true,
+        "similarity": "cosine"
+      },
+      "status": "VALID",
+      "action": "recomputed"
+    },
+    {
+      "index": "e5",
+      "checkpoint": "intfloat/multilingual-e5-large-instruct",
+      "revision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+      "dimension": 1024,
+      "shape": [
+        224,
+        1024
+      ],
+      "fingerprint": "cdd660fc48aa8c3e26921406edf99e11a04cd5ccee0d9dfbd0d552c17eee9215",
+      "corpus_version": "8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743",
+      "matrix_dtype": "float32",
+      "encoding_config": {
+        "spec": {
+          "name": "e5",
+          "checkpoint": "intfloat/multilingual-e5-large-instruct",
+          "family": "e5",
+          "query_template": "Instruct: {task}\nQuery: {query}",
+          "document_template": "{text}",
+          "task_instruction": "Given a web search query, retrieve relevant passages that answer the query",
+          "pooling": "mean",
+          "uses_prompt_name": false,
+          "query_prompt_name": null,
+          "document_prompt_name": null,
+          "default_dtype": "fp32",
+          "max_document_tokens": 512,
+          "max_document_tokens_note": "Limite oficial documentado no model card (limitations).",
+          "gated": false,
+          "fp16_incompatible": false,
+          "dimension_note": "1024-dim."
+        },
+        "dtype": "fp32",
+        "normalize": true,
+        "similarity": "cosine"
+      },
+      "status": "VALID",
+      "action": "recomputed"
+    }
+  ],
+  "resources": {
+    "qwen_embedding": {
+      "started": "2026-09-23T11:49:55.663448",
+      "finished": "2026-09-23T14:03:35.296836",
+      "elapsed_seconds": 8019.633388,
+      "load_seconds": 59.13592169999902,
+      "device": "cpu",
+      "dtype": "torch.float16",
+      "batches": 112,
+      "batch_sizes": [
+        2
+      ],
+      "sampled_peak_rss_bytes": 7502991360,
+      "sampled_peak_private_bytes": 12498497536,
+      "sampled_min_available_ram_bytes": 385912832,
+      "unloaded": true
+    },
+    "e5": {
+      "started": "2026-09-23T14:03:35.472144",
+      "finished": "2026-09-23T14:06:07.776887",
+      "elapsed_seconds": 152.304743,
+      "load_seconds": 2.2278950000036275,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "batches": 112,
+      "batch_sizes": [
+        2
+      ],
+      "sampled_peak_rss_bytes": 7506518016,
+      "sampled_peak_private_bytes": 12364988416,
+      "sampled_min_available_ram_bytes": 522493952,
+      "unloaded": true
+    }
+  },
+  "hash_checks": {
+    "data/processed/chunks/chunks.jsonl": {
+      "before": "bd025e6b5b1ce93f203fa1de10c25ccd20add4ef989ff35fa8388b118c1d4607",
+      "after": "bd025e6b5b1ce93f203fa1de10c25ccd20add4ef989ff35fa8388b118c1d4607",
+      "unchanged": true
+    },
+    "data/processed/chunks/corpus_manifest.json": {
+      "before": "6bdb44775e458c10e59c11568b57b9ab63ec63f9ddfe2f622bc2abc92a3a5780",
+      "after": "6bdb44775e458c10e59c11568b57b9ab63ec63f9ddfe2f622bc2abc92a3a5780",
+      "unchanged": true
+    },
+    "artifacts/indexes/bm25.json": {
+      "before": "c355db9cb2e2937d87425fccd067bf639b5a86efaca2ea95f86d1fa5b42d0ae9",
+      "after": "c355db9cb2e2937d87425fccd067bf639b5a86efaca2ea95f86d1fa5b42d0ae9",
+      "unchanged": true
+    },
+    "artifacts/indexes/dense_colibri/meta.json": {
+      "before": "ceed76fad79cd11ea2859b74098d944ce410df99ea0cdfd500c711ebef0f26ef",
+      "after": "ceed76fad79cd11ea2859b74098d944ce410df99ea0cdfd500c711ebef0f26ef",
+      "unchanged": true
+    },
+    "artifacts/indexes/dense_colibri/matrix.npy": {
+      "before": "6f4777065cfb6a058219d3eb1afebe8fc46c6b4af798797ece494af89f0c70ca",
+      "after": "6f4777065cfb6a058219d3eb1afebe8fc46c6b4af798797ece494af89f0c70ca",
+      "unchanged": true
+    }
+  },
+  "checks": [
+    {
+      "command": [
+        "C:\\Python313\\python.exe",
+        "-m",
+        "pytest",
+        "-o",
+        "cache_dir=artifacts/review/.pytest_cache"
+      ],
+      "started": "2026-09-23T14:07:12.181345",
+      "returncode": 0,
+      "output": "phase2_pytest_final.txt"
+    },
+    {
+      "command": [
+        "rag-ptbr",
+        "validate"
+      ],
+      "started": "2026-09-23T14:07:21.404417",
+      "returncode": 0,
+      "output": "phase2_validate_final.txt"
+    },
+    {
+      "command": [
+        "rag-ptbr",
+        "matrix"
+      ],
+      "started": "2026-09-23T14:07:22.346173",
+      "returncode": 0,
+      "output": "phase2_matrix_final.txt"
+    },
+    {
+      "command": [
+        "C:\\Python313\\python.exe",
+        "artifacts/review/phase2_verify_gold.py"
+      ],
+      "started": "2026-09-23T14:07:23.053684",
+      "returncode": 0,
+      "output": "phase2_gold_verify_final.txt"
+    },
+    {
+      "command": [
+        "rag-ptbr",
+        "review-gold",
+        "--question-id",
+        "q-001-t01"
+      ],
+      "started": "2026-09-23T14:07:24.153666",
+      "returncode": 0,
+      "output": "phase2_review_q001t01_final.txt"
+    },
+    {
+      "command": [
+        "rag-ptbr",
+        "review-gold",
+        "--next"
+      ],
+      "started": "2026-09-23T14:07:25.009429",
+      "returncode": 0,
+      "output": "phase2_review_next_final.txt"
+    },
+    {
+      "command": [
+        "rag-ptbr",
+        "review-gold",
+        "--summary"
+      ],
+      "started": "2026-09-23T14:07:25.929221",
+      "returncode": 0,
+      "output": "phase2_review_summary_final.txt"
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "started": "2026-09-23T14:07:27.081537",
+      "returncode": 0,
+      "output": "phase2_git_status_final.txt"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--stat"
+      ],
+      "started": "2026-09-23T14:07:27.124849",
+      "returncode": 0,
+      "output": "phase2_git_diff_stat_final.txt"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "started": "2026-09-23T14:07:27.190399",
+      "returncode": 0,
+      "output": "phase2_git_diff_check_final.txt"
+    }
+  ],
+  "status": {
+    "corpus": {
+      "documents": 5,
+      "chunks": 224,
+      "frozen": true,
+      "corpus_version": "8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743",
+      "status": "valid"
+    },
+    "models": {
+      "colibri": {
+        "status": "available",
+        "revision": "95a4d4f3a1c056ac19e0da196d0ab2b4289e3b3b"
+      },
+      "qwen_embedding": {
+        "status": "available",
+        "revision": "5cf2132abc99cad020ac570b19d031efec650f2b"
+      },
+      "e5": {
+        "status": "available",
+        "revision": "274baa43b0e13e37fafa6428dbc7938e62e5c439"
+      },
+      "reranker": {
+        "status": "available",
+        "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473"
+      }
+    },
+    "indexes": {
+      "bm25": {
+        "status": "valid",
+        "documents": 224,
+        "fingerprint": "70f04c712b228d70a9106a52e2ab6a586e853bc7c61f97efb9c9a23ae48b6e2b"
+      },
+      "colibri": {
+        "status": "valid",
+        "shape": [
+          224,
+          768
+        ],
+        "dimension": 768,
+        "fingerprint": "f4324759214c5801eec5c9e570463da3c8b792e3420cbe2d764e9cddca4a46dc"
+      },
+      "qwen_embedding": {
+        "status": "valid",
+        "shape": [
+          224,
+          2560
+        ],
+        "dimension": 2560,
+        "fingerprint": "689f2fe282ac056acc26c105287e2705f3c510bc84924a290af946a1eb847228"
+      },
+      "e5": {
+        "status": "valid",
+        "shape": [
+          224,
+          1024
+        ],
+        "dimension": 1024,
+        "fingerprint": "cdd660fc48aa8c3e26921406edf99e11a04cd5ccee0d9dfbd0d552c17eee9215"
+      }
+    },
+    "benchmark": {
+      "total": 125,
+      "approved": 0,
+      "draft_ready": 119,
+      "draft_pending": 6,
+      "rejected": 0,
+      "evidence_refs": 176,
+      "evidence_with_quote": 176,
+      "evidence_with_quote_and_page": 176,
+      "evidence_with_chunks": 174,
+      "qrels": 157,
+      "positive_qrels": 157,
+      "questions_with_positive_qrels": 124,
+      "required_groups": 62,
+      "empty_required_groups": 2,
+      "pending": [
+        {
+          "question_id": "q-001-t15",
+          "classification": "SOURCE_CONTRADICTION"
+        },
+        {
+          "question_id": "q-001-t20",
+          "classification": "AMBIGUOUS_EVIDENCE"
+        },
+        {
+          "question_id": "q-001-m05",
+          "classification": "AMBIGUOUS_EVIDENCE"
+        },
+        {
+          "question_id": "q-003-t17",
+          "classification": "AMBIGUOUS_EVIDENCE"
+        },
+        {
+          "question_id": "q-003-m03",
+          "classification": "MANUAL_VISUAL_REVIEW_REQUIRED"
+        },
+        {
+          "question_id": "q-004-t18",
+          "classification": "SOURCE_CONTRADICTION"
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": [
+          "pergunta q-001-m05: grupo obrigatório q-001-m05-g2 vazio",
+          "pergunta q-003-m03: grupo obrigatório q-003-m03-g3 vazio",
+          "pergunta q-001-t01: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t02: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t03: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t04: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t05: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t06: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t07: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t08: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t09: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t10: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t11: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t12: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t13: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t14: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t15: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t16: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t17: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t18: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t19: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t20: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-t20: evidência q-001-t20-e1 sem chunks de suporte",
+          "pergunta q-001-t20: draft sem relevância anotada — fora da avaliação",
+          "pergunta q-001-m01: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-m02: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-m03: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-m04: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-m05: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-001-m05: evidência q-001-m05-e2 sem chunks de suporte",
+          "pergunta q-002-t01: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t02: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t03: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t04: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t05: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t06: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t07: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t08: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t09: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t10: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t11: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t12: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t13: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t14: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t15: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t16: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t17: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t18: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t19: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-t20: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-m01: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-m02: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-m03: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-m04: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-002-m05: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t01: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t02: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t03: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t04: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t05: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t06: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t07: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t08: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t09: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t10: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t11: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t12: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t13: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t14: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t15: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t16: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t17: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t18: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t19: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-t20: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-m01: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-m02: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-m03: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-m04: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-003-m05: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t01: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t02: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t03: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t04: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t05: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t06: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t07: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t08: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t09: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t10: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t11: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t12: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t13: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t14: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t15: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t16: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t17: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t18: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t19: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-t20: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-m01: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-m02: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-m03: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-m04: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-004-m05: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t01: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t02: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t03: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t04: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t05: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t06: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t07: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t08: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t09: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t10: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t11: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t12: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t13: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t14: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t15: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t16: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t17: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t18: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t19: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-t20: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-m01: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-m02: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-m03: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-m04: draft — aguarda revisão humana; fora da avaliação",
+          "pergunta q-005-m05: draft — aguarda revisão humana; fora da avaliação"
+        ],
+        "valid": true,
+        "warning_counts": {
+          "empty_required_group": 2,
+          "draft": 125,
+          "missing_evidence_chunks": 2,
+          "missing_qrels": 1
+        }
+      }
+    },
+    "experiment": {
+      "configurations": 14,
+      "ready_for_retrieval": false,
+      "reasons": [
+        "HUMAN_GOLD_REVIEW_REQUIRED"
+      ],
+      "readiness_scope": "complete benchmark; drafts require human decisions"
+    }
+  },
+  "process_stop": {
+    "Timestamp": "2026-09-23T11:48:14.6960763-04:00",
+    "PID": 12008,
+    "CloseMainWindow": false,
+    "MainWindowHandle": 0,
+    "HasExited": false,
+    "normal_attempt": {
+      "method": "CloseMainWindow",
+      "returned": false,
+      "window_handle": 0
+    },
+    "force_action": "Stop-Process -Id 12008 -Force",
+    "after": {
+      "pid_exists": false
+    },
+    "before": {
+      "pid": 12008,
+      "command": [
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\augus\\AppData\\Roaming\\Python\\Python313\\Scripts\\rag-ptbr.exe",
+        "index"
+      ],
+      "started_local": "2026-09-23T10:00:20.586578",
+      "cwd": "D:\\rag-ptbr-retrieval-pilot",
+      "cpu_seconds_second_sample": 62688.75,
+      "rss_bytes_second_sample": 4669734912,
+      "private_bytes_second_sample": 30543949824,
+      "gpu_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "gpu_used_mib": 14,
+      "gpu_utilization_percent": 0,
+      "latest_index_mtime_local": "2026-09-23T10:01:47.468854",
+      "qwen_index_present": false,
+      "e5_index_present": false
+    },
+    "reason": "Processo anterior as correcoes, lote unico e consumo privado30.54GB, sem artefato Qwen/E5 ou progresso verificavel em indice por mais107min."
+  },
+  "cpu_benchmark": {
+    "dtype": "float16",
+    "input": [
+      384,
+      2560
+    ],
+    "weight": [
+      2560,
+      9728
+    ],
+    "results": [
+      {
+        "threads": 1,
+        "first_s": 43.00980189999973,
+        "second_s": 43.468345000001136
+      },
+      {
+        "threads": 2,
+        "first_s": 44.67825339999399,
+        "second_s": 46.71539319999283
+      }
+    ],
+    "remaining_trials": "cancelled: no gain observed in completed trials; resumed indexing unchanged",
+    "benchmark_pid_terminated": 10772,
+    "index_pid_resumed": 3164,
+    "resumed_at": "2026-09-23T12:00:03.710087"
+  },
+  "gold_source_check": {
+    "literal_quotes_on_recorded_page": 176,
+    "expected_answers_unchanged_from_HEAD": 125,
+    "approved": 0
+  },
+  "index_seconds": 8172.352915700001,
+  "network_attempts": 0,
+  "official_retrieval_executed": false,
+  "human_approvals_performed": 0
+}

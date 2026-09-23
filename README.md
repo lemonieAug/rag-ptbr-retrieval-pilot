@@ -5,10 +5,10 @@ Este repositório implementa um pipeline controlado para comparar **recuperaçã
 híbrida** e **reranking** sobre um corpus pequeno (3–5 artigos) com benchmark
 anotado por humano.
 
-> **Aviso importante:** o código e os testes desta entrega foram **escritos e
-> revisados por leitura, mas NÃO executados**. Nenhuma validação de runtime,
-> compatibilidade comprovada ou métrica foi obtida. A primeira execução e a
-> validação empírica serão feitas por você, seguindo este README.
+> **Estado local verificado em 23/09/2026:** CLI, matriz de 14 configurações,
+> corpus congelado de 224 chunks e testes executados. O benchmark de 125
+> perguntas continua em `draft`, aguardando revisão humana. Nenhuma métrica
+> oficial foi produzida. Evidências e limitações: `artifacts/review/`.
 
 ---
 
@@ -88,7 +88,7 @@ vez, explicitamente:
 rag-ptbr prepare-models
 ```
 
-Isso baixa os 4 embeddings + o reranker para `artifacts/models/` e grava as
+Isso baixa os 3 embeddings + o reranker para `artifacts/models/` e grava as
 revisões reais em `artifacts/models/revisions.json`.
 
 | Config | Checkpoint | Observação |
@@ -129,6 +129,17 @@ Use `doc_id` (ex.: `art-001`) nos metadados, nas evidências e nos chunks.
    mal extraída aparecem como `[revisar]` no log e em `provenance.json`.
 
 ## 7. Perguntas, evidências e aprovação do gold
+
+Consulte `rag-ptbr status` para verificar corpus, snapshots locais, índices e
+pendências do benchmark sem carregar modelos. `rag-ptbr status --json` inclui
+o inventário de evidências/qrels/grupos e os erros/avisos da validação. O estado
+`ready_for_retrieval` exige decisões humanas para todos os drafts e pelo menos
+uma pergunta aprovada, além de corpus, modelos e índices válidos.
+
+Use `rag-ptbr review-gold --summary` para acompanhar a revisão e
+`rag-ptbr review-gold --next` para inspecionar o próximo draft, priorizando os
+candidatos prontos. Esses comandos são somente leitura; a decisão humana exige
+o ID explícito conforme o [guia de anotação](docs/annotation_guide.md).
 
 1. `cp configs/templates/questions.yaml data/annotations/questions.yaml` e preencha
    (~25–40 perguntas no total; factuais e multi-evidência do mesmo artigo).
@@ -192,21 +203,22 @@ fixo para todos os métodos. Gera `results/<run_id>/generation/generations.jsonl
 e a planilha de avaliação humana `human_eval.csv` (+ `blind_mapping.json`), com
 identificadores cegos e ordem embaralhada.
 
-## 12. Testes (escritos; execute depois)
+## 12. Testes
 
 ```bash
 pytest
 ```
 
 Os testes usam fixtures sintéticas e adaptadores mockados, e forçam modo offline
-do Hugging Face (nunca baixam modelos). **Nesta entrega eles foram escritos, não
-executados.**
+do Hugging Face (nunca baixam modelos). A suíte foi executada nesta auditoria;
+o resultado detalhado está em `artifacts/review/technical_audit.md`.
 
 ## 13. Retomada, cache incompatível e erros comuns
 
 - **Cache incompatível:** se você mudar texto, modelo, dimensão ou template, os
   índices/embeddings guardam um fingerprint e falham com mensagem clara — rode
-  `rag-ptbr chunk` (e `index`) novamente.
+  `rag-ptbr index` para reconstruir apenas índices incompatíveis. Não regenere
+  o corpus congelado sem uma decisão explícita de criar outra versão.
 - **Modelo ausente:** `prepare-models` resolve os checkpoints; os demais comandos
   usam cache local e falham com instrução útil.
 - **Retomar etapas:** cada comando é independente; `evaluate`/`generate`/`report`
@@ -224,11 +236,14 @@ executados.**
 O `run_manifest.json` registra: hashes do corpus/chunks/qrels/config/prompts,
 checkpoints/revisions, versões das bibliotecas, seed, hardware e parâmetros.
 
-## 15. Aviso de não-execução
+## 15. Estado de execução
 
-**Código gerado e revisado por leitura; não executado. Testes escritos, não
-executados.** Nenhuma métrica foi obtida, nenhum modelo foi baixado/inferido e
-nenhuma compatibilidade foi comprovada nesta entrega. A primeira execução é sua.
+Os testes e a validação estrutural foram executados localmente, com checkpoints
+existentes preservados. O carregamento fixa snapshots de `revisions.json` e usa
+somente arquivos locais. `retrieve` requer aprovação humana; `evaluate`, `report`
+e `generate` recusam resultados de corpus, configuração ou benchmark diferentes.
+Veja `artifacts/review/gold_review.md` para revisar os candidatos de gold e
+`artifacts/review/technical_audit.md` para os comandos efetivamente executados.
 
 ---
 

@@ -1,0 +1,62 @@
+question:
+  question_id: q-003-t17
+  text: Qual nome e sigla os autores atribuem à métrica usada para selecionar a melhor
+    combinação de hiperparâmetros?
+  expected_answer: Erro Quadrático Médio (RMSE), conforme denominado no artigo.
+  origin_doc_id: art-003
+  evidence:
+  - evidence_id: q-003-t17-e1
+    doc_id: art-003
+    page: 6
+    section: 3.4. Passo a passo do treinamento
+    quote: 'utilizamos o me´todo de grid search, que nos permitiu explorar diversas
+      combinac¸o˜es de
+
+      hiperparaˆmetros e selecionar aquela que resultou no melhor desempenho. Vale
+      ressaltar
+
+      que a me´trica que utilizamos foi o Erro Quadra´tico Me´dio (RMSE), o qual nos
+      forneceu
+
+      umamedidadaqualidadedonossomodeloempreverosvaloresdeseveridade.'
+    chunk_ids:
+    - art-003-b0011-c000
+    required_group: null
+  question_type: factual
+  modality: text
+  review_status: draft
+  notes: 'Pré-anotação A03-T17. Análise automática da redação original: AMBIGUOUS_EVIDENCE.
+    O artigo chama a métrica de Erro Quadrático Médio (RMSE), e a explicação da seção
+    4 descreve média de diferenças quadráticas sem raiz. RMSE e MSE são conceitualmente
+    diferentes. Adjudicação humana: Augusto Lemonie Gilioli aprovou explicitamente
+    na conversa a nova pergunta sobre o nome e a sigla atribuídos pelos autores, com
+    resposta qualificada por ''conforme denominado no artigo''. A inconsistência da
+    fonte permanece documentada; não se infere qual métrica foi implementada nem se
+    afirma equivalência matemática entre RMSE e MSE. Citação literal, página, chunk
+    e qrel preservados.'
+qrels:
+- question_id: q-003-t17
+  chunk_id: art-003-b0011-c000
+  relevance: 1
+evidence_groups: []
+chunks:
+- chunk_id: art-003-b0011-c000
+  doc_id: art-003
+  block_id: art-003-b0011
+  page: 6
+  section: 3.4. Passoapassodotreinamento
+  modality: text
+  text: 'utilizamos o me´todo de grid search, que nos permitiu explorar diversas combinac¸o˜es
+    de
+
+    hiperparaˆmetros e selecionar aquela que resultou no melhor desempenho. Vale ressaltar
+
+    que a me´trica que utilizamos foi o Erro Quadra´tico Me´dio (RMSE), o qual nos
+    forneceu
+
+    umamedidadaqualidadedonossomodeloempreverosvaloresdeseveridade.'
+  token_count_ref: 58
+  char_count: 327
+  source_block_hash: e02543d6cdf970ad0b3fe35b941690856ae6b36a066b1dc463948b6767e4a111
+
+Registrado: q-003-t17 = approved; revisão: D:\rag-ptbr-retrieval-pilot\data\annotations\reviews\review-5e4575c5726641d298894e960ef788aa.yaml

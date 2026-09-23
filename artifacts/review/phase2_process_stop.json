@@ -1,0 +1,36 @@
+{
+  "Timestamp": "2026-09-23T11:48:14.6960763-04:00",
+  "PID": 12008,
+  "CloseMainWindow": false,
+  "MainWindowHandle": 0,
+  "HasExited": false,
+  "normal_attempt": {
+    "method": "CloseMainWindow",
+    "returned": false,
+    "window_handle": 0
+  },
+  "force_action": "Stop-Process -Id 12008 -Force",
+  "after": {
+    "pid_exists": false
+  },
+  "before": {
+    "pid": 12008,
+    "command": [
+      "C:\\Python313\\python.exe",
+      "C:\\Users\\augus\\AppData\\Roaming\\Python\\Python313\\Scripts\\rag-ptbr.exe",
+      "index"
+    ],
+    "started_local": "2026-09-23T10:00:20.586578",
+    "cwd": "D:\\rag-ptbr-retrieval-pilot",
+    "cpu_seconds_second_sample": 62688.75,
+    "rss_bytes_second_sample": 4669734912,
+    "private_bytes_second_sample": 30543949824,
+    "gpu_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_used_mib": 14,
+    "gpu_utilization_percent": 0,
+    "latest_index_mtime_local": "2026-09-23T10:01:47.468854",
+    "qwen_index_present": false,
+    "e5_index_present": false
+  },
+  "reason": "Processo anterior as correcoes, lote unico e consumo privado30.54GB, sem artefato Qwen/E5 ou progresso verificavel em indice por mais107min."
+}

@@ -6,7 +6,7 @@ Com ``E`` embeddings, a matriz completa tem ``2 + 4*E`` configurações:
 - para cada embedding: ``dense_<e>``, ``dense_<e>_rerank``, ``hybrid_<e>``,
   ``hybrid_<e>_rerank``.
 
-Com os 4 embeddings do piloto => 18 configurações. A matriz é gerada
+Com os 3 embeddings do piloto => 14 configurações. A matriz é gerada
 programaticamente e permite selecionar um subconjunto por padrão de id.
 """
 

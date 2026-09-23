@@ -1,0 +1,11 @@
+reviews:
+- review_id: review-5e4575c5726641d298894e960ef788aa
+  target_type: question
+  target_id: q-003-t17
+  status: approved
+  reviewer: Augusto Lemonie Gilioli
+  comments: 'Aprovação humana explícita na conversa: "sim", para a pergunta sobre
+    nome e sigla atribuídos pelos autores e a resposta "Erro Quadrático Médio (RMSE),
+    conforme denominado no artigo." Inconsistência RMSE/MSE documentada nas notas;
+    evidência e qrel preservados.'
+  date: '2026-09-23T18:35:22.362045+00:00'

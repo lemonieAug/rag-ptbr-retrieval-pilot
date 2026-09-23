@@ -1,0 +1,130 @@
+{
+  "completed_at": "2026-09-23T18:39:06.504360+00:00",
+  "before": {
+    "question_id": "q-004-t18",
+    "text": "Em qual cenário o AMN alcança ganhos médios de pelo menos 25,35% em PBR e 24,87% em RDB?",
+    "expected_answer": "No cenário de baixa incidência de XT",
+    "origin_doc_id": "art-004",
+    "question_type": "factual",
+    "modality": "text",
+    "review_status": "draft",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Seção 6",
+        "quote": "Ja´ no cena´rio de baixa incideˆncia de\nXT,oAMNatingiuumganhome´diodepelomenos25,35%emtermosdePBRe24,87%\nemtermosdeRDBemrelac¸a˜oaoutrosalgoritmos.",
+        "chunk_ids": [
+          "art-004-b0066-c000"
+        ],
+        "required_group": null,
+        "evidence_id": "q-004-t18-e1"
+      },
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Tabela 4 / Seção 5",
+        "quote": "|  | PBR |  |  |  | RDB |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | NSFNet |  | EURO28 |  | NSFNet |  | EURO28 |  |\n|  | AXT | BXT | AXT | BXT | AXT | BXT | AXT | BXT |\n| CPRF | 94,52% | 99,94% | 88,70% | 89,10% | 92,40% | 99,90% | 85,81% | 89,01% |\n| ADEIN | 86,98% | 96,82% | 74,11% | 25,35% | 84,82% | 95,57% | 71,76% | 24,87% |",
+        "chunk_ids": [
+          "art-004-b0067-c000"
+        ],
+        "required_group": null,
+        "evidence_id": "q-004-t18-e2"
+      }
+    ],
+    "notes": "Pré-anotação A04-T18. Análise automática: SOURCE_CONTRADICTION. Conflito interno da fonte: o resumo (p.1) registra 24,81% de RDB mínimo em baixa incidência de XT; a conclusão e a Tabela 4 (p.12) registram 24,87%. A resposta e o número da pergunta coincidem com conclusão/tabela e foram preservados, sem resolver arbitrariamente a divergência. Mantido draft. Trecho conflitante literal do resumo: \"de bloqueio de requisic¸a˜o (PBR) e de ao menos 24,81% em termos de raza˜o de\ndados bloqueados (RDB).\" Candidato produzido por IA; aguarda revisão humana."
+  },
+  "after": {
+    "question_id": "q-004-t18",
+    "text": "Segundo a conclusão do artigo, em qual cenário o AMN alcança ganhos médios de pelo menos 25,35% em PBR e 24,87% em RDB?",
+    "expected_answer": "No cenário de baixa incidência de XT",
+    "origin_doc_id": "art-004",
+    "question_type": "factual",
+    "modality": "text",
+    "review_status": "approved",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Seção 6",
+        "quote": "Ja´ no cena´rio de baixa incideˆncia de\nXT,oAMNatingiuumganhome´diodepelomenos25,35%emtermosdePBRe24,87%\nemtermosdeRDBemrelac¸a˜oaoutrosalgoritmos.",
+        "chunk_ids": [
+          "art-004-b0066-c000"
+        ],
+        "required_group": null,
+        "evidence_id": "q-004-t18-e1"
+      },
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Tabela 4 / Seção 5",
+        "quote": "|  | PBR |  |  |  | RDB |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | NSFNet |  | EURO28 |  | NSFNet |  | EURO28 |  |\n|  | AXT | BXT | AXT | BXT | AXT | BXT | AXT | BXT |\n| CPRF | 94,52% | 99,94% | 88,70% | 89,10% | 92,40% | 99,90% | 85,81% | 89,01% |\n| ADEIN | 86,98% | 96,82% | 74,11% | 25,35% | 84,82% | 95,57% | 71,76% | 24,87% |",
+        "chunk_ids": [
+          "art-004-b0067-c000"
+        ],
+        "required_group": null,
+        "evidence_id": "q-004-t18-e2"
+      }
+    ],
+    "notes": "Pré-anotação A04-T18. Análise automática da redação original: SOURCE_CONTRADICTION. Conflito interno da fonte: o resumo (p.1) registra 24,81% de RDB mínimo em baixa incidência de XT; a conclusão e a Tabela 4 (p.12) registram 24,87%. Adjudicação humana: Augusto Lemonie Gilioli aprovou explicitamente na conversa a reformulação que atribui a afirmação à conclusão do artigo. A resposta permanece 'No cenário de baixa incidência de XT'. A divergência com o resumo permanece documentada; não se afirma que o valor do resumo foi corrigido ou que a fonte é consistente. Citações literais, páginas, chunks e qrels preservados, com suporte na conclusão e na Tabela 4."
+  },
+  "review_record": {
+    "review_id": "review-a43132bdf8464e8dbb106eb4e1cf7a1c",
+    "target_type": "question",
+    "target_id": "q-004-t18",
+    "status": "approved",
+    "reviewer": "Augusto Lemonie Gilioli",
+    "comments": "Aprovação humana explícita na conversa: \"sim\", para a redação \"Segundo a conclusão do artigo, em qual cenário o AMN alcança ganhos médios de pelo menos 25,35% em PBR e 24,87% em RDB?\". Resposta mantida: baixa incidência de XT. Divergência do resumo (24,81%) versus conclusão/Tabela 4 (24,87%) documentada nas notas.",
+    "date": "2026-09-23T18:39:05.416854+00:00"
+  },
+  "protected_hashes": {
+    "D:\\rag-ptbr-retrieval-pilot\\data\\annotations\\qrels.yaml": "08ea7c7aad1671c48e93313fb1980c217450a186b2b773ddb2b3727352c6b611",
+    "D:\\rag-ptbr-retrieval-pilot\\data\\annotations\\evidence_groups.yaml": "c3f2fb7475f9cb52643a66fe7f982c6e04b6336da601c0975a9efca91118876d",
+    "D:\\rag-ptbr-retrieval-pilot\\data\\processed\\chunks\\chunks.jsonl": "bd025e6b5b1ce93f203fa1de10c25ccd20add4ef989ff35fa8388b118c1d4607",
+    "D:\\rag-ptbr-retrieval-pilot\\data\\processed\\chunks\\corpus_manifest.json": "6bdb44775e458c10e59c11568b57b9ab63ec63f9ddfe2f622bc2abc92a3a5780",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\bm25.json": "c355db9cb2e2937d87425fccd067bf639b5a86efaca2ea95f86d1fa5b42d0ae9",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_colibri\\matrix.npy": "6f4777065cfb6a058219d3eb1afebe8fc46c6b4af798797ece494af89f0c70ca",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_colibri\\meta.json": "ceed76fad79cd11ea2859b74098d944ce410df99ea0cdfd500c711ebef0f26ef",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_e5\\matrix.npy": "3eabbae89e6b39efc5d292bec229e3c718ed40ec5d2e3542684abcdc2eb8301b",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_e5\\meta.json": "4ef35779982300bb4912c6f399351e2383c12466ab19d567729a54168fdba975",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_qwen_embedding\\matrix.npy": "0791d6a4203a55eb6a3914cc5dc4f4cd1749643e981b74963df112dc65552492",
+    "D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_qwen_embedding\\meta.json": "f8d6b079d2cdaf613fe5c19ee3399da32281f60c2fb00016627186e83a041c09"
+  },
+  "protected_files_unchanged": true,
+  "other_questions_unchanged": true,
+  "questions_with_matching_review_record": 125,
+  "audit": {
+    "total": 125,
+    "approved": 122,
+    "draft_ready": 0,
+    "draft_pending": 0,
+    "rejected": 3,
+    "evidence_refs": 176,
+    "evidence_with_quote": 176,
+    "evidence_with_quote_and_page": 176,
+    "evidence_with_chunks": 174,
+    "qrels": 157,
+    "positive_qrels": 157,
+    "questions_with_positive_qrels": 124,
+    "required_groups": 62,
+    "empty_required_groups": 2,
+    "pending": [],
+    "validation": {
+      "errors": [],
+      "warnings": [
+        "pergunta q-001-m05: grupo obrigatório q-001-m05-g2 vazio",
+        "pergunta q-003-m03: grupo obrigatório q-003-m03-g3 vazio",
+        "pergunta q-001-t20: evidência q-001-t20-e1 sem chunks de suporte",
+        "pergunta q-001-t20: draft sem relevância anotada — fora da avaliação",
+        "pergunta q-001-m05: evidência q-001-m05-e2 sem chunks de suporte"
+      ],
+      "valid": true,
+      "warning_counts": {
+        "empty_required_group": 2,
+        "missing_evidence_chunks": 2,
+        "missing_qrels": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "hashes": {
+    "data/processed/chunks/chunks.jsonl": "bd025e6b5b1ce93f203fa1de10c25ccd20add4ef989ff35fa8388b118c1d4607",
+    "data/processed/chunks/corpus_manifest.json": "6bdb44775e458c10e59c11568b57b9ab63ec63f9ddfe2f622bc2abc92a3a5780",
+    "artifacts/indexes/bm25.json": "c355db9cb2e2937d87425fccd067bf639b5a86efaca2ea95f86d1fa5b42d0ae9",
+    "artifacts/indexes/dense_colibri/meta.json": "ceed76fad79cd11ea2859b74098d944ce410df99ea0cdfd500c711ebef0f26ef",
+    "artifacts/indexes/dense_colibri/matrix.npy": "6f4777065cfb6a058219d3eb1afebe8fc46c6b4af798797ece494af89f0c70ca"
+  },
+  "corpus_version": "8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743",
+  "chunks": 224,
+  "bm25": "70f04c712b228d70a9106a52e2ab6a586e853bc7c61f97efb9c9a23ae48b6e2b",
+  "colibri": "f4324759214c5801eec5c9e570463da3c8b792e3420cbe2d764e9cddca4a46dc"
+}

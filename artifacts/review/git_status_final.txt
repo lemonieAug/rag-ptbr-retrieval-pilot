@@ -1,0 +1,56 @@
+ M README.md
+ M data/annotations/evidence_groups.yaml
+ M data/annotations/qrels.yaml
+ M data/annotations/questions.yaml
+ M docs/annotation_guide.md
+ M docs/decisions.md
+ M docs/protocol.md
+ M docs/review.md
+ M src/rag_ptbr_pilot/adapters/base.py
+ M src/rag_ptbr_pilot/adapters/embeddings.py
+ M src/rag_ptbr_pilot/adapters/reranker.py
+ M src/rag_ptbr_pilot/adapters/specs.py
+ M src/rag_ptbr_pilot/adapters/tokenizers.py
+ M src/rag_ptbr_pilot/benchmark/validation.py
+ M src/rag_ptbr_pilot/cli.py
+ M src/rag_ptbr_pilot/config.py
+ M src/rag_ptbr_pilot/indexing/dense.py
+ M src/rag_ptbr_pilot/manifest.py
+ M src/rag_ptbr_pilot/persistence.py
+ M src/rag_ptbr_pilot/reporting/report.py
+ M src/rag_ptbr_pilot/retrieval/matrix.py
+ M src/rag_ptbr_pilot/retrieval/pipeline.py
+ M tests/conftest.py
+?? artifacts/review/
+?? src/rag_ptbr_pilot/adapters/local.py
+?? src/rag_ptbr_pilot/benchmark/review.py
+?? src/rag_ptbr_pilot/run_validation.py
+?? tests/unit/test_benchmark_review.py
+?? tests/unit/test_cli_encoding.py
+?? tests/unit/test_run_validation.py
+?? tests/unit/test_runtime_integrity.py
+
+ README.md                                  |   30 +-
+ data/annotations/evidence_groups.yaml      |  357 ++-
+ data/annotations/qrels.yaml                |  483 +++-
+ data/annotations/questions.yaml            | 3428 +++++++++++++++++++---------
+ docs/annotation_guide.md                   |   47 +-
+ docs/decisions.md                          |    6 +-
+ docs/protocol.md                           |    8 +
+ docs/review.md                             |   18 +-
+ src/rag_ptbr_pilot/adapters/base.py        |    2 +-
+ src/rag_ptbr_pilot/adapters/embeddings.py  |   40 +-
+ src/rag_ptbr_pilot/adapters/reranker.py    |   11 +-
+ src/rag_ptbr_pilot/adapters/specs.py       |   18 -
+ src/rag_ptbr_pilot/adapters/tokenizers.py  |    3 +-
+ src/rag_ptbr_pilot/benchmark/validation.py |   72 +-
+ src/rag_ptbr_pilot/cli.py                  |  195 +-
+ src/rag_ptbr_pilot/config.py               |   13 +-
+ src/rag_ptbr_pilot/indexing/dense.py       |    9 +
+ src/rag_ptbr_pilot/manifest.py             |    6 +
+ src/rag_ptbr_pilot/persistence.py          |   18 +
+ src/rag_ptbr_pilot/reporting/report.py     |   18 +
+ src/rag_ptbr_pilot/retrieval/matrix.py     |    2 +-
+ src/rag_ptbr_pilot/retrieval/pipeline.py   |    4 +-
+ tests/conftest.py                          |    4 +-
+ 23 files changed, 3586 insertions(+), 1206 deletions(-)

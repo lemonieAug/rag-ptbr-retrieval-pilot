@@ -103,7 +103,6 @@ class DtypeConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     colibri: str = "fp32"
-    embeddinggemma: str = "bf16"
     qwen_embedding: str = "fp16"
     e5: str = "fp32"
 
@@ -118,6 +117,13 @@ class RerankerConfig(BaseModel):
     )
     device: str = "auto"
     dtype: str = "fp16"
+
+    @model_validator(mode="after")
+    def _fixed_reranker(self):
+        from .adapters.specs import RERANKER_SPEC
+        if self.checkpoint != RERANKER_SPEC.checkpoint or self.instruction != RERANKER_SPEC.instruction:
+            raise ValueError("Checkpoint e instrução do reranker são fixos neste piloto.")
+        return self
 
 
 class GeneratorConfig(BaseModel):
@@ -168,6 +174,11 @@ class ExperimentsConfig(BaseModel):
     embeddings: list[str] | None = None   # sobrescreve models.embeddings
     include_reranker: bool = True
     seed: int = 42
+
+    @field_validator("embeddings")
+    @classmethod
+    def _known_embeddings(cls, value):
+        return ModelsConfig._known_embeddings(value) if value is not None else None
 
 
 class GenerationConfig(BaseModel):

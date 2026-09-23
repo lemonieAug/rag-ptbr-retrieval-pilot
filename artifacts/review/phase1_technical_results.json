@@ -1,0 +1,334 @@
+{
+  "environment": {
+    "python_version": "3.13.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "library_versions": {
+      "torch": "2.13.0",
+      "transformers": "4.57.6",
+      "sentence-transformers": "5.7.0",
+      "numpy": "2.3.3",
+      "pydantic": "2.12.5",
+      "PyYAML": "6.0.2",
+      "pdfplumber": "0.11.10",
+      "pypdf": "6.19.0",
+      "requests": "2.34.2",
+      "huggingface-hub": "0.36.2"
+    },
+    "gpu": {
+      "cuda_available": false
+    }
+  },
+  "config_hash": "5b7cd705717dae07993996a9011d214219fa9ae4c7bd358c5f6bd8eb962f7292",
+  "hash_checks": {
+    "data/processed/chunks/chunks.jsonl": {
+      "before": "bd025e6b5b1ce93f203fa1de10c25ccd20add4ef989ff35fa8388b118c1d4607",
+      "after": "bd025e6b5b1ce93f203fa1de10c25ccd20add4ef989ff35fa8388b118c1d4607",
+      "unchanged": true
+    },
+    "data/processed/chunks/corpus_manifest.json": {
+      "before": "6bdb44775e458c10e59c11568b57b9ab63ec63f9ddfe2f622bc2abc92a3a5780",
+      "after": "6bdb44775e458c10e59c11568b57b9ab63ec63f9ddfe2f622bc2abc92a3a5780",
+      "unchanged": true
+    },
+    "artifacts/indexes/bm25.json": {
+      "before": "c355db9cb2e2937d87425fccd067bf639b5a86efaca2ea95f86d1fa5b42d0ae9",
+      "after": "c355db9cb2e2937d87425fccd067bf639b5a86efaca2ea95f86d1fa5b42d0ae9",
+      "unchanged": true
+    },
+    "artifacts/indexes/dense_colibri/meta.json": {
+      "before": "ceed76fad79cd11ea2859b74098d944ce410df99ea0cdfd500c711ebef0f26ef",
+      "after": "ceed76fad79cd11ea2859b74098d944ce410df99ea0cdfd500c711ebef0f26ef",
+      "unchanged": true
+    },
+    "artifacts/indexes/dense_colibri/matrix.npy": {
+      "before": "6f4777065cfb6a058219d3eb1afebe8fc46c6b4af798797ece494af89f0c70ca",
+      "after": "6f4777065cfb6a058219d3eb1afebe8fc46c6b4af798797ece494af89f0c70ca",
+      "unchanged": true
+    }
+  },
+  "corpus_version": "8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743",
+  "chunks": 224,
+  "indices": {
+    "bm25": {
+      "valid": true
+    },
+    "colibri": {
+      "valid": true,
+      "shape": [
+        224,
+        768
+      ],
+      "revision": "95a4d4f3a1c056ac19e0da196d0ab2b4289e3b3b",
+      "fingerprint": "f4324759214c5801eec5c9e570463da3c8b792e3420cbe2d764e9cddca4a46dc"
+    },
+    "qwen_embedding": {
+      "valid": false,
+      "reason": "Índice denso de qwen_embedding não encontrado: D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_qwen_embedding. Rode: rag-ptbr index."
+    },
+    "e5": {
+      "valid": false,
+      "reason": "Índice denso de e5 não encontrado: D:\\rag-ptbr-retrieval-pilot\\artifacts\\indexes\\dense_e5. Rode: rag-ptbr index."
+    }
+  },
+  "models": {
+    "tardellirs/colibri-embed-ptbr": {
+      "revision": "95a4d4f3a1c056ac19e0da196d0ab2b4289e3b3b",
+      "snapshot": "D:\\rag-ptbr-retrieval-pilot\\artifacts\\models\\models--tardellirs--colibri-embed-ptbr\\snapshots\\95a4d4f3a1c056ac19e0da196d0ab2b4289e3b3b",
+      "weights": [
+        {
+          "file": "model.safetensors",
+          "bytes": 602787368,
+          "header_offsets_match_size": true
+        }
+      ]
+    },
+    "Qwen/Qwen3-Embedding-4B": {
+      "revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+      "snapshot": "D:\\rag-ptbr-retrieval-pilot\\artifacts\\models\\models--Qwen--Qwen3-Embedding-4B\\snapshots\\5cf2132abc99cad020ac570b19d031efec650f2b",
+      "weights": [
+        {
+          "file": "model-00001-of-00002.safetensors",
+          "bytes": 4965826464,
+          "header_offsets_match_size": true
+        },
+        {
+          "file": "model-00002-of-00002.safetensors",
+          "bytes": 3077765624,
+          "header_offsets_match_size": true
+        }
+      ]
+    },
+    "intfloat/multilingual-e5-large-instruct": {
+      "revision": "274baa43b0e13e37fafa6428dbc7938e62e5c439",
+      "snapshot": "D:\\rag-ptbr-retrieval-pilot\\artifacts\\models\\models--intfloat--multilingual-e5-large-instruct\\snapshots\\274baa43b0e13e37fafa6428dbc7938e62e5c439",
+      "weights": [
+        {
+          "file": "model.safetensors",
+          "bytes": 1119825680,
+          "header_offsets_match_size": true
+        }
+      ]
+    },
+    "Qwen/Qwen3-Reranker-0.6B": {
+      "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "snapshot": "D:\\rag-ptbr-retrieval-pilot\\artifacts\\models\\models--Qwen--Qwen3-Reranker-0.6B\\snapshots\\e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "weights": [
+        {
+          "file": "model.safetensors",
+          "bytes": 1191588280,
+          "header_offsets_match_size": true
+        }
+      ]
+    }
+  },
+  "validation": {
+    "errors": [],
+    "warnings": [
+      "pergunta q-001-m05: grupo obrigatório q-001-m05-g2 vazio",
+      "pergunta q-003-m03: grupo obrigatório q-003-m03-g3 vazio",
+      "pergunta q-001-t01: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t02: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t03: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t04: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t05: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t06: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t07: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t08: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t09: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t10: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t11: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t12: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t13: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t14: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t15: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t16: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t17: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t18: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t19: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t20: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-t20: evidência q-001-t20-e1 sem chunks de suporte",
+      "pergunta q-001-t20: draft sem relevância anotada — fora da avaliação",
+      "pergunta q-001-m01: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-m02: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-m03: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-m04: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-m05: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-001-m05: evidência q-001-m05-e2 sem chunks de suporte",
+      "pergunta q-002-t01: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t02: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t03: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t04: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t05: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t06: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t07: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t08: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t09: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t10: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t11: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t12: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t13: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t14: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t15: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t16: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t17: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t18: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t19: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-t20: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-m01: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-m02: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-m03: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-m04: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-002-m05: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t01: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t02: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t03: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t04: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t05: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t06: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t07: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t08: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t09: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t10: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t11: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t12: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t13: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t14: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t15: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t16: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t17: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t18: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t19: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-t20: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-m01: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-m02: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-m03: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-m04: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-003-m05: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t01: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t02: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t03: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t04: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t05: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t06: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t07: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t08: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t09: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t10: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t11: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t12: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t13: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t14: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t15: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t16: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t17: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t18: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t19: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-t20: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-m01: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-m02: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-m03: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-m04: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-004-m05: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t01: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t02: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t03: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t04: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t05: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t06: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t07: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t08: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t09: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t10: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t11: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t12: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t13: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t14: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t15: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t16: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t17: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t18: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t19: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-t20: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-m01: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-m02: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-m03: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-m04: draft — aguarda revisão humana; fora da avaliação",
+      "pergunta q-005-m05: draft — aguarda revisão humana; fora da avaliação"
+    ],
+    "valid": true,
+    "warning_counts": {
+      "empty_required_group": 2,
+      "draft": 125,
+      "missing_evidence_chunks": 2,
+      "missing_qrels": 1
+    }
+  },
+  "preexisting_index_process": {
+    "pid": 12008,
+    "parent_pid": 29648,
+    "command": [
+      "C:\\Python313\\python.exe",
+      "C:\\Users\\augus\\AppData\\Roaming\\Python\\Python313\\Scripts\\rag-ptbr.exe",
+      "index"
+    ],
+    "cpu_seconds": 57317.75,
+    "rss": 7372189696,
+    "private": 25565278208,
+    "started_timestamp": 1790172020.5865784,
+    "running": true
+  },
+  "memory": {
+    "total": 16869548032,
+    "available": 1392529408,
+    "percent": 91.7,
+    "used": 15477018624,
+    "free": 1392529408
+  },
+  "swap": {
+    "total": 39153139712,
+    "used": 15227351040,
+    "free": 23925788672,
+    "percent": 38.9,
+    "sin": 0,
+    "sout": 0
+  },
+  "official_retrieval": "BLOCKED_NO_HUMAN_APPROVAL",
+  "generation": "SKIPPED: ollama executable unavailable in PATH; qwen3:14b availability unconfirmed",
+  "verified_at": "2026-09-23T15:37:48.489129+00:00",
+  "final_tests": {
+    "command": "pytest -o cache_dir=artifacts/review/.pytest_cache",
+    "passed": 91,
+    "failed": 0,
+    "warnings": 0,
+    "seconds": 15.6
+  },
+  "source_hash_checks": {
+    "art-001": {
+      "pdf": true,
+      "markdown": true
+    },
+    "art-002": {
+      "pdf": true,
+      "markdown": true
+    },
+    "art-003": {
+      "pdf": true,
+      "markdown": true
+    },
+    "art-004": {
+      "pdf": true,
+      "markdown": true
+    },
+    "art-005": {
+      "pdf": true,
+      "markdown": true
+    }
+  },
+  "gold_final_checks": {
+    "questions": 125,
+    "all_draft": true,
+    "literal_quotes_and_pages": 176,
+    "qrels": 157,
+    "groups": 62
+  }
+}

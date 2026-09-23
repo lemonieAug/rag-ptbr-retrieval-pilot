@@ -1,0 +1,96 @@
+question:
+  question_id: q-001-t01
+  text: Qual é a tarefa de processamento de linguagem natural investigada pelo artigo
+    no domínio jurídico?
+  expected_answer: Reconhecimento de entidades nomeadas (REN/NER) em textos jurídicos
+  origin_doc_id: art-001
+  evidence:
+  - evidence_id: q-001-t01-e1
+    doc_id: art-001
+    page: 2
+    section: 1. Introdução
+    quote: 'Neste sentido, este trabalho propo˜e uma avaliac¸a˜o de te´cnicas de extrac¸a˜o
+      de
+
+      informac¸a˜o chamada de reconhecimento de entidades nomeadas (do ingleˆs, Named
+
+      Entity Recognition - NER) [YadavandBethard2019] para o contexto jur´ıdico bra-
+
+      sileiro. Estas te´cnicas consistem em localizar em um texto palavras e classifica-
+
+      las de acordo com ro´tulos previamente definidos. Aplicac¸o˜es comuns de NER'
+    chunk_ids:
+    - art-001-b0004-c000
+    required_group: null
+  question_type: factual
+  modality: text
+  review_status: draft
+  notes: 'Pré-anotação A01-T01. Análise automática: READY_FOR_HUMAN_REVIEW. Trecho
+    literal, página e suporte nos chunks conferidos automaticamente após seleção semântica
+    por IA. Candidato produzido por IA; aguarda revisão humana.'
+qrels:
+- question_id: q-001-t01
+  chunk_id: art-001-b0004-c000
+  relevance: 1
+evidence_groups: []
+chunks:
+- chunk_id: art-001-b0004-c000
+  doc_id: art-001
+  block_id: art-001-b0004
+  page: 2
+  section: 1. Introduc¸a˜o
+  modality: text
+  text: 'A inteligencia artificial vem auxiliando o meio jur´ıdico atrave´s de te´cnicas
+    ja´
+
+    estabelecidas, principalmente na a´rea de processamento de linguagens natural
+    (PLN)
+
+    [Dale2019]. A maioria dos dados jur´ıdicos produzidos dentro e fora dos tribunais
+    sa˜o
+
+    definidos em textos livres em sistemas, ou ainda, em documentos na˜o-estruturados
+    (e.g.,
+
+    emformatoPDF),ouseja,asinformac¸o˜esapresentadasna˜oesta˜oorganizadasouordena-
+
+    das de forma padronizada. Dessa forma, tais informac¸o˜es na˜o sa˜o acess´ıveis
+    a modelos
+
+    tradicionais de processamento, recuperac¸a˜o e extrac¸a˜o de informac¸o˜es. Nesse
+    contexto,
+
+    existem va´rias algoritmos de PLN que tem sido aplicados neste tipo de sistema,
+    com o
+
+    objetivodeestruturaressesdados,afimdeajudarnoprocessodetomadadedecisa˜o,bem
+
+    comoagilizaroprocessojudicial[Dale2019].
+
+    Neste sentido, este trabalho propo˜e uma avaliac¸a˜o de te´cnicas de extrac¸a˜o
+    de
+
+    informac¸a˜o chamada de reconhecimento de entidades nomeadas (do ingleˆs, Named
+
+    Entity Recognition - NER) [YadavandBethard2019] para o contexto jur´ıdico bra-
+
+    sileiro. Estas te´cnicas consistem em localizar em um texto palavras e classifica-
+
+    las de acordo com ro´tulos previamente definidos. Aplicac¸o˜es comuns de NER
+
+    consistem em extrair nomes de pessoas, locais, valores moneta´rios e ate´ datas
+
+    [Minkovetal. 2005]. No contexto jur´ıdico, as entidades ja´ estudadas incluem
+    leis
+
+    [LuzdeAraujoetal. 2018, Chenetal. 2020], reconhecimento de partes lo´gicas em
+    do-
+
+    cumentos [Sonetal. 2016], pessoa, jurisprudeˆncia, legislac¸a˜o, tempo, localizac¸a˜o
+    e
+
+    organizac¸a˜o [Luz'
+  token_count_ref: 350
+  char_count: 1561
+  source_block_hash: a835b1641847e7806aa9ca343322c648bcd6e0cbd2122d2f7da76fdfdb036115
+

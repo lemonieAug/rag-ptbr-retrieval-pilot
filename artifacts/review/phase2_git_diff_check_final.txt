@@ -1,0 +1,17 @@
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/annotation_guide.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/decisions.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/protocol.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/review.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/adapters/base.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/adapters/embeddings.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/benchmark/validation.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/cli.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/config.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/indexing/dense.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/manifest.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/persistence.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/reporting/report.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/retrieval/matrix.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rag_ptbr_pilot/retrieval/pipeline.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/conftest.py', LF will be replaced by CRLF the next time Git touches it

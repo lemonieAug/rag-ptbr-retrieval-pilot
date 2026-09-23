@@ -1,0 +1,11 @@
+reviews:
+- review_id: review-a43132bdf8464e8dbb106eb4e1cf7a1c
+  target_type: question
+  target_id: q-004-t18
+  status: approved
+  reviewer: Augusto Lemonie Gilioli
+  comments: 'Aprovação humana explícita na conversa: "sim", para a redação "Segundo
+    a conclusão do artigo, em qual cenário o AMN alcança ganhos médios de pelo menos
+    25,35% em PBR e 24,87% em RDB?". Resposta mantida: baixa incidência de XT. Divergência
+    do resumo (24,81%) versus conclusão/Tabela 4 (24,87%) documentada nas notas.'
+  date: '2026-09-23T18:39:05.416854+00:00'

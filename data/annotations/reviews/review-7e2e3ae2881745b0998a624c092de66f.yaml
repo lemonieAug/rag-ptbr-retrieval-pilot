@@ -1,0 +1,11 @@
+reviews:
+- review_id: review-7e2e3ae2881745b0998a624c092de66f
+  target_type: question
+  target_id: q-001-t15
+  status: approved
+  reviewer: Augusto Lemonie Gilioli
+  comments: 'Aprovação humana explícita na conversa: "aprovo", para a redação que
+    pergunta qual modelo foi apontado como superior segundo a interpretação dos autores.
+    Mantida a resposta BiLSTM-CRF com FLAIR; empates da Tabela 3 documentados nas
+    notas.'
+  date: '2026-09-23T18:29:33.689683+00:00'

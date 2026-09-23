@@ -1,8 +1,10 @@
-# Relatório de revisão (por leitura)
+# Relatório de revisão
 
-> **Status:** código gerado e revisado **por leitura; NÃO executado**. Nenhum
-> comando do projeto foi rodado (sem instalação de dependências, sem testes, sem
-> lint, sem inferência, sem downloads). Testes escritos, não executados.
+> **Atualização de 23/09/2026:** Python 3.13.1, CLI, matriz, validação estrutural
+> e suíte de testes executados localmente. Corpus de 224 chunks preservado;
+> 125 perguntas continuam draft. Resultados e bloqueios operacionais constam
+> de `artifacts/review/technical_audit.md`. As seções históricas abaixo descrevem
+> a revisão inicial por leitura, anterior a esta auditoria de runtime.
 
 ## 0. Método da revisão
 
@@ -99,10 +101,10 @@ Verificada por leitura, ponto a ponto:
   invalidam o `corpus_version`/fingerprints.
 - **Dedup por `chunk_id`**, nunca por texto (RRF acumula contribuições por id).
 
-## 4. Limitações e validação posterior
+## 4. Limitações da revisão inicial e validação posterior
 
-- **Não executado**: compatibilidade de imports, schemas Pydantic, CLI e testes
-  não foram validados em runtime — a primeira execução é do usuário.
+- **Validado nesta auditoria**: imports leves, schemas, CLI e testes. A execução
+  experimental oficial continua aguardando gold aprovado por humano.
 - **Prompt/templates de colibri**: `prompt_name="query"/"document"` confirmados
   na documentação; conferir contra `model.prompts` no `prepare-models`.
 - **Limite de entrada de colibri** marcado `None` (resolver no prep); o limite
@@ -119,7 +121,7 @@ Verificada por leitura, ponto a ponto:
   um tokenizer lento com offsets `(0,0)` corromperia a subdivisão. Risco
   condicional, não confirmado por leitura; validar na execução.
 
-## 5. Verificações NÃO executadas (explicitamente)
+## 5. Verificações não executadas na revisão inicial (registro histórico)
 
 - `pytest` (todos os testes escritos, nenhum executado).
 - Instalação de dependências / resolução do PyTorch / import real dos módulos.

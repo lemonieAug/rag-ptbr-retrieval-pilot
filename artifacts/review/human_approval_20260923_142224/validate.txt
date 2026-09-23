@@ -1,0 +1,14 @@
+Artigos: 5 | Perguntas: 125 | Qrels: 157 | Grupos: 62 | Chunks: 224
+Erros: 0 | Avisos: 11
+Categorias de avisos: {'empty_required_group': 2, 'draft': 6, 'missing_evidence_chunks': 2, 'missing_qrels': 1}
+  [aviso] pergunta q-001-m05: grupo obrigatório q-001-m05-g2 vazio
+  [aviso] pergunta q-003-m03: grupo obrigatório q-003-m03-g3 vazio
+  [aviso] pergunta q-001-t15: draft — aguarda revisão humana; fora da avaliação
+  [aviso] pergunta q-001-t20: draft — aguarda revisão humana; fora da avaliação
+  [aviso] pergunta q-001-t20: evidência q-001-t20-e1 sem chunks de suporte
+  [aviso] pergunta q-001-t20: draft sem relevância anotada — fora da avaliação
+  [aviso] pergunta q-001-m05: draft — aguarda revisão humana; fora da avaliação
+  [aviso] pergunta q-001-m05: evidência q-001-m05-e2 sem chunks de suporte
+  [aviso] pergunta q-003-t17: draft — aguarda revisão humana; fora da avaliação
+  [aviso] pergunta q-003-m03: draft — aguarda revisão humana; fora da avaliação
+  [aviso] pergunta q-004-t18: draft — aguarda revisão humana; fora da avaliação

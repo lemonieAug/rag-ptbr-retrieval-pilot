@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from ..errors import MissingArtifactError
 from .specs import EmbeddingSpec, RERANKER_SPEC
+from .local import local_checkpoint
 
 _SPECIALS = {
     "task": RERANKER_SPEC.instruction,
@@ -32,7 +33,7 @@ def load_tokenizer(checkpoint: str, cache_dir: str | None = None,
     if cache_dir:
         kwargs["cache_dir"] = cache_dir
     try:
-        return AutoTokenizer.from_pretrained(checkpoint, **kwargs)
+        return AutoTokenizer.from_pretrained(local_checkpoint(checkpoint, cache_dir), **kwargs)
     except Exception as exc:  # OSError/EnvironmentError quando falta no cache
         raise MissingArtifactError(
             f"Tokenizer de {checkpoint!r} não encontrado no cache local. "

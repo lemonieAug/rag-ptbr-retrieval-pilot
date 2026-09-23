@@ -34,8 +34,8 @@ from .indexing import (
     ensure_compatible,
 )
 from .io_utils import load_json, save_json, save_jsonl, save_text
-from .manifest import RunManifest, hash_json, sha256_text, short_hash, timestamp_iso
-from .persistence import load_chunks, load_manifest, save_chunks, save_manifest
+from .manifest import RunManifest, hash_json, sha256_file, sha256_text, short_hash, timestamp_iso
+from .persistence import load_chunks, load_manifest, save_chunks, save_manifest, load_frozen_corpus
 from .retrieval import (
     RetrievalRunner,
     build_matrix,
@@ -44,6 +44,7 @@ from .retrieval import (
 )
 from .retrieval.results import QueryRetrieval
 from .schemas import ReviewStatus
+from .run_validation import benchmark_hashes, validate_run
 from .chunking import build_chunks, build_corpus_manifest
 from .chunking.token_validation import TokenValidationReport
 from .reporting import build_qrel_index, evaluate_config, paired_delta, render_report
@@ -121,6 +122,15 @@ def _load_bm25(cfg: AppConfig, chunks, normalizer, corpus_version: str) -> BM25I
     )
     ensure_compatible(idx.fingerprint, expected, "bm25")
     idx.rebuild_terms(chunks, normalizer)
+    from collections import Counter
+    lengths = {cid: len(terms) for cid, terms in idx.doc_terms.items()}
+    df = dict(Counter(term for terms in idx.doc_terms.values() for term in set(terms)))
+    if (idx.chunk_ids != [c.chunk_id for c in chunks]
+            or idx.k1 != cfg.retrieval.bm25.k1 or idx.b != cfg.retrieval.bm25.b
+            or idx.doc_lengths != lengths or idx.df != df
+            or idx.n_docs != len(chunks)
+            or idx.avgdl != (sum(lengths.values()) / len(chunks) if chunks else 0.0)):
+        raise ConfigError("Índice BM25 corrompido/incompatível com os chunks e parâmetros.")
     return idx
 
 
@@ -132,12 +142,46 @@ def _load_dense_index(cfg: AppConfig, embedding: str, corpus_version: str) -> De
     if not (d / "meta.json").exists():
         raise ConfigError(f"Índice denso de {embedding} não encontrado: {d}. Rode: rag-ptbr index.")
     idx = DenseIndex.load(d)
+    dimensions = {"colibri": 768, "qwen_embedding": 2560, "e5": 1024}
+    if (idx.embedding_name != embedding or idx.checkpoint != spec.checkpoint
+            or idx.dimension != dimensions[embedding]):
+        raise ConfigError(f"Metadados incompatíveis no índice {embedding}.")
     revision = _load_revisions(cfg).get(spec.checkpoint)
+    if not revision:
+        raise ConfigError(f"Revisão não registrada para {spec.checkpoint}; índice não verificável.")
+    if idx.revision != revision:
+        raise ConfigError(f"Revisão incompatível no índice {embedding}.")
     expected = dense_fingerprint(
         corpus_version, embedding, spec.checkpoint, revision, idx.dimension,
     )
     ensure_compatible(idx.fingerprint, expected, f"dense_{embedding}")
+    encoding = _encoding_config(cfg, embedding)
+    if idx.encoding_config is not None:
+        ensure_compatible(hash_json(idx.encoding_config), hash_json(encoding), f"encoding_{embedding}")
+    else:
+        # Legacy indexes used exactly these published templates and native dtypes.
+        ensure_compatible(_LEGACY_ENCODING_HASHES[embedding], hash_json(encoding), f"legacy_encoding_{embedding}")
+    chunks = load_chunks(cfg.resolve(cfg.paths.chunks_path))
+    if idx.chunk_ids != [c.chunk_id for c in chunks]:
+        raise ConfigError(f"IDs/ordem dos chunks incompatíveis no índice {embedding}.")
     return idx
+
+
+_LEGACY_ENCODING_HASHES = {
+    "colibri": "77635dfe5409e5bc899ab64da5ae7b657f6f0d155f8a259a655c2a3d32313e4d",
+    "qwen_embedding": "7d8546b8447f5b40272dc99cae99ead231e5e9514490897f121bfc3f82227494",
+    "e5": "d16087cb17b8dfaeebb8dedc45423aa98a55af458b697b2e45e0708d93ce6528",
+}
+
+
+def _encoding_config(cfg, embedding):
+    from dataclasses import asdict
+    from .adapters.specs import get_embedding_spec
+
+    if not cfg.retrieval.normalize_embeddings or not cfg.retrieval.cosine_similarity:
+        raise ConfigError("O piloto requer embeddings normalizados e similaridade cosseno.")
+    return {"spec": asdict(get_embedding_spec(embedding)),
+            "dtype": getattr(cfg.models.dtype, embedding), "normalize": True, "similarity": "cosine"}
 
 
 def _merge_reports(reports: list[TokenValidationReport]) -> TokenValidationReport:
@@ -190,12 +234,16 @@ def cmd_validate(args) -> None:
     chunks = []
     chunks_path = cfg.resolve(cfg.paths.chunks_path)
     if chunks_path.exists():
-        chunks = load_chunks(chunks_path)
+        if cfg.resolve(cfg.paths.corpus_manifest_path).exists():
+            chunks, _ = load_frozen_corpus(cfg)
+        else:
+            chunks = load_chunks(chunks_path)
 
     report = validate_benchmark(articles, questions, qrels, groups, chunks)
     print(f"Artigos: {len(articles)} | Perguntas: {len(questions)} | "
           f"Qrels: {len(qrels)} | Grupos: {len(groups)} | Chunks: {len(chunks)}")
     print(f"Erros: {len(report.errors)} | Avisos: {len(report.warnings)}")
+    print(f"Categorias de avisos: {report.warning_counts}")
     for e in report.errors:
         print(f"  [ERRO] {e}")
     for w in report.warnings:
@@ -276,46 +324,55 @@ def cmd_index(args) -> None:
     from .adapters import get_embedding_adapter
 
     cfg = load_config(args.config)
-    chunks = load_chunks(cfg.resolve(cfg.paths.chunks_path))
-    manifest = load_manifest(cfg.resolve(cfg.paths.corpus_manifest_path))
+    chunks, manifest = load_frozen_corpus(cfg)
     corpus_version = manifest.corpus_version
     normalizer = LexicalNormalizer(cfg.retrieval.lexical)
 
     indexes_dir = cfg.resolve(cfg.reporting.artifacts_dir) / "indexes"
     indexes_dir.mkdir(parents=True, exist_ok=True)
 
-    # BM25
-    bm25 = BM25Index(k1=cfg.retrieval.bm25.k1, b=cfg.retrieval.bm25.b)
-    bm25.build(chunks, normalizer)
-    bm25.fingerprint = bm25_fingerprint(
-        corpus_version, cfg.retrieval.bm25.k1, cfg.retrieval.bm25.b,
-        cfg.retrieval.lexical.model_dump(mode="json"),
-    )
-    save_json(indexes_dir / "bm25.json", bm25.to_dict())
-    print("[ok] Índice BM25 construído.")
+    # Reuse only caches accepted by the exact retrieval loaders.
+    try:
+        _load_bm25(cfg, chunks, normalizer, corpus_version)
+        print("[reuse] Índice BM25 compatível.")
+    except (ConfigError, RuntimeError, ValueError, OSError, KeyError) as exc:
+        print(f"[index] BM25: {exc}")
+        bm25 = BM25Index(k1=cfg.retrieval.bm25.k1, b=cfg.retrieval.bm25.b)
+        bm25.build(chunks, normalizer)
+        bm25.fingerprint = bm25_fingerprint(
+            corpus_version, cfg.retrieval.bm25.k1, cfg.retrieval.bm25.b,
+            cfg.retrieval.lexical.model_dump(mode="json"),
+        )
+        save_json(indexes_dir / "bm25.json", bm25.to_dict())
+        print("[ok] Índice BM25 construído.")
 
-    # Densa (por embedding, em etapas, liberando recursos)
     revisions = _load_revisions(cfg)
     for embedding in cfg.effective_embeddings():
-        adapter = get_embedding_adapter(embedding, cfg)
-        print(f"[index] codificando documentos com {embedding} ...")
-        adapter.load()
+        encoding = _encoding_config(cfg, embedding)
         try:
+            _load_dense_index(cfg, embedding, corpus_version)
+            print(f"[reuse] Índice denso de {embedding} compatível.")
+            continue
+        except (ConfigError, RuntimeError, ValueError, OSError, KeyError) as exc:
+            print(f"[index] {embedding}: {exc}")
+        adapter = get_embedding_adapter(embedding, cfg)
+        print(f"[index] codificando documentos com {embedding} ...", flush=True)
+        try:
+            adapter.load()
             matrix = adapter.encode_documents([c.text for c in chunks])
             revision = revisions.get(adapter.checkpoint)
             dense = DenseIndex(
-                embedding_name=embedding,
-                checkpoint=adapter.checkpoint,
-                revision=revision,
-                dimension=adapter.dimension,
-                chunk_ids=[c.chunk_id for c in chunks],
-                matrix=matrix,
+                embedding_name=embedding, checkpoint=adapter.checkpoint,
+                revision=revision, dimension=adapter.dimension,
+                chunk_ids=[c.chunk_id for c in chunks], matrix=matrix,
+                encoding_config=encoding,
             )
             dense.fingerprint = dense_fingerprint(
                 corpus_version, embedding, adapter.checkpoint, revision, adapter.dimension,
             )
             dense.save(indexes_dir / f"dense_{embedding}")
-            print(f"[ok] Índice denso de {embedding} (dim={adapter.dimension}).")
+            _load_dense_index(cfg, embedding, corpus_version)
+            print(f"[ok] Índice denso de {embedding} (dim={adapter.dimension}).", flush=True)
         finally:
             adapter.unload()
 
@@ -324,8 +381,7 @@ def cmd_retrieve(args) -> None:
     from .adapters import get_embedding_adapter, get_reranker_adapter
 
     cfg = load_config(args.config)
-    chunks = load_chunks(cfg.resolve(cfg.paths.chunks_path))
-    manifest = load_manifest(cfg.resolve(cfg.paths.corpus_manifest_path))
+    chunks, manifest = load_frozen_corpus(cfg)
     chunk_by_id = {c.chunk_id: c for c in chunks}
     normalizer = LexicalNormalizer(cfg.retrieval.lexical)
 
@@ -333,6 +389,13 @@ def cmd_retrieve(args) -> None:
     approved = _approved(questions)
     if not approved:
         raise ConfigError("Nenhuma pergunta aprovada para recuperação (review_status=approved).")
+    validation = validate_benchmark(
+        load_articles(cfg.resolve(cfg.paths.metadata_path)), questions,
+        load_qrels(cfg.resolve(cfg.paths.qrels_path)),
+        load_evidence_groups(cfg.resolve(cfg.paths.evidence_groups_path)), chunks,
+    )
+    if not validation.valid:
+        raise ConfigError("Benchmark inválido: " + "; ".join(validation.errors))
 
     matrix = build_matrix(cfg.effective_embeddings())
     selected = select_matrix(matrix, cfg.experiments.select, cfg.experiments.include_reranker)
@@ -341,31 +404,55 @@ def cmd_retrieve(args) -> None:
     bm25 = _load_bm25(cfg, chunks, normalizer, manifest.corpus_version)
     dense_indices = {e: _load_dense_index(cfg, e, manifest.corpus_version) for e in needed_embeddings}
     adapters = {e: get_embedding_adapter(e, cfg) for e in needed_embeddings}
-    for adapter in adapters.values():
-        adapter.load()
-
-    reranker = None
-    if any(s.rerank for s in selected):
-        reranker = get_reranker_adapter(cfg)
-        reranker.load()
-
+    import random
+    import numpy as np
+    import torch
+    random.seed(cfg.experiments.seed)
+    np.random.seed(cfg.experiments.seed)
+    torch.manual_seed(cfg.experiments.seed)
     runner = RetrievalRunner(cfg.retrieval, chunk_by_id, bm25, normalizer,
-                             dense_indices, adapters, reranker)
+                             dense_indices, adapters)
+    runtime_devices = {}
+    query_encoding_seconds = {}
+    from .timing import Timer
+    # Only query vectors remain resident when moving to the next model.
+    for embedding in sorted(adapters):
+        adapter = adapters[embedding]
+        try:
+            adapter.load()
+            runtime_devices[embedding] = getattr(adapter, "_device", cfg.models.device)
+            for q in approved:
+                query_text = retrieval_query(q)
+                assert_no_leakage(query_text, q)
+                timer = Timer()
+                runner._encode_query(embedding, q.question_id, query_text)
+                query_encoding_seconds.setdefault(embedding, {})[q.question_id] = timer.stop()
+        finally:
+            adapter.unload()
+    reranker = get_reranker_adapter(cfg) if any(s.rerank for s in selected) else None
+    runner.reranker = reranker
 
     run_id = _new_run_id(manifest.corpus_version)
     rankings_dir = cfg.resolve(cfg.reporting.results_dir) / run_id / "rankings"
     rankings_dir.mkdir(parents=True, exist_ok=True)
 
-    for spec in selected:
-        results = []
-        for q in approved:
-            query_text = retrieval_query(q)
-            assert_no_leakage(query_text, q)
-            results.append(runner.run_query(q.question_id, query_text, spec))
-        save_jsonl(rankings_dir / f"{spec.config_id}.jsonl",
-                   [r.to_dict() for r in results])
-        print(f"[ok] {spec.config_id}: {len(results)} consultas -> "
-              f"{rankings_dir / (spec.config_id + '.jsonl')}")
+    try:
+        if reranker is not None:
+            reranker.load()
+            runtime_devices["reranker"] = getattr(reranker, "_device", cfg.models.reranker.device)
+        for spec in selected:
+            results = []
+            for q in approved:
+                query_text = retrieval_query(q)
+                assert_no_leakage(query_text, q)
+                results.append(runner.run_query(q.question_id, query_text, spec))
+            save_jsonl(rankings_dir / f"{spec.config_id}.jsonl",
+                       [r.to_dict() for r in results])
+            print(f"[ok] {spec.config_id}: {len(results)} consultas -> "
+                  f"{rankings_dir / (spec.config_id + '.jsonl')}")
+    finally:
+        if reranker is not None:
+            reranker.unload()
 
     # Manifesto de execução
     qrels = load_qrels(cfg.resolve(cfg.paths.qrels_path))
@@ -380,17 +467,22 @@ def cmd_retrieve(args) -> None:
         corpus_version=manifest.corpus_version,
         prompts_hash=prompts_hash,
         qrels_hash=hash_json([q.model_dump(mode="json") for q in qrels]),
+        **benchmark_hashes(cfg),
         model_revisions=_load_revisions(cfg),
         package_version=__version__,
         library_versions=env.get("library_versions", {}),
         python_version=env.get("python_version", ""),
-        hardware=env.get("gpu", {}),
+        hardware={**env.get("gpu", {}), "platform": env.get("platform"),
+                  "runtime_devices": runtime_devices},
         seed=cfg.experiments.seed,
         parameters={"top_n": cfg.retrieval.top_n,
                     "bm25": cfg.retrieval.bm25.model_dump(mode="json"),
                     "rrf": cfg.retrieval.rrf.model_dump(mode="json")},
         configurations=[s.config_id for s in selected],
+        ranking_hashes={p.name: sha256_file(p) for p in rankings_dir.glob("*.jsonl")},
     )
+    manifest_run.parameters["query_encoding_seconds"] = query_encoding_seconds
+    manifest_run.parameters["dense_timing_scope"] = "cached query vector lookup + exact cosine search; query encoding measured separately"
     save_json(cfg.resolve(cfg.reporting.results_dir) / run_id / "run_manifest.json",
               manifest_run.to_dict())
     print(f"\nRun ID: {run_id}")
@@ -411,6 +503,7 @@ def cmd_evaluate(args) -> None:
     if run_id is None:
         raise ConfigError("Nenhuma execução encontrada. Rode: rag-ptbr retrieve.")
     run_dir = cfg.resolve(cfg.reporting.results_dir) / run_id
+    validate_run(cfg, run_dir, questions, load_qrels(cfg.resolve(cfg.paths.qrels_path)))
     rankings_dir = run_dir / "rankings"
 
     k_values = cfg.metrics.k_values
@@ -469,6 +562,7 @@ def cmd_generate(args) -> None:
     if run_id is None:
         raise ConfigError("Nenhuma execução encontrada. Rode: rag-ptbr retrieve.")
     run_dir = cfg.resolve(cfg.reporting.results_dir) / run_id
+    validate_run(cfg, run_dir, questions, load_qrels(cfg.resolve(cfg.paths.qrels_path)))
     rankings_dir = run_dir / "rankings"
 
     template_path = cfg.resolve(cfg.generation.prompt_template)
@@ -528,6 +622,8 @@ def cmd_report(args) -> None:
     if run_id is None:
         raise ConfigError("Nenhuma execução encontrada. Rode: rag-ptbr retrieve.")
     run_dir = cfg.resolve(cfg.reporting.results_dir) / run_id
+    validate_run(cfg, run_dir, _approved(load_questions(cfg.resolve(cfg.paths.questions_path))),
+                 load_qrels(cfg.resolve(cfg.paths.qrels_path)))
     report_path = run_dir / "report.md"
     if report_path.exists():
         print(report_path.read_text(encoding="utf-8"))
@@ -546,12 +642,16 @@ def _add_config(p) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
+    from .benchmark.review import register_review_parser
+    from .status import register_status_parser
     parser = argparse.ArgumentParser(
         prog="rag-ptbr",
         description="Piloto de retrieval para RAG em artigos científicos em PT-BR.",
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     sub = parser.add_subparsers(dest="command", required=True)
+    register_review_parser(sub)
+    register_status_parser(sub)
 
     p = sub.add_parser("matrix", help="Mostra a matriz experimental e a seleção.")
     _add_config(p)
@@ -602,6 +702,11 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> int:
+    # Redirected Windows streams otherwise use CP1252, which cannot represent
+    # literal scientific evidence (for example dotless i and math symbols).
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
     parser = build_parser()
     args = parser.parse_args(argv)
     try:

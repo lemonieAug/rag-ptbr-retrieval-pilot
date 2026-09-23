@@ -1,0 +1,4 @@
+[reuse] Índice BM25 compatível.
+[reuse] Índice denso de colibri compatível.
+[reuse] Índice denso de qwen_embedding compatível.
+[reuse] Índice denso de e5 compatível.

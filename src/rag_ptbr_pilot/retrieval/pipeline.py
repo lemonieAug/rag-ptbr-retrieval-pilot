@@ -48,7 +48,7 @@ class RetrievalRunner:
         self.dense_indices = dense_indices
         self.embedding_adapters = embedding_adapters
         self.reranker = reranker
-        self._qcache: dict[tuple[str, str], object] = {}
+        self._qcache: dict[tuple[str, str, str], object] = {}
 
     def _bm25(self, query_text: str, top_n: int) -> list[RankedChunk]:
         items = self.bm25_index.search(query_text, self.normalizer, top_n)
@@ -61,7 +61,7 @@ class RetrievalRunner:
         return _ranked(items, "dense")
 
     def _encode_query(self, embedding: str, query_id: str, query_text: str):
-        key = (embedding, query_id)
+        key = (embedding, query_id, query_text)
         if key not in self._qcache:
             self._qcache[key] = self.embedding_adapters[embedding].encode_queries([query_text])[0]
         return self._qcache[key]

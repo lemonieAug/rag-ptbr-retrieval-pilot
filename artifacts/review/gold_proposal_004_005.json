@@ -1,0 +1,1467 @@
+[
+  {
+    "question_id": "q-004-t01",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 1,
+        "section": "Resumo",
+        "quote": "Resumo. Redes o´pticas ela´sticas com multiplexac¸a˜o por divisa˜o espacial\n(SDM-EON), usando fibras multi-nu´cleos (MCF), sa˜o promissoras para as fu-\nturas redes de transporte.",
+        "chunk_ids": [
+          "art-004-b0001-c000"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-004",
+        "page": 1,
+        "section": "Seção 1",
+        "quote": "A rede o´ptica ela´stica com multiplexac¸a˜o por divisa˜o espacial (spatial-division multi-\nplexing elastic optical network - SDM-EON), em particular usando fibras multi-nu´cleo\n(multi-core fiber - MCF)",
+        "chunk_ids": [
+          "art-004-b0002-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t02",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 1,
+        "section": "Resumo",
+        "quote": "Em MCFs, surge uma nova dimensa˜o no problema\ndealocac¸a˜oderecursos: aalocac¸a˜odonu´cleo.",
+        "chunk_ids": [
+          "art-004-b0001-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t03",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 6,
+        "section": "Seção 4",
+        "quote": "Neste artigo e´ proposto o algoritmo com aprendizado de ma´quina para escolha de nu´cleo\n(AMN) em SDM-EONs.",
+        "chunk_ids": [
+          "art-004-b0018-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t04",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 2,
+        "section": "Seção 1",
+        "quote": "Um destes desafios e´ o crosstalk (XT) inter-nu´cleo [Hayashietal. 2011]. O XT e´\num tipo de interfereˆncia que ocorre quando a mesma faixa de frequeˆncia e´ utilizada por\ndoisnu´cleospro´ximos. Quantomenoradistaˆnciaentreosnu´cleos,maioroefeitodoXT.",
+        "chunk_ids": [
+          "art-004-b0003-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t05",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 2,
+        "section": "Seção 1",
+        "quote": "O problema RMSCA consiste em quatro subproblemas: i) rotea-\nmento,queconsisteemescolherumarotaentreumno´ deorigemO eumno´ dedestinoD\nna rede; ii) escolha da modulac¸a˜o, que consiste em definir qual o formato de modulac¸a˜o\nsera´ usadopelocaminhoo´ptico. Amodulac¸a˜oe´ aformadecodificac¸a˜odainformac¸a˜o(re-\npresentada por bits) em sinais digitais [TanenbaumandWetherall2011]; iii) escolha do\nnu´cleo, onde o plano de controle deve escolher qual dos nu´cleos da fibra sera´ usado pelo\ncaminhoo´ptico;eiv)alocac¸a˜odeespectro,queconsistedefinirqualporc¸a˜oespectralsera´\nusadapelocaminhoo´ptico.",
+        "chunk_ids": [
+          "art-004-b0003-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t06",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 2,
+        "section": "Seção 1",
+        "quote": "Oespectroo´ptico,emumaredeo´pticaela´stica,e´ divididoem\nporc¸o˜esde12,5GHzdenominadasslotsdefrequeˆncia[ITU-TG.694.12020].",
+        "chunk_ids": [
+          "art-004-b0003-c001"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-004",
+        "page": 8,
+        "section": "Seção 5",
+        "quote": "Cada\nnu´cleoe´ divididoem320slotsdefrequeˆncia,emquecadaslotpossui12,5GHz.",
+        "chunk_ids": [
+          "art-004-b0028-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t07",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 2,
+        "section": "Seção 2",
+        "quote": "As estrate´gias XT-aware sa˜o cientes de crosstalk e utilizam\nos valores e n´ıveis de crosstalk em tempo real para a tomada de decisa˜o no problema\nRMSCA. Ja´ as estrate´gias XT-avoid buscam alocar os recursos da rede de forma a evitar\no crosstalk sem possuir os valores em tempo real.",
+        "chunk_ids": [
+          "art-004-b0004-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t08",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 3,
+        "section": "Seção 2",
+        "quote": "Buscando eficieˆncia e baixo custo computacional, este artigo aborda o problema de\nalocac¸a˜oderecursosemSDM-EONatrave´sdeme´todosXT-avoid.",
+        "chunk_ids": [
+          "art-004-b0005-c000"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-004",
+        "page": 4,
+        "section": "Seção 2",
+        "quote": "deste artigo, que propo˜e o uso de redes neurais para definir o melhor nu´cleo a ser usado,\nsemoconhecimentodosn´ıveisdeXT(istoe´,XT-avoid),emSDM-EONs.",
+        "chunk_ids": [
+          "art-004-b0007-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t09",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 4,
+        "section": "Seção 3",
+        "quote": "Neste artigo sa˜o considerados treˆs\nfatores limitadores de desempenho pela camada f´ısica: i) o ru´ıdo de emissa˜o espontaˆnea\namplificada (amplified spontaneous emission - ASE); ii) os efeitos na˜o-lineares; e iii) o\ncrosstalk inter-nu´cleo.",
+        "chunk_ids": [
+          "art-004-b0008-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t10",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 4,
+        "section": "Seção 3",
+        "quote": "Umamaneirademedirosn´ıveisdeQoTdaredee´ pormeiodarelac¸a˜osinal-ru´ıdo\no´ptico (optical signal to noise ratio - OSNR). A OSNR estabelece uma relac¸a˜o entre a\nPSDdocaminhoo´pticoeaPSDdoru´ıdoASEedainterfereˆnciana˜olinearesqueoafeta.\nAOSNRe´ usadacomoumdoscrite´riosdeQoTnesteartigoee´ dadapor",
+        "chunk_ids": [
+          "art-004-b0009-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t11",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 6,
+        "section": "Seção 4",
+        "quote": "Oalgoritmoutilizadopara acriac¸a˜odabasededadose´ oCBA-SBA\n[LacerdaJretal. 2021].",
+        "chunk_ids": [
+          "art-004-b0019-c000"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Seção 6",
+        "quote": "OAMNutilizaumaredeneuralparaaprenderocomportamento\nde outro algoritmo, o CBA-SBA, e extrair caracter´ısticas-chave e predizer qual o melhor\nnu´cleoparaseralocadoparacadarequisic¸a˜oemumdeterminadoestadodarede.",
+        "chunk_ids": [
+          "art-004-b0066-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t12",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 6,
+        "section": "Seção 4",
+        "quote": "O fluxo de funcionamento do AMN e´ composto de\ntreˆs passos: o primeiro passo constitui a criac¸a˜o de uma base de dados, o segundo passo\ncorresponde ao treinamento da RNA e o terceiro passo constitui a execuc¸a˜o do AMN\nduranteafasedefuncionamentodarede.",
+        "chunk_ids": [
+          "art-004-b0018-c000"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-004",
+        "page": 7,
+        "section": "Seção 4",
+        "quote": "Os passos um e dois ocorrem em um momento offline da rede. Ja´ o passo treˆs e´\nexecutado durante o funcionamento da rede para a alocac¸a˜o de nu´cleo. Nesta etapa, para\ncadarequisic¸a˜odenovocaminhoo´pticoquechegaaoplanodecontrole,oAMNalimenta\nasuaRNAcomosdezesseteatributos(estadoatualdarede)eexecutaaRNAja´ treinada.\nNo processo de execuc¸a˜o da RNA, a mesma retorna o nu´cleo a ser escolhido.",
+        "chunk_ids": [
+          "art-004-b0023-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t13",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A aproximação de 800.000 consta na Figura 1; o texto informa exatamente 844.631 registros gerados (e 675.704 usados no treino, com divisão 80/20). A resposta pré-anotada aproximada foi preservada, pois a pergunta trata da base gerada. Mantido draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 6,
+        "section": "Figura 1 / Seção 4",
+        "quote": "Passo 1.Gerar uma base Passo 2.Treinar a rede Passo 3.Executar a rede\nde dados com ≈ 800.000 neural para aprender o neural treinada para\nregistros. comportamento da base. escolha do núcleo.",
+        "chunk_ids": [
+          "art-004-b0018-c000"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-004",
+        "page": 6,
+        "section": "Seção 4",
+        "quote": "A base gerada a partir do CBA-SBA possui 844.631 registros, que correspondem\nas requisic¸o˜es na˜o bloqueadas de um total de 1.000.000 de requisic¸o˜es geradas em dife-\nrentes pontos de carga da rede.",
+        "chunk_ids": [
+          "art-004-b0019-c001"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t14",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 8,
+        "section": "Seção 5",
+        "quote": "Astopologiasconsideradasnassimulac¸o˜essa˜oaNSFNeteaEURO28(Figura3).",
+        "chunk_ids": [
+          "art-004-b0026-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t15",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 8,
+        "section": "Seção 5",
+        "quote": "Osalgoritmossa˜oavaliadosemtermosdeprobabilidadedebloqueioderequisic¸a˜o\n(PBR) e raza˜o de dados bloqueados (RDB).",
+        "chunk_ids": [
+          "art-004-b0028-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t16",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Seção 5",
+        "quote": "O ganho me´dio\nconsistename´diaentreosganhosobtidosnoscincopontosdecargadecadagra´fico(900,\n1000,1100,1200e1300Erlangs).",
+        "chunk_ids": [
+          "art-004-b0064-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t17",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Os percentuais constam no resumo e na conclusão para alta incidência de XT; a Tabela 4 e discussão excluem implicitamente NSFNet versus CBA-SBA por equivalência no intervalo de confiança (1,17% e 1,36%). O cenário pedido está suportado; ressalva preservada para revisão humana.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Seção 6",
+        "quote": "O AMN alcanc¸ou, em um cena´rio com alta incideˆncia de XT,\nganhosme´diosemrelac¸a˜oaoutrosalgoritmosXT-avoiddepelomenos8,16%emtermos\nde PBR e de pelo menos 9,28% em termos de RDB.",
+        "chunk_ids": [
+          "art-004-b0066-c000"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-004",
+        "page": 1,
+        "section": "Resumo",
+        "quote": "Em cena´rio de alta incideˆncia de crosstalk, o AMN\nobteveganhosdeaomenos8,16%paraPBRedeaomenos9,28%paraRDB.",
+        "chunk_ids": [
+          "art-004-b0001-c001"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t18",
+    "status": "SOURCE_CONTRADICTION",
+    "observations": "Conflito interno da fonte: o resumo (p.1) registra 24,81% de RDB mínimo em baixa incidência de XT; a conclusão e a Tabela 4 (p.12) registram 24,87%. A resposta e o número da pergunta coincidem com conclusão/tabela e foram preservados, sem resolver arbitrariamente a divergência. Mantido draft. Trecho conflitante literal do resumo: \"de bloqueio de requisic¸a˜o (PBR) e de ao menos 24,81% em termos de raza˜o de\ndados bloqueados (RDB).\"",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Seção 6",
+        "quote": "Ja´ no cena´rio de baixa incideˆncia de\nXT,oAMNatingiuumganhome´diodepelomenos25,35%emtermosdePBRe24,87%\nemtermosdeRDBemrelac¸a˜oaoutrosalgoritmos.",
+        "chunk_ids": [
+          "art-004-b0066-c000"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Tabela 4 / Seção 5",
+        "quote": "|  | PBR |  |  |  | RDB |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | NSFNet |  | EURO28 |  | NSFNet |  | EURO28 |  |\n|  | AXT | BXT | AXT | BXT | AXT | BXT | AXT | BXT |\n| CPRF | 94,52% | 99,94% | 88,70% | 89,10% | 92,40% | 99,90% | 85,81% | 89,01% |\n| ADEIN | 86,98% | 96,82% | 74,11% | 25,35% | 84,82% | 95,57% | 71,76% | 24,87% |",
+        "chunk_ids": [
+          "art-004-b0067-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t19",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Seção 5",
+        "quote": "Nos cena´rios com alta incideˆncia de XT, o desempenho do\nAMN e´ equivalente ao CBA-SBA na topologia NSFNet. Neste caso espec´ıfico, os resul-\ntados esta˜o sobrepostos pelo intervalo de confianc¸a (marcado com um “*” na Tabela 4).\nNa topologia EURO28, o ganho me´dio do AMN (em relac¸a˜o ao CBA-SBA) e´ de 8,16%\nemtermosdePBR.AsimilaridadeentreoAMNeoCBA-SBAnestecena´riodar-sepelo\nfato do AMN ser treinado a partir do CBA-SBA, o que acarreta em uma convergeˆncia de\ndesempenhonocena´riodeAXT.",
+        "chunk_ids": [
+          "art-004-b0065-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-t20",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Seção 6",
+        "quote": "Para trabalhos futuros pretende-se investigar o desempenho do AMN sendo trei-\nnadoporoutrasbasesdedados,ale´mdabasegeradapeloalgoritmoCBA-SBA.Tambe´m\npretende-se estudar o uso de outras te´cnicas de ML para auxiliar na tomada de decisa˜o\nda escolha de nu´cleo. Por fim, pretende-se aprofundar a investigac¸a˜o e utilizar a aborda-\ngem de ML para tratar a alocac¸a˜o de nu´cleo em conjunto com outros subproblemas do\nRMSCA,comoalocac¸a˜odeespectroouroteamento.",
+        "chunk_ids": [
+          "art-004-b0066-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-004-m01",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A informação solicitada da Figura 1 está explicitamente representada no texto das pp.6–7. Uma única informação necessária; os dois chunks são alternativas OR, sem grupos artificiais por sobreposição. Mantido draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 6,
+        "section": "Seção 4 / Figura 1",
+        "quote": "corresponde ao treinamento da RNA e o terceiro passo constitui a execuc¸a˜o do AMN\nduranteafasedefuncionamentodarede.",
+        "chunk_ids": [
+          "art-004-b0018-c000"
+        ],
+        "required_group": "q-004-m01-g1"
+      },
+      {
+        "doc_id": "art-004",
+        "page": 7,
+        "section": "Seção 4",
+        "quote": "Os passos um e dois ocorrem em um momento offline da rede. Ja´ o passo treˆs e´\nexecutado durante o funcionamento da rede para a alocac¸a˜o de nu´cleo. Nesta etapa, para\ncadarequisic¸a˜odenovocaminhoo´pticoquechegaaoplanodecontrole,oAMNalimenta\nasuaRNAcomosdezesseteatributos(estadoatualdarede)eexecutaaRNAja´ treinada.\nNo processo de execuc¸a˜o da RNA, a mesma retorna o nu´cleo a ser escolhido.",
+        "chunk_ids": [
+          "art-004-b0023-c000"
+        ],
+        "required_group": "q-004-m01-g1"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-004-m01-g1",
+        "question_id": "q-004-m01",
+        "required": true,
+        "description": "Terceiro passo: execução da RNA treinada durante a operação para escolher o núcleo.",
+        "chunk_ids": [
+          "art-004-b0018-c000",
+          "art-004-b0023-c000"
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "q-004-m02",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A Tabela 1 está parcialmente fragmentada na extração: referências e tipos de XT aparecem em blocos distintos. A característica e a justificativa pedidas estão explícitas no texto da Seção 2, pp.2–3. Nenhuma correspondência de linha da tabela foi inventada; os dois grupos usam suporte textual suficiente. Mantido draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 2,
+        "section": "Seção 2",
+        "quote": "Ja´ as estrate´gias XT-avoid buscam alocar os recursos da rede de forma a evitar\no crosstalk sem possuir os valores em tempo real.",
+        "chunk_ids": [
+          "art-004-b0004-c000"
+        ],
+        "required_group": "q-004-m02-g1"
+      },
+      {
+        "doc_id": "art-004",
+        "page": 3,
+        "section": "Seção 2",
+        "quote": "Buscando eficieˆncia e baixo custo computacional, este artigo aborda o problema de\nalocac¸a˜oderecursosemSDM-EONatrave´sdeme´todosXT-avoid.",
+        "chunk_ids": [
+          "art-004-b0005-c000"
+        ],
+        "required_group": "q-004-m02-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-004-m02-g1",
+        "question_id": "q-004-m02",
+        "required": true,
+        "description": "XT-avoid evita crosstalk sem conhecer seus valores em tempo real.",
+        "chunk_ids": [
+          "art-004-b0004-c000"
+        ]
+      },
+      {
+        "group_id": "q-004-m02-g2",
+        "question_id": "q-004-m02",
+        "required": true,
+        "description": "O artigo escolhe XT-avoid buscando eficiência e baixo custo computacional.",
+        "chunk_ids": [
+          "art-004-b0005-c000"
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "q-004-m03",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Identidade das topologias e finalidade estão em uma frase textual que referencia a Figura 3; não se infere grafo, enlaces ou topologia visual pela legenda. Mantido draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 8,
+        "section": "Seção 5 / Figura 3",
+        "quote": "Astopologiasconsideradasnassimulac¸o˜essa˜oaNSFNeteaEURO28(Figura3).",
+        "chunk_ids": [
+          "art-004-b0026-c000"
+        ],
+        "required_group": "q-004-m03-g1"
+      },
+      {
+        "doc_id": "art-004",
+        "page": 8,
+        "section": "Seção 5 / Figura 3",
+        "quote": "Astopologiasconsideradasnassimulac¸o˜essa˜oaNSFNeteaEURO28(Figura3).",
+        "chunk_ids": [
+          "art-004-b0026-c000"
+        ],
+        "required_group": "q-004-m03-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-004-m03-g1",
+        "question_id": "q-004-m03",
+        "required": true,
+        "description": "As topologias representadas são NSFNet e EURO28.",
+        "chunk_ids": [
+          "art-004-b0026-c000"
+        ]
+      },
+      {
+        "group_id": "q-004-m03-g2",
+        "question_id": "q-004-m03",
+        "required": true,
+        "description": "Essas topologias são usadas nas simulações de avaliação de desempenho do AMN.",
+        "chunk_ids": [
+          "art-004-b0026-c000"
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "q-004-m04",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Valores, carga, topologias e cenário constam no texto das pp.9–10; curvas ilegíveis na extração não foram reconstruídas. Mantido draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 10,
+        "section": "Seção 5 / Figura 4",
+        "quote": "O ganho do AMN em relac¸a˜o ao CPRF com uma carga de 1300 Erlangs\n(u´ltimo ponto de carga) foi de 87,19% na topologia NSFNet (Figura 4 (a)) e 80,64% na\ntopologia EURO28 (Figura 4 (b)).",
+        "chunk_ids": [
+          "art-004-b0039-c000"
+        ],
+        "required_group": "q-004-m04-g1"
+      },
+      {
+        "doc_id": "art-004",
+        "page": 10,
+        "section": "Seção 5 / Figura 4",
+        "quote": "O ganho do AMN em relac¸a˜o ao CPRF com uma carga de 1300 Erlangs\n(u´ltimo ponto de carga) foi de 87,19% na topologia NSFNet (Figura 4 (a)) e 80,64% na\ntopologia EURO28 (Figura 4 (b)).",
+        "chunk_ids": [
+          "art-004-b0039-c000"
+        ],
+        "required_group": "q-004-m04-g2"
+      },
+      {
+        "doc_id": "art-004",
+        "page": 10,
+        "section": "Seção 5 / Figura 4",
+        "quote": "O ganho do AMN em relac¸a˜o ao CPRF com uma carga de 1300 Erlangs\n(u´ltimo ponto de carga) foi de 87,19% na topologia NSFNet (Figura 4 (a)) e 80,64% na\ntopologia EURO28 (Figura 4 (b)).",
+        "chunk_ids": [
+          "art-004-b0039-c000"
+        ],
+        "required_group": "q-004-m04-g3"
+      },
+      {
+        "doc_id": "art-004",
+        "page": 9,
+        "section": "Seção 5",
+        "quote": "A avaliac¸a˜o de desempenho e´ realizado em dois cena´rios: um com alta in-\ncideˆncia de XT (AXT) e um com baixa incideˆncia de XT (BXT). Para simular estes\ndois cena´rios, o coeficiente de acoplamento de poteˆncia da fibra (h ) e´ ajustado para\nl\n6,4×10−9 m−1 no cena´rio de AXT [Lobatoetal. 2019] e 1,5×10−9 m−1 no cena´rio de\nBXT[Lobatoetal. 2019]. Estaabordagemverificaodesempenhodaspropostasemdife-\nrentestiposdeMCFs. AFigura4apresentaosresultadosdePBRparaocena´rioAXT.",
+        "chunk_ids": [
+          "art-004-b0032-c001"
+        ],
+        "required_group": "q-004-m04-g4"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-004-m04-g1",
+        "question_id": "q-004-m04",
+        "required": true,
+        "description": "Os ganhos relatados são medidos na carga de 1300 Erlangs.",
+        "chunk_ids": [
+          "art-004-b0039-c000"
+        ]
+      },
+      {
+        "group_id": "q-004-m04-g2",
+        "question_id": "q-004-m04",
+        "required": true,
+        "description": "O ganho de PBR do AMN sobre CPRF na NSFNet é 87,19%.",
+        "chunk_ids": [
+          "art-004-b0039-c000"
+        ]
+      },
+      {
+        "group_id": "q-004-m04-g3",
+        "question_id": "q-004-m04",
+        "required": true,
+        "description": "O ganho de PBR do AMN sobre CPRF na EURO28 é 80,64%.",
+        "chunk_ids": [
+          "art-004-b0039-c000"
+        ]
+      },
+      {
+        "group_id": "q-004-m04-g4",
+        "question_id": "q-004-m04",
+        "required": true,
+        "description": "Figura 4 apresenta PBR no cenário de alta incidência de XT (AXT).",
+        "chunk_ids": [
+          "art-004-b0032-c001"
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "q-004-m05",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Cabeçalhos hierárquicos PBR/RDB, topologia e AXT/BXT preservados na tabela extraída permitem interpretar os valores. Significado do asterisco confirmado no parágrafo subsequente. Mantido draft.",
+    "evidence": [
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Tabela 4 / Seção 5",
+        "quote": "|  | PBR |  |  |  | RDB |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | NSFNet |  | EURO28 |  | NSFNet |  | EURO28 |  |\n|  | AXT | BXT | AXT | BXT | AXT | BXT | AXT | BXT |\n| CPRF | 94,52% | 99,94% | 88,70% | 89,10% | 92,40% | 99,90% | 85,81% | 89,01% |\n| ADEIN | 86,98% | 96,82% | 74,11% | 25,35% | 84,82% | 95,57% | 71,76% | 24,87% |\n| CBA-SBA | 1,17%* | 99,98% | 8,16% | 98,83% | 1,36%* | 99,97% | 9,28% | 98,72% |",
+        "chunk_ids": [
+          "art-004-b0067-c000"
+        ],
+        "required_group": "q-004-m05-g1"
+      },
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Tabela 4 / Seção 5",
+        "quote": "|  | PBR |  |  |  | RDB |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | NSFNet |  | EURO28 |  | NSFNet |  | EURO28 |  |\n|  | AXT | BXT | AXT | BXT | AXT | BXT | AXT | BXT |\n| CPRF | 94,52% | 99,94% | 88,70% | 89,10% | 92,40% | 99,90% | 85,81% | 89,01% |\n| ADEIN | 86,98% | 96,82% | 74,11% | 25,35% | 84,82% | 95,57% | 71,76% | 24,87% |\n| CBA-SBA | 1,17%* | 99,98% | 8,16% | 98,83% | 1,36%* | 99,97% | 9,28% | 98,72% |",
+        "chunk_ids": [
+          "art-004-b0067-c000"
+        ],
+        "required_group": "q-004-m05-g2"
+      },
+      {
+        "doc_id": "art-004",
+        "page": 12,
+        "section": "Seção 5",
+        "quote": "Nos cena´rios com alta incideˆncia de XT, o desempenho do\nAMN e´ equivalente ao CBA-SBA na topologia NSFNet. Neste caso espec´ıfico, os resul-\ntados esta˜o sobrepostos pelo intervalo de confianc¸a (marcado com um “*” na Tabela 4).",
+        "chunk_ids": [
+          "art-004-b0065-c000"
+        ],
+        "required_group": "q-004-m05-g3"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-004-m05-g1",
+        "question_id": "q-004-m05",
+        "required": true,
+        "description": "Na NSFNet/AXT, o ganho médio de PBR sobre CBA-SBA é 1,17% com asterisco.",
+        "chunk_ids": [
+          "art-004-b0067-c000"
+        ]
+      },
+      {
+        "group_id": "q-004-m05-g2",
+        "question_id": "q-004-m05",
+        "required": true,
+        "description": "Na NSFNet/AXT, o ganho médio de RDB sobre CBA-SBA é 1,36% com asterisco.",
+        "chunk_ids": [
+          "art-004-b0067-c000"
+        ]
+      },
+      {
+        "group_id": "q-004-m05-g3",
+        "question_id": "q-004-m05",
+        "required": true,
+        "description": "O asterisco denota equivalência por sobreposição do intervalo de confiança.",
+        "chunk_ids": [
+          "art-004-b0065-c000"
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "q-005-t01",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 10,
+        "section": "Seção 5",
+        "quote": "Neste estudo, foram propostos dois modelos para o diagnóstico automático de cân-\ncerdepênisemimagenshistopatológicas",
+        "chunk_ids": [
+          "art-005-b0022-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t02",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 4,
+        "section": "Seção 3.1",
+        "quote": "O conjunto de imagens utilizadas para a produção deste trabalho foi organizado\npeloProjetoCâncerdePênisdaAmazôniaLegal(PCPAm)emcolaboraçãocomNúcleo\nde Computação Aplicada da Universidade Federal do Maranhão.",
+        "chunk_ids": [
+          "art-005-b0009-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t03",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 4,
+        "section": "Seção 3.1",
+        "quote": "Este consiste em 194\nimagens RGB de resolução 2048×1536 píxeis, organizadas por ampliação e situação\npatológicaconformeatabela2.",
+        "chunk_ids": [
+          "art-005-b0009-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t04",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 5,
+        "section": "Tabela 2 / Seção 3.1",
+        "quote": "Tabela2. Organizaçãodoconjuntodeimagens.\nAmpliação Normal Câncer Total\n40× 40 57 97\n100× 40 57 97",
+        "chunk_ids": [
+          "art-005-b0011-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t05",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 5,
+        "section": "Seção 3.1",
+        "quote": "Paraaconduçãodesteestudo,optou-seporutilizarapenasaampliaçãode100x. A\ndecisãodeutilizarexclusivamenteaampliaçãode100xfoibaseadanaescolhadométodo\ndepré-processamentoquerequerumnúmerosignificativodetreinamentos.",
+        "chunk_ids": [
+          "art-005-b0011-c000"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-005",
+        "page": 11,
+        "section": "Seção 5",
+        "quote": "Os resultados foram obtidos exclusivamente para a ampliação 100x, devido à\nnatureza do método Vahadane e a alguns testes preliminares.",
+        "chunk_ids": [
+          "art-005-b0023-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t06",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 6,
+        "section": "Seção 3.2",
+        "quote": "Para a tarefa de pré-processamento, foi selecionado o método Vahadane, desen-\nvolvido e apresentado em [Vahadaneetal. 2016]. Este método é uma técnica avançada\nutilizadanaanálisedeimagenshistopatológicasparacorrigirvariaçõesdecoretornaras\nimagensmaisconsistentesecomparáveis.",
+        "chunk_ids": [
+          "art-005-b0013-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t07",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 6,
+        "section": "Seção 3.2",
+        "quote": "Após a aplicação do método Vahadane, as imagens foram\nredimensionadasparaaresolução256x192,emvirtudedaslimitaçõescomputacionais.",
+        "chunk_ids": [
+          "art-005-b0013-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t08",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 6,
+        "section": "Seção 3.2",
+        "quote": "Alémdopré-processamento,tambémforamaplicadastécnicasdeAugmentation\nparalidarcomdoisproblemaspresentesnoconjuntodeimagens: odesbalanceamentode\nclasseseaescassezdeimagensparaotreinamento.",
+        "chunk_ids": [
+          "art-005-b0013-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t09",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 6,
+        "section": "Seção 3.2",
+        "quote": "Paralidarcomas\npoucasimagensdodataset,foramutilizadastransformaçõesgeométricas: rotaçãoem90º,\n180ºe270º,inversãohorizontalevertical.",
+        "chunk_ids": [
+          "art-005-b0013-c001"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t10",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 8,
+        "section": "Seção 4",
+        "quote": "OsmodelosDenseMSAGeDenseUSAGforamimplementados\nutilizandoosframeworksKeraseTensorFlow[Josephetal. 2021].",
+        "chunk_ids": [
+          "art-005-b0017-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t11",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 6,
+        "section": "Seção 3.3",
+        "quote": "A Figura 3 apresenta a arquitetura da DenseNet201 utilizada neste estudo.",
+        "chunk_ids": [
+          "art-005-b0014-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t12",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 7,
+        "section": "Seção 3.3",
+        "quote": "Devido à complexidade do MSAG, o número de parâmetros da rede tornou-se\nmuito elevado, impossibilitandosua utilização em todosos blocos densosda rede, sendo\naplicadoapenasnosblocosdasduasprimeirassucessões.",
+        "chunk_ids": [
+          "art-005-b0015-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t13",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 7,
+        "section": "Seção 3.3",
+        "quote": "Este mecanismo de atenção surgiu da\nreduçãodonúmerodeconvoluçõesutilizadasnoMSAG,mantendoapenasaconvolução\n1x1(PointWise),comoilustradonaFigura5.",
+        "chunk_ids": [
+          "art-005-b0015-c001"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t14",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 8,
+        "section": "Seção 4",
+        "quote": "OsmodelosDenseMSAGeDenseUSAGforamimplementados\nutilizandoosframeworksKeraseTensorFlow[Josephetal. 2021].",
+        "chunk_ids": [
+          "art-005-b0017-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t15",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 8,
+        "section": "Seção 4",
+        "quote": "O otimizador AdamW [LoshchilovandHutter2017] foi utilizado devido sua eficiência\ncomputacionalepoucanecessidadedememória.",
+        "chunk_ids": [
+          "art-005-b0017-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t16",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 8,
+        "section": "Seção 4",
+        "quote": "Para avaliação dos resultados, as métricas adotadas para monitorar o progresso\ndo treinamento foram a acurácia, a precisão, a sensibilidade e o F1-Score.",
+        "chunk_ids": [
+          "art-005-b0017-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t17",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 9,
+        "section": "Seção 4",
+        "quote": "Inicialmente,oconjuntode\ndadosfoidivididoutilizandoométodoHoldout,noqual50%dasimagensforamalocadas\nparaoconjuntodetreinamento, 40%paraoconjuntodetestee10%para oconjuntode\nvalidação.",
+        "chunk_ids": [
+          "art-005-b0018-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t18",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 9,
+        "section": "Seção 4",
+        "quote": "Ométododevalidação\ncruzadaescolhidofoioMonteCarlo,noqualoconjuntodedadosédivididoemconjuntos\ndetreinamento,testeevalidaçãováriasvezesdeformaaleatória,gerandodiversasdivisões\ndiferentes.",
+        "chunk_ids": [
+          "art-005-b0018-c001"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t19",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 9,
+        "section": "Seção 4",
+        "quote": "Foram\nrealizadas 5 partições distintas do conjunto de dados, sempre garantindo que a imagem\nutilizadaparaopré-processamentoestivessepresentenoconjuntodetreinamento.",
+        "chunk_ids": [
+          "art-005-b0018-c001"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-t20",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 11,
+        "section": "Seção 5",
+        "quote": "Embora a DenseUSAG tenha resultados\ncomparáveisàliteratura,elaaindaapresentaalgumaslimitações,comoumasensibilidade\ninferior e elevados desvios padrão em suas métricas.",
+        "chunk_ids": [
+          "art-005-b0023-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": []
+  },
+  {
+    "question_id": "q-005-m01",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Suporte literal conferido no Markdown extraído e no chunk congelado; página verificada pelo marcador PAGE da extração. Candidato produzido por IA, permanece draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 5,
+        "section": "Tabela 2 / Seção 3.1",
+        "quote": "Tabela2. Organizaçãodoconjuntodeimagens.\nAmpliação Normal Câncer Total\n40× 40 57 97\n100× 40 57 97",
+        "chunk_ids": [
+          "art-005-b0011-c000"
+        ],
+        "required_group": "q-005-m01-g1"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 5,
+        "section": "Seção 3.1",
+        "quote": "Paraaconduçãodesteestudo,optou-seporutilizarapenasaampliaçãode100x. A\ndecisãodeutilizarexclusivamenteaampliaçãode100xfoibaseadanaescolhadométodo\ndepré-processamentoquerequerumnúmerosignificativodetreinamentos.",
+        "chunk_ids": [
+          "art-005-b0011-c000"
+        ],
+        "required_group": "q-005-m01-g2"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 6,
+        "section": "Seção 3.2",
+        "quote": "Para a tarefa de pré-processamento, foi selecionado o método Vahadane, desen-\nvolvido e apresentado em [Vahadaneetal. 2016].",
+        "chunk_ids": [
+          "art-005-b0013-c000"
+        ],
+        "required_group": "q-005-m01-g3"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-005-m01-g1",
+        "question_id": "q-005-m01",
+        "required": true,
+        "description": "Tabela 2: 57 imagens da classe Câncer na ampliação 100×.",
+        "chunk_ids": [
+          "art-005-b0011-c000"
+        ]
+      },
+      {
+        "group_id": "q-005-m01-g2",
+        "question_id": "q-005-m01",
+        "required": true,
+        "description": "Uso exclusivo de 100× decorre do número de treinamentos exigido pelo pré-processamento.",
+        "chunk_ids": [
+          "art-005-b0011-c000"
+        ]
+      },
+      {
+        "group_id": "q-005-m01-g3",
+        "question_id": "q-005-m01",
+        "required": true,
+        "description": "O pré-processamento utilizado é Vahadane.",
+        "chunk_ids": [
+          "art-005-b0013-c000"
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "q-005-m02",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Sequência inteira da Figura 1 está explicitamente descrita no parágrafo da Seção 3; cada grupo representa uma etapa necessária e o mesmo chunk suporta todas elas. Mantido draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 4,
+        "section": "Seção 3 / Figura 1",
+        "quote": "AFigura1resumeametodologiapropostaneste\ntrabalho,composta pelaaquisiçãoda basededados",
+        "chunk_ids": [
+          "art-005-b0007-c000"
+        ],
+        "required_group": "q-005-m02-g1"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 4,
+        "section": "Seção 3 / Figura 1",
+        "quote": "pelaetapade pré-processamentodas\nimagens",
+        "chunk_ids": [
+          "art-005-b0007-c000"
+        ],
+        "required_group": "q-005-m02-g2"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 4,
+        "section": "Seção 3 / Figura 1",
+        "quote": "pelo desenvolvimento e treinamento de arquiteturas de redes neurais",
+        "chunk_ids": [
+          "art-005-b0007-c000"
+        ],
+        "required_group": "q-005-m02-g3"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 4,
+        "section": "Seção 3 / Figura 1",
+        "quote": "e finaliza\ncomaavaliaçãodosresultadosobtidos.",
+        "chunk_ids": [
+          "art-005-b0007-c000"
+        ],
+        "required_group": "q-005-m02-g4"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-005-m02-g1",
+        "question_id": "q-005-m02",
+        "required": true,
+        "description": "Primeira etapa: aquisição da base de dados.",
+        "chunk_ids": [
+          "art-005-b0007-c000"
+        ]
+      },
+      {
+        "group_id": "q-005-m02-g2",
+        "question_id": "q-005-m02",
+        "required": true,
+        "description": "Segunda etapa: pré-processamento das imagens.",
+        "chunk_ids": [
+          "art-005-b0007-c000"
+        ]
+      },
+      {
+        "group_id": "q-005-m02-g3",
+        "question_id": "q-005-m02",
+        "required": true,
+        "description": "Terceira etapa: desenvolvimento e treinamento de arquiteturas neurais.",
+        "chunk_ids": [
+          "art-005-b0007-c000"
+        ]
+      },
+      {
+        "group_id": "q-005-m02-g4",
+        "question_id": "q-005-m02",
+        "required": true,
+        "description": "Etapa final: avaliação dos resultados.",
+        "chunk_ids": [
+          "art-005-b0007-c000"
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "q-005-m03",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A pergunta solicita expressamente os critérios descritos no texto, que são literais nas pp.4–5. Não requer inferência sobre aparência das imagens. Mantido draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 5,
+        "section": "Seção 3.1 / Figura 2",
+        "quote": "A Figura 2 apresenta alguns exemplos de imagens, com identificação do\npacienteedalâminautilizadaparafotografaraamostrarecolhida,organizadasporclassee\nampliação.",
+        "chunk_ids": [
+          "art-005-b0011-c000"
+        ],
+        "required_group": "q-005-m03-g1"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 4,
+        "section": "Seção 3.1",
+        "quote": "organizadas por ampliação e situação\npatológicaconformeatabela2.",
+        "chunk_ids": [
+          "art-005-b0009-c000"
+        ],
+        "required_group": "q-005-m03-g1"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 5,
+        "section": "Seção 3.1 / Figura 2",
+        "quote": "A Figura 2 apresenta alguns exemplos de imagens, com identificação do\npacienteedalâminautilizadaparafotografaraamostrarecolhida,organizadasporclassee\nampliação.",
+        "chunk_ids": [
+          "art-005-b0011-c000"
+        ],
+        "required_group": "q-005-m03-g2"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 4,
+        "section": "Seção 3.1",
+        "quote": "organizadas por ampliação e situação\npatológicaconformeatabela2.",
+        "chunk_ids": [
+          "art-005-b0009-c000"
+        ],
+        "required_group": "q-005-m03-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-005-m03-g1",
+        "question_id": "q-005-m03",
+        "required": true,
+        "description": "Um critério de organização dos exemplos é classe ou situação patológica.",
+        "chunk_ids": [
+          "art-005-b0009-c000",
+          "art-005-b0011-c000"
+        ]
+      },
+      {
+        "group_id": "q-005-m03-g2",
+        "question_id": "q-005-m03",
+        "required": true,
+        "description": "Outro critério de organização dos exemplos é ampliação.",
+        "chunk_ids": [
+          "art-005-b0009-c000",
+          "art-005-b0011-c000"
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "q-005-m04",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Composição e ponto de inserção apresentados na Figura 4 estão explicitamente descritos no texto da p.7. O texto também limita MSAG às duas primeiras sucessões de blocos, por excesso de parâmetros; a resposta não deve implicar aplicação a toda a rede. Mantido draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 7,
+        "section": "Seção 3.3",
+        "quote": "em três tipos de convoluções: convolução com filtros de tamanho 1x1, conhecida como\nPointWise;convoluçõespadrãocomfiltrosdetamanho3x3;econvoluçõesdilatadascom\nfiltrosdetamanho3x3eumataxadedilataçãoiguala2.",
+        "chunk_ids": [
+          "art-005-b0015-c000"
+        ],
+        "required_group": "q-005-m04-g1"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 7,
+        "section": "Seção 3.3",
+        "quote": "em três tipos de convoluções: convolução com filtros de tamanho 1x1, conhecida como\nPointWise;convoluçõespadrãocomfiltrosdetamanho3x3;econvoluçõesdilatadascom\nfiltrosdetamanho3x3eumataxadedilataçãoiguala2.",
+        "chunk_ids": [
+          "art-005-b0015-c000"
+        ],
+        "required_group": "q-005-m04-g2"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 7,
+        "section": "Seção 3.3",
+        "quote": "em três tipos de convoluções: convolução com filtros de tamanho 1x1, conhecida como\nPointWise;convoluçõespadrãocomfiltrosdetamanho3x3;econvoluçõesdilatadascom\nfiltrosdetamanho3x3eumataxadedilataçãoiguala2.",
+        "chunk_ids": [
+          "art-005-b0015-c000"
+        ],
+        "required_group": "q-005-m04-g3"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 7,
+        "section": "Seção 3.3",
+        "quote": "As adaptações realizadas na arquitetura da DenseNet foram aplicadas em seus\nblocos densos, mais especificamente na concatenação. A primeira adaptação, chamada\nDenseMSAG, incorpora o Multi-Scale Attention Gate (MSAG) em suas concatenações,\nummecanismodeatençãoapresentadopor [Tangetal. 2023].",
+        "chunk_ids": [
+          "art-005-b0015-c000"
+        ],
+        "required_group": "q-005-m04-g4"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-005-m04-g1",
+        "question_id": "q-005-m04",
+        "required": true,
+        "description": "O MSAG inclui convolução 1×1 Point Wise.",
+        "chunk_ids": [
+          "art-005-b0015-c000"
+        ]
+      },
+      {
+        "group_id": "q-005-m04-g2",
+        "question_id": "q-005-m04",
+        "required": true,
+        "description": "O MSAG inclui convolução padrão 3×3.",
+        "chunk_ids": [
+          "art-005-b0015-c000"
+        ]
+      },
+      {
+        "group_id": "q-005-m04-g3",
+        "question_id": "q-005-m04",
+        "required": true,
+        "description": "O MSAG inclui convolução dilatada 3×3 com taxa de dilatação 2.",
+        "chunk_ids": [
+          "art-005-b0015-c000"
+        ]
+      },
+      {
+        "group_id": "q-005-m04-g4",
+        "question_id": "q-005-m04",
+        "required": true,
+        "description": "MSAG é inserido nas concatenações dos blocos densos da DenseNet.",
+        "chunk_ids": [
+          "art-005-b0015-c000"
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "q-005-m05",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A melhor linha da Tabela 3 foi extraída em bloco de tabela separado dos cabeçalhos e demais linhas. Ambos os chunks são necessários para verificar a coluna F1 e a comparação de máximo; por isso não são alternativas OR. A conclusão de melhor F1 refere-se às configurações propostas da Tabela 3, não ao máximo da literatura/Tabela 4. Mantido draft.",
+    "evidence": [
+      {
+        "doc_id": "art-005",
+        "page": 9,
+        "section": "Tabela 3 / Seção 4",
+        "quote": "| DenseUSAG | Melhorépoca | P35T | 92,30%±4,44% | 95,22%±5,05% | 92,17%±10,83% | 93,16%±4,63% |\n| --- | --- | --- | --- | --- | --- | --- |",
+        "chunk_ids": [
+          "art-005-b0020-c000"
+        ],
+        "required_group": "q-005-m05-g1"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 9,
+        "section": "Tabela 3 / Seção 4",
+        "quote": "Tabela3. Resultadosobtidospelametodologiaproposta\nTrabalhos Estágio ImagemParâm. Acurácia Precisão Sensibilidade F1-Score\nDenseMSAG Melhorépoca P49T1 82,56%±4,93% 93,75%±4,16% 75,65%±9,02% 83,45%±5,13%\nDenseMSAG Últimaépoca P49T1 80,00%±7,11% 93,97%±4,77% 70,43%±9,91% 80,32%±7,85%\nDenseUSAG Últimaépoca P35T 88,20%±6,93% 95,78%±5,81% 84,34%±13,95% 88,95%±7,25%",
+        "chunk_ids": [
+          "art-005-b0019-c000"
+        ],
+        "required_group": "q-005-m05-g2"
+      },
+      {
+        "doc_id": "art-005",
+        "page": 10,
+        "section": "Seção 4.1",
+        "quote": "Em relação à sensibilidade, a\nDenseUSAGalcançouapenas92,1%±10,8%,valorinferiorquandocomparadoaosoutros\ntrabalhos. A métrica da sensibilidade é de grande relevância em estudos que tratam do\ndiagnósticodedoençasaoavaliaromodeloquantoàpresençadefalsosnegativos,osquais\npodemrepresentarumafalsapercepçãodesegurança. Essavariaçãoemrelaçãoàsoutras\nmétricas indica a necessidade de soluções para mitigar os falsos negativos.",
+        "chunk_ids": [
+          "art-005-b0021-c000"
+        ],
+        "required_group": "q-005-m05-g3"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-005-m05-g1",
+        "question_id": "q-005-m05",
+        "required": true,
+        "description": "Configuração DenseUSAG/Melhor época/P35 T obtém F1 de 93,16% ± 4,63%.",
+        "chunk_ids": [
+          "art-005-b0020-c000"
+        ]
+      },
+      {
+        "group_id": "q-005-m05-g2",
+        "question_id": "q-005-m05",
+        "required": true,
+        "description": "Cabeçalhos e demais linhas da Tabela 3 estabelecem F1 inferior nas outras configurações avaliadas.",
+        "chunk_ids": [
+          "art-005-b0019-c000"
+        ]
+      },
+      {
+        "group_id": "q-005-m05-g3",
+        "question_id": "q-005-m05",
+        "required": true,
+        "description": "Sensibilidade de 92,1% ± 10,8% é inferior à dos trabalhos comparados e exige cuidado com falsos negativos.",
+        "chunk_ids": [
+          "art-005-b0021-c000"
+        ]
+      }
+    ]
+  }
+]

@@ -15,6 +15,7 @@ from typing import Any
 from ..errors import MissingArtifactError
 from .base import RerankerAdapter, resolve_device, resolve_dtype
 from .specs import RERANKER_SPEC, RerankerSpec
+from .local import local_checkpoint
 
 
 class Qwen3Reranker(RerankerAdapter):
@@ -30,6 +31,7 @@ class Qwen3Reranker(RerankerAdapter):
                 "Instale: pip install -e '.[models]'"
             ) from None
 
+        checkpoint_path = local_checkpoint(self.spec.checkpoint, self.cache_dir)
         device = resolve_device(self.device)
         dtype = resolve_dtype(self.dtype, device)
         tok_kwargs: dict[str, Any] = {
@@ -45,13 +47,13 @@ class Qwen3Reranker(RerankerAdapter):
             model_kwargs["cache_dir"] = self.cache_dir
 
         try:
-            self._tokenizer = AutoTokenizer.from_pretrained(self.checkpoint, **tok_kwargs)
+            self._tokenizer = AutoTokenizer.from_pretrained(checkpoint_path, **tok_kwargs)
             self._model = AutoModelForCausalLM.from_pretrained(
-                self.checkpoint, **model_kwargs
+                checkpoint_path, **model_kwargs
             )
         except Exception as exc:
             raise MissingArtifactError(
-                f"Falha ao carregar {self.checkpoint!r} do cache local. "
+                f"Falha ao carregar {self.spec.checkpoint!r} do cache local. "
                 f"Rode primeiro: rag-ptbr prepare-models. Erro: {exc}"
             ) from exc
 
@@ -74,7 +76,6 @@ class Qwen3Reranker(RerankerAdapter):
 
             import torch
 
-            self._model.to("cpu")
             del self._model
             self._model = None
             if torch.cuda.is_available():
@@ -134,7 +135,7 @@ class Qwen3Reranker(RerankerAdapter):
             )
             padded = {k: v.to(self._device) for k, v in padded.items()}
             with torch.no_grad():
-                logits = self._model(**padded).logits[:, -1, :]
+                logits = self._model(**padded, use_cache=False).logits[:, -1, :]
             true_vec = logits[:, self._token_true_id]
             false_vec = logits[:, self._token_false_id]
             pair = torch.stack([false_vec, true_vec], dim=1)

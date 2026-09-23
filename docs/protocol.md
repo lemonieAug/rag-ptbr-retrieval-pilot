@@ -30,6 +30,14 @@ O reranker não recupera evidência ausente dos candidatos recebidos.
 
 ## 3. Matriz experimental (14 configurações)
 
+A execução offline fixa os snapshots registrados em `artifacts/models/revisions.json`.
+Índices compatíveis são reutilizados; corpus, parâmetros, templates, precisão,
+dimensões e revisões divergentes bloqueiam a reutilização. Consultas são codificadas
+por um embedding de cada vez e os modelos são descarregados antes do reranker.
+O tempo de codificação compartilhado fica em `parameters.query_encoding_seconds`
+no manifesto; `timings.dense` mede a busca exata com vetor já codificado.
+O relatório apresenta ambos separadamente, sem confundir busca com inferência.
+
 `2 + 3×4` com 3 embeddings (colibri, qwen_embedding, e5 — embeddinggemma
 removido por ser gated). Baselines centrais e ablações:
 

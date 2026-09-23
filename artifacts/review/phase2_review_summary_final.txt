@@ -1,0 +1,5 @@
+Total: 125
+Approved: 0
+Draft ready: 119
+Draft pending: 6
+Rejected: 0

@@ -26,6 +26,7 @@ class DenseIndex:
     chunk_ids: list[str] = field(default_factory=list)
     matrix: np.ndarray | None = None
     fingerprint: str = ""
+    encoding_config: dict | None = None
 
     def search(self, query_vector: np.ndarray,
                top_n: int) -> list[tuple[str, float]]:
@@ -46,6 +47,7 @@ class DenseIndex:
             "dimension": self.dimension,
             "chunk_ids": self.chunk_ids,
             "fingerprint": self.fingerprint,
+            "encoding_config": self.encoding_config,
         }
 
     @classmethod
@@ -58,6 +60,7 @@ class DenseIndex:
             chunk_ids=meta["chunk_ids"],
             matrix=matrix,
             fingerprint=meta.get("fingerprint", ""),
+            encoding_config=meta.get("encoding_config"),
         )
 
     def save(self, out_dir: str | Path) -> None:
@@ -70,5 +73,15 @@ class DenseIndex:
     def load(cls, out_dir: str | Path) -> "DenseIndex":
         out_dir = Path(out_dir)
         meta = load_json(out_dir / "meta.json")
-        matrix = np.load(out_dir / "matrix.npy")
+        try:
+            matrix = np.load(out_dir / "matrix.npy", allow_pickle=False)
+        except EOFError as exc:
+            raise ValueError(f"Índice denso corrompido: {out_dir}") from exc
+        if (not np.issubdtype(matrix.dtype, np.floating)
+                or matrix.ndim != 2
+                or matrix.shape != (len(meta["chunk_ids"]), meta["dimension"])
+                or len(set(meta["chunk_ids"])) != len(meta["chunk_ids"])
+                or not np.isfinite(matrix).all()
+                or not np.allclose(np.linalg.norm(matrix, axis=1), 1.0, atol=1e-3)):
+            raise ValueError(f"Índice denso corrompido: {out_dir}")
         return cls.from_meta(meta, matrix)

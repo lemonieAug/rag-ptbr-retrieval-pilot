@@ -69,12 +69,30 @@ def render_report(run_id: str, summaries: dict[str, dict],
     if timing_stages:
         lines.append("## Latência média por etapa (segundos, quando medida)")
         lines.append("")
+        if manifest.parameters.get("query_encoding_seconds"):
+            lines.append("A etapa dense mede busca exata com vetores de consulta já codificados. "
+                         "A codificação é compartilhada pelas variantes e medida separadamente abaixo; "
+                         "estes tempos não incluem carregamento dos modelos.")
+            lines.append("")
         lines.append("| config | " + " | ".join(timing_stages) + " |")
         lines.append("|" + "---|" * (len(timing_stages) + 1))
         for config_id, s in summaries.items():
             t = s.get("timings", {})
             row = [_fmt(t.get(stage), 6) for stage in timing_stages]
             lines.append("| " + config_id + " | " + " | ".join(row) + " |")
+        lines.append("")
+
+    encoding_times = manifest.parameters.get("query_encoding_seconds", {})
+    if encoding_times:
+        lines.append("## Codificação das consultas (compartilhada entre variantes)")
+        lines.append("")
+        lines.append("| embedding | consultas | média (s) | total (s) |")
+        lines.append("|---|---:|---:|---:|")
+        for embedding, by_query in sorted(encoding_times.items()):
+            values = list(by_query.values())
+            total = sum(values)
+            mean = total / len(values) if values else 0.0
+            lines.append(f"| {embedding} | {len(values)} | {mean:.6f} | {total:.6f} |")
         lines.append("")
 
     # Deltas pareados

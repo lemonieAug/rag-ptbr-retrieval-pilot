@@ -1,0 +1,17 @@
+Matriz experimental (14 configurações, embeddings=['colibri', 'qwen_embedding', 'e5']):
+ * bm25                         initial=bm25    emb=-                rerank=False
+ * bm25_rerank                  initial=bm25    emb=-                rerank=True
+ * dense_colibri                initial=dense   emb=colibri          rerank=False
+ * dense_colibri_rerank         initial=dense   emb=colibri          rerank=True
+ * hybrid_colibri               initial=hybrid  emb=colibri          rerank=False
+ * hybrid_colibri_rerank        initial=hybrid  emb=colibri          rerank=True
+ * dense_qwen_embedding         initial=dense   emb=qwen_embedding   rerank=False
+ * dense_qwen_embedding_rerank  initial=dense   emb=qwen_embedding   rerank=True
+ * hybrid_qwen_embedding        initial=hybrid  emb=qwen_embedding   rerank=False
+ * hybrid_qwen_embedding_rerank initial=hybrid  emb=qwen_embedding   rerank=True
+ * dense_e5                     initial=dense   emb=e5               rerank=False
+ * dense_e5_rerank              initial=dense   emb=e5               rerank=True
+ * hybrid_e5                    initial=hybrid  emb=e5               rerank=False
+ * hybrid_e5_rerank             initial=hybrid  emb=e5               rerank=True
+
+14 configuração(ões) selecionada(s) (subset em experiments.select).

@@ -1,0 +1,37 @@
+ M README.md
+ M data/annotations/evidence_groups.yaml
+ M data/annotations/qrels.yaml
+ M data/annotations/questions.yaml
+ M docs/annotation_guide.md
+ M docs/decisions.md
+ M docs/protocol.md
+ M docs/review.md
+ M src/rag_ptbr_pilot/adapters/base.py
+ M src/rag_ptbr_pilot/adapters/embeddings.py
+ M src/rag_ptbr_pilot/adapters/reranker.py
+ M src/rag_ptbr_pilot/adapters/specs.py
+ M src/rag_ptbr_pilot/adapters/tokenizers.py
+ M src/rag_ptbr_pilot/benchmark/validation.py
+ M src/rag_ptbr_pilot/cli.py
+ M src/rag_ptbr_pilot/config.py
+ M src/rag_ptbr_pilot/indexing/dense.py
+ M src/rag_ptbr_pilot/manifest.py
+ M src/rag_ptbr_pilot/persistence.py
+ M src/rag_ptbr_pilot/reporting/report.py
+ M src/rag_ptbr_pilot/retrieval/matrix.py
+ M src/rag_ptbr_pilot/retrieval/pipeline.py
+ M tests/conftest.py
+?? artifacts/review/
+?? src/rag_ptbr_pilot/adapters/local.py
+?? src/rag_ptbr_pilot/benchmark/audit.py
+?? src/rag_ptbr_pilot/benchmark/review.py
+?? src/rag_ptbr_pilot/run_validation.py
+?? src/rag_ptbr_pilot/status.py
+?? tests/unit/test_benchmark_review.py
+?? tests/unit/test_cli_encoding.py
+?? tests/unit/test_index_cache_integrity.py
+?? tests/unit/test_run_validation.py
+?? tests/unit/test_runtime_integrity.py
+?? tests/unit/test_status.py
+warning: unable to access 'C:\Users\augus/.config/git/ignore': Permission denied
+warning: unable to access 'C:\Users\augus/.config/git/ignore': Permission denied

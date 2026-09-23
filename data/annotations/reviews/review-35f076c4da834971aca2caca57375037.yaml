@@ -1,0 +1,13 @@
+reviews:
+- review_id: review-35f076c4da834971aca2caca57375037
+  target_type: question
+  target_id: q-003-m03
+  status: rejected
+  reviewer: Augusto Lemonie Gilioli
+  comments: 'Rejeicao explicitamente confirmada pelo revisor na conversa: concordo.
+    A comparacao de Campo Verde e Maracaju depende das barras das Figuras 2 e 3, nao
+    preservadas nos chunks do corpus congelado. Suporte textual incompleto e grupo
+    obrigatorio sem suporte. Questao excluida deste benchmark; mantida a anotacao
+    MANUAL_VISUAL_REVIEW_REQUIRED como justificativa historica, sem afirmar que houve
+    inspecao visual.'
+  date: '2026-09-23T18:36:39.299350+00:00'

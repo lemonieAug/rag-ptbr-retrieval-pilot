@@ -1,0 +1,11 @@
+reviews:
+- review_id: review-5f7539b08dfc4bebb5fe93a9645e4e20
+  target_type: question
+  target_id: q-004-t09
+  status: approved
+  reviewer: Augusto Lemonie Gilioli
+  comments: 'Aprovação humana em lote expressamente confirmada por Augusto Lemonie
+    Gilioli na conversa: "Confirmo tudo", após definição do alcance como as 119 candidatas
+    READY_FOR_HUMAN_REVIEW. Os seis casos pendentes foram excluídos. O assistente
+    registrou a decisão do usuário pelo helper de revisão.'
+  date: '2026-09-23T18:23:27.424838+00:00'

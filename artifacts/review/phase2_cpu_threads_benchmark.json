@@ -1,0 +1,27 @@
+{
+  "dtype": "float16",
+  "input": [
+    384,
+    2560
+  ],
+  "weight": [
+    2560,
+    9728
+  ],
+  "results": [
+    {
+      "threads": 1,
+      "first_s": 43.00980189999973,
+      "second_s": 43.468345000001136
+    },
+    {
+      "threads": 2,
+      "first_s": 44.67825339999399,
+      "second_s": 46.71539319999283
+    }
+  ],
+  "remaining_trials": "cancelled: no gain observed in completed trials; resumed indexing unchanged",
+  "benchmark_pid_terminated": 10772,
+  "index_pid_resumed": 3164,
+  "resumed_at": "2026-09-23T12:00:03.710087"
+}

@@ -1,0 +1,2409 @@
+[
+  {
+    "question_id": "q-001-t01",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 2,
+        "section": "1. Introdução",
+        "quote": "Neste sentido, este trabalho propo˜e uma avaliac¸a˜o de te´cnicas de extrac¸a˜o de\ninformac¸a˜o chamada de reconhecimento de entidades nomeadas (do ingleˆs, Named\nEntity Recognition - NER) [YadavandBethard2019] para o contexto jur´ıdico bra-\nsileiro. Estas te´cnicas consistem em localizar em um texto palavras e classifica-\nlas de acordo com ro´tulos previamente definidos. Aplicac¸o˜es comuns de NER",
+        "chunk_ids": [
+          "art-001-b0004-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 62,
+        "last_line": 66
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t02",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 2,
+        "section": "1. Introdução",
+        "quote": "de aplicac¸a˜o de me´todos de PLN na resoluc¸a˜o de problema do setor jur´ıdico. O presente\ntrabalho se propo˜e a extrair legislac¸o˜es e jurisprudeˆncias como entidades nomeadas de\npetic¸o˜es iniciais. Duas bases de dados foram avaliadas: a base de dados LeNER-br,",
+        "chunk_ids": [
+          "art-001-b0004-c001"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 82,
+        "last_line": 84
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t03",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 2,
+        "section": "1. Introdução",
+        "quote": "proposta originalmente por [Luz de Araujo et al. 2018] e uma base de dados proprieta´ria,\nproduzida neste trabalho, a qual consiste de petic¸o˜es iniciais de processos que tramitaram\nna primeira instaˆncia da justic¸a Brasileira. Esta base e´ composta por 1676 trechos\nde petic¸o˜es iniciais, contendo um total de 3825 anotac¸o˜es das entidades legislac¸a˜o e",
+        "chunk_ids": [
+          "art-001-b0004-c002"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 85,
+        "last_line": 88
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t04",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 2,
+        "section": "1. Introdução",
+        "quote": "proposta originalmente por [Luz de Araujo et al. 2018] e uma base de dados proprieta´ria,\nproduzida neste trabalho, a qual consiste de petic¸o˜es iniciais de processos que tramitaram\nna primeira instaˆncia da justic¸a Brasileira. Esta base e´ composta por 1676 trechos",
+        "chunk_ids": [
+          "art-001-b0004-c002"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 85,
+        "last_line": 87
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t05",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 6,
+        "section": "5. Metodologia Experimental",
+        "quote": "se de bibliotecas para processamento de linguagens naturais de propostas opostas. En-\nquanto o FLAIR tem o foco em facilitar a execuc¸a˜o de experimentos para trabalhos ci-\nent´ıficos por pesquisadores, o Spacy se concentra na aplicac¸a˜o industrial de te´cnicas\nPLN. Neste artigo, foram treinados, avaliados e comparados treˆs redes neurais: duas",
+        "chunk_ids": [
+          "art-001-b0014-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 215,
+        "last_line": 218
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t06",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 6,
+        "section": "5. Metodologia Experimental",
+        "quote": "se de bibliotecas para processamento de linguagens naturais de propostas opostas. En-\nquanto o FLAIR tem o foco em facilitar a execuc¸a˜o de experimentos para trabalhos ci-\nent´ıficos por pesquisadores, o Spacy se concentra na aplicac¸a˜o industrial de te´cnicas\nPLN. Neste artigo, foram treinados, avaliados e comparados treˆs redes neurais: duas",
+        "chunk_ids": [
+          "art-001-b0014-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 215,
+        "last_line": 218
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t07",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 7,
+        "section": "6. Resultados",
+        "quote": "Comopodeserobservado,omodeloSpacyutilizaumaCNN(ConvolutionalNeu-\nral Network com conexo˜es residuais e usa Bloom Embeddings para representar palavras.\nOFLAIR,porsuavez,usaumaBiLSTM-CRF(BidirectionalLong-ShortTermMemory-\nConditional Random Fields), que e´ o modelo que domina o estado-da-arte para tarefas\ndesequencelabeling,segundo[Akbiketal. 2018]. Asconfigurac¸o˜esutilizadasnotreina-\nmento do modelo do FLAIR seguiram as recomendac¸o˜es de configurac¸o˜es do modelo de\nmaior desempenho apresentado por esse mesmo trabalho: uma combinac¸a˜o de BiLSTM\ncomumaCRFlayereFLAIRembeddings,forwardebackward,paragerac¸a˜odosvetores\ndepalavras.",
+        "chunk_ids": [
+          "art-001-b0021-c000"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-001",
+        "page": 8,
+        "section": "6. Resultados",
+        "quote": "Por outro lado, para reproduzir o modelo apresentado por\n[LuzdeAraujoetal. 2018], empregou-se o uso do TensorFlow [Abadietal. 2015],\numa biblioteca para aprendizagem de ma´quina publicada e distribu´ıda pelo Google. A\narquitetura utilizada consiste no mesmo modelo proposto por [Lampleetal. 2016], o\nqual consiste e uma BiLSTM combinada com um algoritmo probabil´ıstico, o CRF, e\nincorporac¸o˜esdepalavras(i.e.,embeddings)a` n´ıveldecaractere.",
+        "chunk_ids": [
+          "art-001-b0022-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 294,
+        "last_line": 302
+      },
+      {
+        "first_line": 306,
+        "last_line": 311
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t08",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 4,
+        "section": "3. Pergunta de Pesquisa",
+        "quote": "PERGUNTA DE PESQUISA: Das arquiteturas escolhidas, qual possui\na melhor performance em termos de precisa˜o, recall e F score na tarefa\n1\ndereconhecimentodeentidadesnomeadasnodom´ıniojur´ıdico?",
+        "chunk_ids": [
+          "art-001-b0009-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 169,
+        "last_line": 172
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t09",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 4,
+        "section": "4.1. BiLSTM-CRF",
+        "quote": "Essaarquiteturacombinaumaredeneuralbidirectionallong-shorttermmemorycomum\nmodelobaseadoemprobabilidade,oconditionalrandomfields[Lampleetal. 2016]. Ela\nfoi usada em [LuzdeAraujoetal. 2018] para avaliar o desempenho do dataset proposto\ne, tambe´m, e´ arquitetura padra˜o empregada pelo FLAIR. A proposta dele e´ utilizar um\nalgoritmo que leve em conta uma quantidade virtualmente infinita de contexto e passar\nseus resultados para uma camada CRF, que por sua vez, se encarregara´ do rotulac¸a˜o das\nsequeˆnciasdepalavras,capturandoasdependeˆnciasaolongodosro´tulos.",
+        "chunk_ids": [
+          "art-001-b0011-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 177,
+        "last_line": 183
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t10",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 7,
+        "section": "6. Resultados",
+        "quote": "Comopodeserobservado,omodeloSpacyutilizaumaCNN(ConvolutionalNeu-\nral Network com conexo˜es residuais e usa Bloom Embeddings para representar palavras.",
+        "chunk_ids": [
+          "art-001-b0021-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 294,
+        "last_line": 295
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t11",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 6,
+        "section": "5.1. Base de Dados",
+        "quote": "Abasededadosfoiextra´ıdade74petic¸o˜esiniciaisdeprocessosquetramitaramnajustic¸a\nbrasileira, de acesso acesso privado, fazendo um total de 1676 trechos extra´ıdos. As\npa´ginasdaspetic¸o˜esiniciaisforamsubmetidasa` umprocessodeOCR(opticalcharacter\nrecognition) para extrac¸a˜o do conteu´do textual que viria ser utilizado na composic¸a˜o do\nconjunto de treinamento empregado neste trabalho. Em contraste, a base de dados do",
+        "chunk_ids": [
+          "art-001-b0015-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 223,
+        "last_line": 227
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t12",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 7,
+        "section": "5.2. Medidas de Avaliação",
+        "quote": "O conjunto de dados foi dividido em dois subconjuntos, um para treinamento, composto\npor 70% das amostras e outro para teste, composto por 30%, ambas selecionadas aleato-\nriamente. Para cada umas das arquiteturas utilizadas foram empregadas as configurac¸o˜es",
+        "chunk_ids": [
+          "art-001-b0019-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 264,
+        "last_line": 266
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t13",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 7,
+        "section": "5.2. Medidas de Avaliação",
+        "quote": "as especificac¸o˜es trazidas em [LuzdeAraujoetal. 2018]. Como medidas de avaliac¸a˜o\nforamusadasasme´tricasdeprecisa˜o,recalleF score,descritasaseguir:\n1",
+        "chunk_ids": [
+          "art-001-b0019-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 268,
+        "last_line": 270
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t14",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 6,
+        "section": "5.1. Base de Dados",
+        "quote": "conjuntodetreinoedeteste. poss´ıvelnotarpormeiodessasfigurasqueabasededados\nencontra-se desbalanceada, o que torna o F score uma me´trica bastante confia´vel para\n1\nmedirodesempenhodosmodelosaseremtreinados.",
+        "chunk_ids": [
+          "art-001-b0016-c000"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-001",
+        "page": 7,
+        "section": "5.2. Medidas de Avaliação",
+        "quote": "positivos sa˜o de fato positivos. O F score, por fim, mostra uma relac¸a˜o harmoˆnica entre\n1\nprecisa˜o e recall para que possa-se reconhecer qual modelo possui o melhor balancea-\nmentoentreessasduasme´tricas.",
+        "chunk_ids": [
+          "art-001-b0019-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 245,
+        "last_line": 248
+      },
+      {
+        "first_line": 279,
+        "last_line": 282
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t15",
+    "status": "SOURCE_CONTRADICTION",
+    "observations": "A narrativa afirma superioridade em precisão e F1 nas duas classes, mas a Tabela 3 empata F1 de legislação (FLAIR/TensorFlow: 0,89) e precisão de jurisprudência (FLAIR/spaCy: 0,78). A resposta foi preservada para adjudicação humana; o qrel candidato sustenta a afirmação narrativa, não resolve a contradição.",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 8,
+        "section": "6. Resultados",
+        "quote": "Pode-se observar que, de acordo com os resultados apresentados na Tabela 3 o\nmodelo BiLSTM-CRF com FLAIR embeddings treinado com aux´ılio da biblioteca para\nPLN FLAIR apresentou resultados superiores com relac¸a˜o a` precisa˜o e F score em am-\n1\nbas as categorias de entidades anotadas na base de dados analisada. Entretanto, o melhor",
+        "chunk_ids": [
+          "art-001-b0023-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 326,
+        "last_line": 330
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t16",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Pergunta explicitamente limitada à discussão: ela atribui melhor recall ao TensorFlow. A Tabela 3 limita essa vantagem à legislação (0,87 versus 0,85); jurisprudência favorece FLAIR (0,53 versus 0,44). Não interpretar como superioridade em ambas as classes.",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 8,
+        "section": "6. Resultados",
+        "quote": "bas as categorias de entidades anotadas na base de dados analisada. Entretanto, o melhor\nscore para recall na˜o foi alcanc¸ado por ele, mas sim pelo modelo BiLSTM-CRF usado\npor [LuzdeAraujoetal. 2018] em seus pro´prios experimentos. Contudo, vale ressaltar\nque a diferenc¸a entre as pontuac¸o˜es adquiridas pelo modelo do FLAIR e do TensorFlow\nna˜o foram ta˜o distantes uma da outra, o que, como pode ser visto pelo seu F score,",
+        "chunk_ids": [
+          "art-001-b0023-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 330,
+        "last_line": 334
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t17",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 8,
+        "section": "6. Resultados",
+        "quote": "torna o modelo BiLSTM-CRF com FLAIR embeddings o modelo com melhor equil´ıbrio\nentre precisa˜o e recall. O modelo CNN com conexo˜es residuais, por sua vez, mostrou-\nse ter a pior performance entre seus pares. Quando comparado com o modelo treinado\npelo FLAIR, ele na˜o conseguiu se sobressair em nenhuma me´trica. E´ importante notar,",
+        "chunk_ids": [
+          "art-001-b0023-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 336,
+        "last_line": 339
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t18",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 8,
+        "section": "6. Resultados",
+        "quote": "Ale´m disso, eles mostram que o uso de FLAIR embeddings na gerac¸a˜o dos vetores de\npalavras,quesera˜oentreguescomoinputparaumaredeneural,podeproverumamelhora\nsubstancial nos scores do modelo a ser treinado. Os resultados, tambe´m, reafirmam a",
+        "chunk_ids": [
+          "art-001-b0023-c001"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 348,
+        "last_line": 350
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t19",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 7,
+        "section": "5.3. Recursos de Hardware e Software",
+        "quote": "Os experimentos foram realizados em um computador com processador Ryzen 5 2600x,\n16GB ram DDR4. O sistema operacional utilizado foi o Ubuntu 18.04. As bibliotecas\nutilizadas foram, Tensorflow versa˜o 1.15.0, Keras versa˜o 2.3.1, Numpy versa˜o 1.18.3,",
+        "chunk_ids": [
+          "art-001-b0020-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 284,
+        "last_line": 286
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-t20",
+    "status": "AMBIGUOUS_EVIDENCE",
+    "observations": "O início da contribuição (produção de nova base de petições) foi interpretado pelo chunker como section, enquanto text conserva apenas primeira base deste tipo anotada manualmente. Indexação/reranking/geração usam text e não section. Não há suporte integral no conteúdo de um chunk; quote/página verificáveis na fonte, sem qrel. Não foi alterado o corpus congelado.",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 3,
+        "section": "1. Introdução / contribuições",
+        "quote": "2. a produc¸a˜o de uma nova base de dados, baseada em petic¸o˜es iniciais, sendo a\nprimeira base de dados deste tipo de documento jur´ıdico anotada manualmente\nate´ opresentemomento;",
+        "chunk_ids": [],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 101,
+        "last_line": 103
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-m01",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A prosa explicita integralmente a função pedida; não se inferiu a estrutura visual da Figura 1. A pergunta demanda uma única informação apesar do tipo multi_evidence pré-anotado; um único grupo é semanticamente correto.",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 4,
+        "section": "4.1. BiLSTM-CRF",
+        "quote": "Essaarquiteturacombinaumaredeneuralbidirectionallong-shorttermmemorycomum\nmodelobaseadoemprobabilidade,oconditionalrandomfields[Lampleetal. 2016]. Ela\nfoi usada em [LuzdeAraujoetal. 2018] para avaliar o desempenho do dataset proposto\ne, tambe´m, e´ arquitetura padra˜o empregada pelo FLAIR. A proposta dele e´ utilizar um\nalgoritmo que leve em conta uma quantidade virtualmente infinita de contexto e passar\nseus resultados para uma camada CRF, que por sua vez, se encarregara´ do rotulac¸a˜o das\nsequeˆnciasdepalavras,capturandoasdependeˆnciasaolongodosro´tulos.",
+        "chunk_ids": [
+          "art-001-b0011-c000"
+        ],
+        "required_group": "q-001-m01-g1"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-001-m01-g1",
+        "question_id": "q-001-m01",
+        "required": true,
+        "description": "Função da CRF: rotular sequências e capturar dependências entre rótulos após o processamento contextual.",
+        "chunk_ids": [
+          "art-001-b0011-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 177,
+        "last_line": 183
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-m02",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Tabela extraída perdeu alinhamento da coluna Proposto; os valores e a comparação são recuperáveis na prosa contígua. Não se usou o chunk isolado da coluna sem cabeçalhos.",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 6,
+        "section": "5.1. Base de Dados / Tabela 1",
+        "quote": "Abasededadosfoiextra´ıdade74petic¸o˜esiniciaisdeprocessosquetramitaramnajustic¸a\nbrasileira, de acesso acesso privado, fazendo um total de 1676 trechos extra´ıdos. As\npa´ginasdaspetic¸o˜esiniciaisforamsubmetidasa` umprocessodeOCR(opticalcharacter\nrecognition) para extrac¸a˜o do conteu´do textual que viria ser utilizado na composic¸a˜o do\nconjunto de treinamento empregado neste trabalho. Em contraste, a base de dados do\nLeNER-BR conta com um nu´mero um pouco menor de documentos, pore´m maior em\nrelac¸a˜o a` sentenc¸as anotadas. Ademais, a base de dados de [LuzdeAraujoetal. 2018] e´\nmenos espec´ıfico quanto ao tipo de texto jur´ıdico que o compo˜e, sendo o apresentando\nnestetrabalhocompostoapenasporpetic¸o˜esiniciais.\nTabela1. Caracter´ısticasdabasededados.\nPropriedade LeNER-BR\nDocumentos 70\nClasses 6\nTrechos 10.392",
+        "chunk_ids": [
+          "art-001-b0015-c000"
+        ],
+        "required_group": "q-001-m02-g1"
+      },
+      {
+        "doc_id": "art-001",
+        "page": 6,
+        "section": "5.1. Base de Dados",
+        "quote": "A Tabela 1 apresenta outras informac¸o˜es sobre a base de dados. A base de dados\nproposta suporta dois tipo de classes: Legislac¸a˜o e Jurisprudeˆncia. Em contraste com o\nLeNER-BR,quepossuimaisclasses,nestapesquisaoptou-sepordarfocoa`sduasclasses,\nentre as seis do LeNER-BR, que sa˜o mais relevantes para petic¸o˜es iniciais. Percebe-se,",
+        "chunk_ids": [
+          "art-001-b0015-c000"
+        ],
+        "required_group": "q-001-m02-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-001-m02-g1",
+        "question_id": "q-001-m02",
+        "required": true,
+        "description": "Comparação de trechos: proposta 1.676, LeNER-BR 10.392.",
+        "chunk_ids": [
+          "art-001-b0015-c000"
+        ]
+      },
+      {
+        "group_id": "q-001-m02-g2",
+        "question_id": "q-001-m02",
+        "required": true,
+        "description": "A base proposta usa duas classes, menos que LeNER-BR.",
+        "chunk_ids": [
+          "art-001-b0015-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 223,
+        "last_line": 236
+      },
+      {
+        "first_line": 238,
+        "last_line": 241
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-m03",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 6,
+        "section": "5.1. Base de Dados / Tabela 2",
+        "quote": "Tabela2. Distribuic¸a˜odasentidadesnosconjuntosdetreinoeteste\nConjunto Jurisprudeˆncia Legislac¸a˜o\nTreino 9011 1341\nTeste 3398 427",
+        "chunk_ids": [
+          "art-001-b0016-c000"
+        ],
+        "required_group": "q-001-m03-g1"
+      },
+      {
+        "doc_id": "art-001",
+        "page": 7,
+        "section": "5.2. Medidas de Avaliação",
+        "quote": "positivos sa˜o de fato positivos. O F score, por fim, mostra uma relac¸a˜o harmoˆnica entre\n1\nprecisa˜o e recall para que possa-se reconhecer qual modelo possui o melhor balancea-\nmentoentreessasduasme´tricas.",
+        "chunk_ids": [
+          "art-001-b0019-c000"
+        ],
+        "required_group": "q-001-m03-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-001-m03-g1",
+        "question_id": "q-001-m03",
+        "required": true,
+        "description": "Contagens por classe/partição comprovam predominância de jurisprudência.",
+        "chunk_ids": [
+          "art-001-b0016-c000"
+        ]
+      },
+      {
+        "group_id": "q-001-m03-g2",
+        "question_id": "q-001-m03",
+        "required": true,
+        "description": "F1 sintetiza harmonicamente precisão e recall.",
+        "chunk_ids": [
+          "art-001-b0019-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 249,
+        "last_line": 252
+      },
+      {
+        "first_line": 279,
+        "last_line": 282
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-m04",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "O rótulo FLAIR é section do primeiro chunk. A comparação requer dois grupos: resultado FLAIR e resultados concorrentes; não são evidências independentes criadas por sobreposição.",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 8,
+        "section": "6. Resultados / Tabela 3",
+        "quote": "Jurisprudeˆncia 0.78 0.53 0.63\nPode-se observar que, de acordo com os resultados apresentados na Tabela 3 o\nmodelo BiLSTM-CRF com FLAIR embeddings treinado com aux´ılio da biblioteca para\nPLN FLAIR apresentou resultados superiores com relac¸a˜o a` precisa˜o e F score em am-\n1\nbas as categorias de entidades anotadas na base de dados analisada. Entretanto, o melhor\nscore para recall na˜o foi alcanc¸ado por ele, mas sim pelo modelo BiLSTM-CRF usado\npor [LuzdeAraujoetal. 2018] em seus pro´prios experimentos. Contudo, vale ressaltar\nque a diferenc¸a entre as pontuac¸o˜es adquiridas pelo modelo do FLAIR e do TensorFlow\nna˜o foram ta˜o distantes uma da outra, o que, como pode ser visto pelo seu F score,\n1\ntorna o modelo BiLSTM-CRF com FLAIR embeddings o modelo com melhor equil´ıbrio\nentre precisa˜o e recall. O modelo CNN com conexo˜es residuais, por sua vez, mostrou-",
+        "chunk_ids": [
+          "art-001-b0023-c000"
+        ],
+        "required_group": "q-001-m04-g1"
+      },
+      {
+        "doc_id": "art-001",
+        "page": 8,
+        "section": "6. Resultados / Tabela 3",
+        "quote": "Tabela3. Acura´cia,precisa˜o,recalleF scoredosmodelosparacadaentidade.\n1\nBiblioteca/\nFramework Modelo Entidade Precisa˜o Recall F score\n1\nLegislac¸a˜o 0.79 0.44 0.56\nSpacy CNN\nJurisprudeˆncia 0.78 0.11 0.20\nLegislac¸a˜o 0.91 0.87 0.89\nTensorFlow BiLSTM-CRF\nJurisprudeˆncia 0.74 0.44 0.55",
+        "chunk_ids": [
+          "art-001-b0022-c000"
+        ],
+        "required_group": "q-001-m04-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-001-m04-g1",
+        "question_id": "q-001-m04",
+        "required": true,
+        "description": "FLAIR: jurisprudência F1 0,63 e recall 0,53; prosa explica equilíbrio.",
+        "chunk_ids": [
+          "art-001-b0023-c000"
+        ]
+      },
+      {
+        "group_id": "q-001-m04-g2",
+        "question_id": "q-001-m04",
+        "required": true,
+        "description": "Concorrentes em jurisprudência: TensorFlow F1 0,55/recall 0,44 e spaCy F1 0,20/recall 0,11.",
+        "chunk_ids": [
+          "art-001-b0022-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 325,
+        "last_line": 337
+      },
+      {
+        "first_line": 312,
+        "last_line": 322
+      }
+    ]
+  },
+  {
+    "question_id": "q-001-m05",
+    "status": "AMBIGUOUS_EVIDENCE",
+    "observations": "Fonte Markdown sustenta a resposta, mas o chunker separou a linha numérica da legislação FLAIR (fim de b0022) do rótulo FLAIR (section de b0023). Nenhum chunk isolado preserva a associação inequívoca modelo/linha; grupo FLAIR fica sem chunk. Corpus congelado preservado. Não tratar mera proximidade como qrel suficiente.",
+    "evidence": [
+      {
+        "doc_id": "art-001",
+        "page": 8,
+        "section": "6. Resultados / Tabela 3",
+        "quote": "Tabela3. Acura´cia,precisa˜o,recalleF scoredosmodelosparacadaentidade.\n1\nBiblioteca/\nFramework Modelo Entidade Precisa˜o Recall F score\n1\nLegislac¸a˜o 0.79 0.44 0.56\nSpacy CNN\nJurisprudeˆncia 0.78 0.11 0.20",
+        "chunk_ids": [
+          "art-001-b0022-c000"
+        ],
+        "required_group": "q-001-m05-g1"
+      },
+      {
+        "doc_id": "art-001",
+        "page": 8,
+        "section": "6. Resultados / Tabela 3",
+        "quote": "Legislac¸a˜o 0.93 0.85 0.89\nFLAIR BiLSTM-CRF",
+        "chunk_ids": [],
+        "required_group": "q-001-m05-g2"
+      },
+      {
+        "doc_id": "art-001",
+        "page": 9,
+        "section": "7. Conclusão",
+        "quote": "Por outro lado, o modelo com pior performance foi o CNN com conexo˜es resi-\nduais, treinado no Spacy, que, quando comparado ao modelo de melhor desempenho,\nmostrou-se ser inferior em todos os aspectos considerados. De certa forma este resul-",
+        "chunk_ids": [
+          "art-001-b0025-c000"
+        ],
+        "required_group": "q-001-m05-g3"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-001-m05-g1",
+        "question_id": "q-001-m05",
+        "required": true,
+        "description": "spaCy em legislação: recall 0,44 e F1 0,56.",
+        "chunk_ids": [
+          "art-001-b0022-c000"
+        ]
+      },
+      {
+        "group_id": "q-001-m05-g2",
+        "question_id": "q-001-m05",
+        "required": true,
+        "description": "FLAIR em legislação: recall 0,85 e F1 0,89, associado inequivocamente ao modelo.",
+        "chunk_ids": []
+      },
+      {
+        "group_id": "q-001-m05-g3",
+        "question_id": "q-001-m05",
+        "required": true,
+        "description": "Conclusão identifica CNN/spaCy como modelo de pior desempenho.",
+        "chunk_ids": [
+          "art-001-b0025-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 312,
+        "last_line": 319
+      },
+      {
+        "first_line": 323,
+        "last_line": 324
+      },
+      {
+        "first_line": 373,
+        "last_line": 375
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t01",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 12,
+        "section": "5. Considerações Finais",
+        "quote": "Este trabalho teve como contribuição central à concepção de uma abordagem explorando\nAprendizado de Máquina para predição da mortalidade hospitalar utilizando dados cole-\ntados durante as primeiras 48 horas de internação nas UTIs. O MIMIC-III foi utilizado\ncomobancodedadosdeinformaçõesclínicascoletadasdomundoreal.",
+        "chunk_ids": [
+          "art-002-b0037-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 440,
+        "last_line": 443
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t02",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 5,
+        "section": "3.2. Banco de Dados e População Estudada",
+        "quote": "A coorte de pacientes relevantes para o desenvolvimento do modelo foi extraída do Me-\ndical Information Mart for Intensive Care (MIMIC-III) baseado no código fornecido por\n[Harutyunyanetal. 2019]. O MIMIC-III [Johnsonandatal. 2016] é um repositório de\nacesso público criado a partir de dados clínicos de pacientes do Beth Israel Deaconess\nMedicalCenter (BIDMC),queéumhospitaluniversitáriodaHarvardMedicalSchool.",
+        "chunk_ids": [
+          "art-002-b0018-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 220,
+        "last_line": 224
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t03",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 5,
+        "section": "3.2. Banco de Dados e População Estudada",
+        "quote": "Para o desenvolvimento do modelo foram incluídos apenas registros de pacientes\ncom 18 anos ou mais e que permaneceram internados em UTIs por um período mínimo\nde 48 horas. Isso resultou em uma coorte de 17.734 pacientes e 1.456.610 observações.\nDesses pacientes, 15.328 sobreviveram e 2.406 morreram, resultando em uma taxa de\nmortalidadede13,57%.",
+        "chunk_ids": [
+          "art-002-b0018-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 225,
+        "last_line": 229
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t04",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 11,
+        "section": "4. Análise de Performance",
+        "quote": "O modelo é baseado em 12 variáveis preditoras de entrada, sendo 7 sinais vitais (DBP,\nSBP,MAP,BT,RR,HR,SpO2),2dadosdemográficos(sexoeidade),2resultadosdela-\nboratório(glicoseepH)eumsistemadepontuação(GCS).Estessinaisvitaisusualmente",
+        "chunk_ids": [
+          "art-002-b0036-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 414,
+        "last_line": 416
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t05",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 5,
+        "section": "3.1. Discussão do Problema de Pesquisa",
+        "quote": "Oobjetivodomodelodesenvolvidoporestetrabalhoéidentificaroriscodemorte\nduranteainternaçãodepacientesemUTIsconsiderandocomobaseosdadosdoMIMIC-\nIII. Foram comparadas as performances de vários métodos de Aprendizado de Máquina,\nutilizando para isso dados de uma mesma coorte de pacientes coletados em janelas de\ntempo de 24 e 48 horas após a admissão nas UTIs. As janelas de tempo foram estabe-\nlecidas através de uma avaliação empírica inicial, que mostrou que com esses intervalos\nde tempo já é possível uma estimativa de risco de mortalidade suficientemente precisa.",
+        "chunk_ids": [
+          "art-002-b0017-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 210,
+        "last_line": 216
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t06",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 5,
+        "section": "3.2. Banco de Dados e População Estudada",
+        "quote": "Para o desenvolvimento do modelo foram incluídos apenas registros de pacientes\ncom 18 anos ou mais e que permaneceram internados em UTIs por um período mínimo\nde 48 horas. Isso resultou em uma coorte de 17.734 pacientes e 1.456.610 observações.",
+        "chunk_ids": [
+          "art-002-b0018-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 225,
+        "last_line": 227
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t07",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 5,
+        "section": "3.2. Banco de Dados e População Estudada",
+        "quote": "de 48 horas. Isso resultou em uma coorte de 17.734 pacientes e 1.456.610 observações.\nDesses pacientes, 15.328 sobreviveram e 2.406 morreram, resultando em uma taxa de\nmortalidadede13,57%.",
+        "chunk_ids": [
+          "art-002-b0018-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 227,
+        "last_line": 229
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t08",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 9,
+        "section": "3.4.2. Agregação dos Dados por Hora e Tratamento de Dados Ausentes",
+        "quote": "Como estratégia para evitar a geração de viés no modelo, os dados ausentes não\nforam substituídos por valores estimados. A abordagem utilizada foi incluir apenas\npacientes com um alto percentual de informações completas, sendo então selecionados\npacientes onde todas as variáveis foram registradas pelo menos uma vez em três horários\ndiferentes dentro da janela de tempo de medição. Esta imposição resultou em um con-",
+        "chunk_ids": [
+          "art-002-b0029-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 322,
+        "last_line": 326
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t09",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 9,
+        "section": "3.4.2. Agregação dos Dados por Hora e Tratamento de Dados Ausentes",
+        "quote": "Os modelos de Aprendizado de Máquina aplicados a séries temporais têm uma\nperformancedeclassificaçãomelhorquandorecebemcomoentradadadoscomrepresen-\ntações de tempo discretizadas [Facelietal. 2021]. Dessa forma, com o objetivo de obter\numarepresentaçãomaisdensadosdadosfisiológicosdeformaaoportunizarumamelhor\ninferência pelos algoritmos, as observações de cada série temporal foram agregadas em\nintervalosdehoraemhoraatravésdocálculodamediana.",
+        "chunk_ids": [
+          "art-002-b0029-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 316,
+        "last_line": 321
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t10",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 9,
+        "section": "3.5. Construção de Recursos",
+        "quote": "A construção de recursos aborda o problema de encontrar a transformação de variáveis\nquepossuamamaiorquantidadedeinformaçõesúteis. Comoassériestemporaispresen-\ntesnobancodedadosutilizadonessetrabalhocontémumgrandenúmerodeinformações\nausentes,omodelopropostocalculaosdadosestatísticosresumidos(valormínimo,valor\nmáximo, desvio padrão, variância, média e mediana) de cada uma das variáveis dentro\nda janela de tempo estipulada (24 ou 48 horas). Esta estratégia reduz a complexidade do\nmodelo,poisutilizainformaçõesmaisrelevantescomoentradaparaatarefadeprevisão.",
+        "chunk_ids": [
+          "art-002-b0030-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 330,
+        "last_line": 336
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t11",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 9,
+        "section": "3.6. Balanceamento das Classes",
+        "quote": "Nestetrabalhoforamexperimentadastrêsdiferentesestratégiasdebalanceamento\nentre as classes: (i) random oversampling: sobreamostragem aleatória da classe minori-\ntária (método escolhido); (ii) random downsampling: seleciona e remove aleatoriamente\namostras da classe majoritária; e, (iii) SMOTE (Synthetic Minority Oversampling Techni-\nque): geraçãodeexemplossintéticosdetreinamentodaclasseminoritária.",
+        "chunk_ids": [
+          "art-002-b0031-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 350,
+        "last_line": 354
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t12",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 10,
+        "section": "3.7. Normalização",
+        "quote": "Muitos métodos de Aprendizado de Máquina exigem que as variáveis selecionadas este-\njamnamesmaescalaparaumdesempenhoideal[Facelietal. 2021]. Ométodochamado\n“min-max”foiescolhido,atravésdoqualosvaloresforamtransformadosparaumaescala\nmínimo-zeroemáximo-um.",
+        "chunk_ids": [
+          "art-002-b0032-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 359,
+        "last_line": 362
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t13",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 10,
+        "section": "4. Análise de Performance",
+        "quote": "Asensibilidade,tambémchamadadeTaxadeVerdadeirosPositivos(TPR),indica\na capacidade do método de classificação em prever corretamente os pacientes que mor-\nreram (classe positiva). A especificidade indica a capacidade do método de classificação",
+        "chunk_ids": [
+          "art-002-b0033-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 369,
+        "last_line": 371
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t14",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 10,
+        "section": "4. Análise de Performance",
+        "quote": "reram (classe positiva). A especificidade indica a capacidade do método de classificação\nem prever corretamente os pacientes que sobreviveram (classe negativa). F1 score é uma\nmédia harmônica calculada com base na precisão e na sensibilidade [Facelietal. 2021].",
+        "chunk_ids": [
+          "art-002-b0033-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 371,
+        "last_line": 373
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t15",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 11,
+        "section": "4. Análise de Performance",
+        "quote": "A comparação do desempenho da abordagem proposta com outros trabalhos da\nliteratura será feita tendo como base a Tabela 1. A métrica AUC foi empregada para essa\ncomparação por ser apontada pela literatura como a mais relevante para medição de de-\nsempenho quando da predição de mortalidade hospitalar [Muralitharanandatal. 2021].\nComo referência será utilizado o resultado obtido pelo método GBC, desenvolvido pelo\npresentetrabalho,oqualalcançouamelhorperformancedeclassificação(AUCde0,85).",
+        "chunk_ids": [
+          "art-002-b0036-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 408,
+        "last_line": 413
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t16",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 10,
+        "section": "4. Análise de Performance",
+        "quote": "Na janela de tempo de 24 horas, o método MLP teve melhor performance con-\nsiderando simultaneamente os indicadores F1 score e AUC, com valores de 0,51 e 0,83,\nrespectivamente. O algoritmo GBC teve performance similar, mas com o valor de F1\nscore um pouco inferior. Considerando a Figura 2(a), que apresenta as curvas ROC dos",
+        "chunk_ids": [
+          "art-002-b0034-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 380,
+        "last_line": 383
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t17",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 10,
+        "section": "4. Análise de Performance",
+        "quote": "Já na janela de tempo de 48 horas, o método GBC teve uma performance ligei-\nramente superior em ambos indicadores F1 score e AUC, com valores de 0,53 e 0,85,\nrespectivamente. As curvas ROC dos modelos nesta janela de tempo estão apresentadas",
+        "chunk_ids": [
+          "art-002-b0034-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 389,
+        "last_line": 391
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t18",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 11,
+        "section": "4. Análise de Performance",
+        "quote": "O modelo é baseado em 12 variáveis preditoras de entrada, sendo 7 sinais vitais (DBP,\nSBP,MAP,BT,RR,HR,SpO2),2dadosdemográficos(sexoeidade),2resultadosdela-\nboratório(glicoseepH)eumsistemadepontuação(GCS).Estessinaisvitaisusualmente\nsãoregistradosautomaticamentepormonitoresmultiparamétricosemambientesdeUTIs,\nsimplificandoassimacoletadestesdadosfisiológicos.",
+        "chunk_ids": [
+          "art-002-b0036-c000"
+        ],
+        "required_group": null
+      },
+      {
+        "doc_id": "art-002",
+        "page": 6,
+        "section": "Tabela 1 / descrição de siglas",
+        "quote": "Descriçãodasvariáveis:HR-frequênciacardíaca;SBP-pressãoarterialsistólica;DBP-pressãoarterialdiastólica;MAP-pressão\narterialmédia;RR-frequênciarespiratória;SpO2-saturaçãoperiféricadeoxigênio;BT-temperaturacorporal;GCS-escalade\ncomadeGlasgow;FiO2-fraçãoinspiradadeoxigênio;PaO2-pressãoarterialdeoxigênio;WBC-contagemdecélulasbrancas;\nAIDS-SíndromedaImunodeficiênciaHumana;pH-potencialhidrogeniônico.",
+        "chunk_ids": [
+          "art-002-b0021-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 414,
+        "last_line": 418
+      },
+      {
+        "first_line": 239,
+        "last_line": 242
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t19",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 8,
+        "section": "3.4.1. Limpeza de Dados",
+        "quote": "No modelo proposto, cada variável numérica está associada a limites superior e\ninferior para detectar valores inutilizáveis (outliers). O valor observado será excluído se\nestiver fora desses limites. Ao aplicar essas regras para gerar a coorte do modelo foram\nremovidas7.471observações(0,51%)classificadascomovaloresatípicosextremos.",
+        "chunk_ids": [
+          "art-002-b0026-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 294,
+        "last_line": 297
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-t20",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 12,
+        "section": "5. Considerações Finais",
+        "quote": "Como perspectiva de continuidade da pesquisa, a expectativa é que esta aborda-\ngemtenhasuaperformancepreditivaotimizada,naexpectativaquesejapossívelempregar\na mesma em um ambiente clínico real, como apoio à tomada de decisões considerando a\nceleridadeinerenteaosambientesdecuidadointensivos.",
+        "chunk_ids": [
+          "art-002-b0037-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 448,
+        "last_line": 451
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-m01",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A Tabela 2 extraída tem colunas colapsadas; a prosa transcreve inequivocamente as três variáveis e incidências. Um grupo corresponde à única comparação pedida, não a três grupos artificiais por número.",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 9,
+        "section": "3.4.2. Agregação dos Dados por Hora e Tratamento de Dados Ausentes",
+        "quote": "esparsas. A Tabela 2 apresenta a quantidade de observações com dados não nulos por\nvariável. Conforme pode-se observar, existem poucas medições das variáveis Potencial\nHidrogeniônico, Escala de Coma de Glasgow e Glicose, com incidências em 8%, 11% e\n17%dasobservações,respectivamente.",
+        "chunk_ids": [
+          "art-002-b0029-c000"
+        ],
+        "required_group": "q-002-m01-g1"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-002-m01-g1",
+        "question_id": "q-002-m01",
+        "required": true,
+        "description": "Variáveis de menor incidência: pH 8%, GCS 11%, glicose 17%.",
+        "chunk_ids": [
+          "art-002-b0029-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 312,
+        "last_line": 315
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-m02",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Tabela 3 perdeu rótulos/valores de 48h na extração; discussão textual preserva integralmente método, janela e métricas. Não se atribui relevância ao chunk da tabela mutilada.",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 10,
+        "section": "4. Análise de Performance",
+        "quote": "Já na janela de tempo de 48 horas, o método GBC teve uma performance ligei-\nramente superior em ambos indicadores F1 score e AUC, com valores de 0,53 e 0,85,\nrespectivamente. As curvas ROC dos modelos nesta janela de tempo estão apresentadas",
+        "chunk_ids": [
+          "art-002-b0034-c000"
+        ],
+        "required_group": "q-002-m02-g1"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-002-m02-g1",
+        "question_id": "q-002-m02",
+        "required": true,
+        "description": "GBC lidera em 48 horas com F1 0,53 e AUC 0,85.",
+        "chunk_ids": [
+          "art-002-b0034-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 389,
+        "last_line": 391
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-m03",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A discussão da Figura 2(a) explica explicitamente o fenômeno pedido; não se afirma um limiar numérico ou curva que dependa de leitura visual.",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 10,
+        "section": "4. Análise de Performance",
+        "quote": "score um pouco inferior. Considerando a Figura 2(a), que apresenta as curvas ROC dos\nmodelos de 24 horas, pode-se observar que apesar dos métodos MLP, LR, RF, GBC e\nAdaboost apresentarem valores semelhantes em relação a métrica AUC, eles se compor-\ntam de maneira diferente dependendo do limiar de decisão a ser escolhido. Portanto a\nescolhadoclassificadormaisadequadodependerádopontodeequilíbriodesejadoparaa\nespecificidadeesensibilidade.",
+        "chunk_ids": [
+          "art-002-b0034-c000"
+        ],
+        "required_group": "q-002-m03-g1"
+      },
+      {
+        "doc_id": "art-002",
+        "page": 10,
+        "section": "4. Análise de Performance",
+        "quote": "A AUC é uma grandeza escalar entre 0 e 1 que representa a área abaixo da curva ROC e\nmede a qualidade das previsões do modelo independentemente do ponto de operação do\nclassificador[Bradley1997].",
+        "chunk_ids": [
+          "art-002-b0033-c000"
+        ],
+        "required_group": "q-002-m03-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-002-m03-g1",
+        "question_id": "q-002-m03",
+        "required": true,
+        "description": "AUCs semelhantes podem acompanhar diferentes sensibilidades/especificidades conforme limiar.",
+        "chunk_ids": [
+          "art-002-b0034-c000"
+        ]
+      },
+      {
+        "group_id": "q-002-m03-g2",
+        "question_id": "q-002-m03",
+        "required": true,
+        "description": "AUC resume a área da ROC independentemente do ponto de operação.",
+        "chunk_ids": [
+          "art-002-b0033-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 383,
+        "last_line": 388
+      },
+      {
+        "first_line": 374,
+        "last_line": 376
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-m04",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A discussão explicita os valores da comparação da Tabela 1, mantendo os cabeçalhos semânticos que faltam em partes da tabela extraída.",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 11,
+        "section": "4. Análise de Performance",
+        "quote": "O modelo é baseado em 12 variáveis preditoras de entrada, sendo 7 sinais vitais (DBP,\nSBP,MAP,BT,RR,HR,SpO2),2dadosdemográficos(sexoeidade),2resultadosdela-\nboratório(glicoseepH)eumsistemadepontuação(GCS).Estessinaisvitaisusualmente\nsãoregistradosautomaticamentepormonitoresmultiparamétricosemambientesdeUTIs,\nsimplificandoassimacoletadestesdadosfisiológicos.",
+        "chunk_ids": [
+          "art-002-b0036-c000"
+        ],
+        "required_group": "q-002-m04-g1"
+      },
+      {
+        "doc_id": "art-002",
+        "page": 11,
+        "section": "4. Análise de Performance",
+        "quote": "A performance AUC de 0,85 alcançada é superior ao trabalho de\n[Alghatanietal. 2021], que obteve AUC de 0,78. Por sua vez, os trabalhos\n[Purushothamandatal. 2018] (AUC de 0,87), [Pirracchioandatal. 2015] (AUC\nde 0,88) e [Harutyunyanetal. 2019] (AUC de 0,87) apresentam melhor performance,\nentretanto exigem ao total 17 variáveis preditoras, dependem de até 6 exames laborato-\nriais ou requerem os valores individuais dos 4 critérios da escala de Glasgow, da qual\nmuitas vezes é registrado somente o valor total. Estes aspectos podem dificultar sua",
+        "chunk_ids": [
+          "art-002-b0036-c000"
+        ],
+        "required_group": "q-002-m04-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-002-m04-g1",
+        "question_id": "q-002-m04",
+        "required": true,
+        "description": "Proposta usa 12 variáveis: 7 sinais vitais, 2 dados demográficos, 2 exames e GCS; sinais coletados automaticamente.",
+        "chunk_ids": [
+          "art-002-b0036-c000"
+        ]
+      },
+      {
+        "group_id": "q-002-m04-g2",
+        "question_id": "q-002-m04",
+        "required": true,
+        "description": "Comparadores com AUC maior requerem 17 variáveis, até 6 exames ou componentes de GCS.",
+        "chunk_ids": [
+          "art-002-b0036-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 414,
+        "last_line": 418
+      },
+      {
+        "first_line": 419,
+        "last_line": 425
+      }
+    ]
+  },
+  {
+    "question_id": "q-002-m05",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Cada etapa necessária tem grupo próprio. A sequência está explicitada nas subseções; não se inventaram setas ou detalhes visuais da Figura 1.",
+    "evidence": [
+      {
+        "doc_id": "art-002",
+        "page": 8,
+        "section": "3.4.1. Limpeza de Dados",
+        "quote": "Os dados extraídos do MIMIC-III possuem valores errôneos devido a ruídos, registros\nincorretos, erros tipográficos e imputação de informações ou unidades inconsistentes\n[Purushothamandatal. 2018]. Paratratardessesvaloresdiscrepantespresentesnobanco\nde dados foram utilizadas as especificações constantes no repositório de código-fonte de\n[Harutyunyanetal. 2019], as quais foram definidas por especialistas clínicos com base\nemseuconhecimentodeintervalosdemedidasválidas.\nNo modelo proposto, cada variável numérica está associada a limites superior e\ninferior para detectar valores inutilizáveis (outliers). O valor observado será excluído se\nestiver fora desses limites. Ao aplicar essas regras para gerar a coorte do modelo foram\nremovidas7.471observações(0,51%)classificadascomovaloresatípicosextremos.",
+        "chunk_ids": [
+          "art-002-b0026-c000"
+        ],
+        "required_group": "q-002-m05-g1"
+      },
+      {
+        "doc_id": "art-002",
+        "page": 9,
+        "section": "3.4.2. Agregação dos Dados por Hora e Tratamento de Dados Ausentes",
+        "quote": "Os modelos de Aprendizado de Máquina aplicados a séries temporais têm uma\nperformancedeclassificaçãomelhorquandorecebemcomoentradadadoscomrepresen-\ntações de tempo discretizadas [Facelietal. 2021]. Dessa forma, com o objetivo de obter\numarepresentaçãomaisdensadosdadosfisiológicosdeformaaoportunizarumamelhor\ninferência pelos algoritmos, as observações de cada série temporal foram agregadas em\nintervalosdehoraemhoraatravésdocálculodamediana.\nComo estratégia para evitar a geração de viés no modelo, os dados ausentes não\nforam substituídos por valores estimados. A abordagem utilizada foi incluir apenas\npacientes com um alto percentual de informações completas, sendo então selecionados\npacientes onde todas as variáveis foram registradas pelo menos uma vez em três horários\ndiferentes dentro da janela de tempo de medição. Esta imposição resultou em um con-\njuntodedadoscom6.184pacientesnajaneladetempode48he4.979pacientesnajanela\nde24h.",
+        "chunk_ids": [
+          "art-002-b0029-c000"
+        ],
+        "required_group": "q-002-m05-g2"
+      },
+      {
+        "doc_id": "art-002",
+        "page": 9,
+        "section": "3.5. Construção de Recursos",
+        "quote": "A construção de recursos aborda o problema de encontrar a transformação de variáveis\nquepossuamamaiorquantidadedeinformaçõesúteis. Comoassériestemporaispresen-\ntesnobancodedadosutilizadonessetrabalhocontémumgrandenúmerodeinformações\nausentes,omodelopropostocalculaosdadosestatísticosresumidos(valormínimo,valor\nmáximo, desvio padrão, variância, média e mediana) de cada uma das variáveis dentro\nda janela de tempo estipulada (24 ou 48 horas). Esta estratégia reduz a complexidade do\nmodelo,poisutilizainformaçõesmaisrelevantescomoentradaparaatarefadeprevisão.",
+        "chunk_ids": [
+          "art-002-b0030-c000"
+        ],
+        "required_group": "q-002-m05-g3"
+      },
+      {
+        "doc_id": "art-002",
+        "page": 9,
+        "section": "3.6. Balanceamento das Classes",
+        "quote": "Nestetrabalhoforamexperimentadastrêsdiferentesestratégiasdebalanceamento\nentre as classes: (i) random oversampling: sobreamostragem aleatória da classe minori-\ntária (método escolhido); (ii) random downsampling: seleciona e remove aleatoriamente\namostras da classe majoritária; e, (iii) SMOTE (Synthetic Minority Oversampling Techni-\nque): geraçãodeexemplossintéticosdetreinamentodaclasseminoritária.",
+        "chunk_ids": [
+          "art-002-b0031-c000"
+        ],
+        "required_group": "q-002-m05-g4"
+      },
+      {
+        "doc_id": "art-002",
+        "page": 10,
+        "section": "3.7. Normalização",
+        "quote": "Muitos métodos de Aprendizado de Máquina exigem que as variáveis selecionadas este-\njamnamesmaescalaparaumdesempenhoideal[Facelietal. 2021]. Ométodochamado\n“min-max”foiescolhido,atravésdoqualosvaloresforamtransformadosparaumaescala\nmínimo-zeroemáximo-um.",
+        "chunk_ids": [
+          "art-002-b0032-c000"
+        ],
+        "required_group": "q-002-m05-g5"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-002-m05-g1",
+        "question_id": "q-002-m05",
+        "required": true,
+        "description": "Limpeza de valores discrepantes.",
+        "chunk_ids": [
+          "art-002-b0026-c000"
+        ]
+      },
+      {
+        "group_id": "q-002-m05-g2",
+        "question_id": "q-002-m05",
+        "required": true,
+        "description": "Agregação horária pela mediana e seleção por completude sem imputação.",
+        "chunk_ids": [
+          "art-002-b0029-c000"
+        ]
+      },
+      {
+        "group_id": "q-002-m05-g3",
+        "question_id": "q-002-m05",
+        "required": true,
+        "description": "Construção de estatísticas resumidas.",
+        "chunk_ids": [
+          "art-002-b0030-c000"
+        ]
+      },
+      {
+        "group_id": "q-002-m05-g4",
+        "question_id": "q-002-m05",
+        "required": true,
+        "description": "Balanceamento por random oversampling.",
+        "chunk_ids": [
+          "art-002-b0031-c000"
+        ]
+      },
+      {
+        "group_id": "q-002-m05-g5",
+        "question_id": "q-002-m05",
+        "required": true,
+        "description": "Normalização min-max.",
+        "chunk_ids": [
+          "art-002-b0032-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 288,
+        "last_line": 297
+      },
+      {
+        "first_line": 316,
+        "last_line": 328
+      },
+      {
+        "first_line": 330,
+        "last_line": 336
+      },
+      {
+        "first_line": 350,
+        "last_line": 354
+      },
+      {
+        "first_line": 359,
+        "last_line": 362
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t01",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 1,
+        "section": "Resumo",
+        "quote": "Resumo. A ferrugem asia´tica e´ uma doenc¸a causada pelo fungo Phakopsora\npachyrhizi; tendo a soja como um de seus hospedeiros, e seu aparecimento de-",
+        "chunk_ids": [
+          "art-003-b0000-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 23,
+        "last_line": 24
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t02",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 1,
+        "section": "Resumo",
+        "quote": "pendente de mu´ltiplas varia´veis do ambiente. Este trabalho propo˜e o uso de\nmodelos de aprendizado de ma´quina estado-da-arte para prever a severidade\nda ferrugem asia´tica em lavouras de soja. Combinamos dados geolo´gicos e",
+        "chunk_ids": [
+          "art-003-b0000-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 25,
+        "last_line": 27
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t03",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 3,
+        "section": "3.1. Coleta de Dados",
+        "quote": "Noestudo,aseveridadee´ quantificadacomoumame´diapercentualparaolotede\ncultivo,levandoemconsiderac¸a˜oaporcentagemdaa´reaafetadapelaferrugemnasfolhas\nremanescentesdasplantas,sendoatribu´ıdoovalorde100%emcasosdecopascompleta-\nmente desfolhadas [Barroandet. al. 2021]. Adicionalmente, sa˜o fornecidas informac¸o˜es",
+        "chunk_ids": [
+          "art-003-b0006-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 113,
+        "last_line": 116
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t04",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 3,
+        "section": "3.1. Coleta de Dados",
+        "quote": "Os dados de plantac¸o˜es utilizados para determinar a severidade da ferrugem asia´tica fo-\nram obtidos de testes cooperativos de fungicidas coordenados pelo Conso´rcio Antiferru-\ngem [Barroandet. al. 2021]. Esses dados abrangem 10 estados brasileiros (Bahia [BA],\nDistritoFederal[DF],Tocantins[TO],Goia´s[GO],MinasGerais[MG],MatoGrossodo\nSul [MS], Mato Grosso [MT], Sa˜o Paulo [SP], Parana´ [PR], e Rio Grande do Sul [RS]),\ncomcolheitasdasafrade2014/15ate´ 2019/20.",
+        "chunk_ids": [
+          "art-003-b0006-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 107,
+        "last_line": 112
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t05",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Resposta reproduz a contagem declarada pelo artigo. A enumeração inclui o Distrito Federal entre os dez; editorialmente são nove estados e o DF, não corrigimos silenciosamente o texto-fonte.",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 3,
+        "section": "3.1. Coleta de Dados",
+        "quote": "gem [Barroandet. al. 2021]. Esses dados abrangem 10 estados brasileiros (Bahia [BA],\nDistritoFederal[DF],Tocantins[TO],Goia´s[GO],MinasGerais[MG],MatoGrossodo\nSul [MS], Mato Grosso [MT], Sa˜o Paulo [SP], Parana´ [PR], e Rio Grande do Sul [RS]),\ncomcolheitasdasafrade2014/15ate´ 2019/20.",
+        "chunk_ids": [
+          "art-003-b0006-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 109,
+        "last_line": 112
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t06",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 3,
+        "section": "3.1. Coleta de Dados",
+        "quote": "gem [Barroandet. al. 2021]. Esses dados abrangem 10 estados brasileiros (Bahia [BA],\nDistritoFederal[DF],Tocantins[TO],Goia´s[GO],MinasGerais[MG],MatoGrossodo\nSul [MS], Mato Grosso [MT], Sa˜o Paulo [SP], Parana´ [PR], e Rio Grande do Sul [RS]),\ncomcolheitasdasafrade2014/15ate´ 2019/20.",
+        "chunk_ids": [
+          "art-003-b0006-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 109,
+        "last_line": 112
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t07",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 3,
+        "section": "3.1. Coleta de Dados",
+        "quote": "valores clima´ticos referentes aos meses de novembro e dezembro do ano da safra, uma\nvezqueessee´ oper´ıodoreferenteapre´-colheita.",
+        "chunk_ids": [
+          "art-003-b0006-c001"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 125,
+        "last_line": 126
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t08",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 3,
+        "section": "3.1. Coleta de Dados",
+        "quote": "Entre os dados utilizados para enriquecimento foram utilizados dados clima´ticos\nrelacionadosaoper´ıododasafradecadacidade. Osdadosesta˜odispon´ıveisnopacoteda\nlinguagem R, brclimr [Saldanhaetal. 2023]. Foram utilizados o desvio padra˜o e valores\nma´ximos, m´ınimos e me´dios mensais de precipitac¸a˜o, evapotranspirac¸a˜o, temperatura\nm´ınima, temperatura ma´xima, radiac¸a˜o solar, e umidade relativa do ar. Foram usados os",
+        "chunk_ids": [
+          "art-003-b0006-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 120,
+        "last_line": 124
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t09",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 4,
+        "section": "3.2. Tratamento de Dados",
+        "quote": "dados obtidos do pacote brclimr, foi usado o co´digo dos mu-\nnic´ıpios(atribuidospeloIBGE)ondeasplantac¸o˜esocorreram. Foramseparadoosvalores\nde desvio padra˜o e valores ma´ximos, m´ınimos e me´dios para cada diferente combinac¸a˜o\ndemunic´ıpio,meˆseano. Foramselecionadososvaloresreferentesapre´-colheitadecada\nsafra, nos meses de novembro e dezembro, e os valores foram acrescentados ao conjunto\ndedadosdeseveridade.",
+        "chunk_ids": [
+          "art-003-b0007-c001"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 155,
+        "last_line": 160
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t10",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 4,
+        "section": "3.2. Tratamento de Dados",
+        "quote": "Dados referente a`s caracter´ısticas clima´ticas de uma regia˜o foram obtidos nos re-\nposito´riosdoIBGE.Essesconjuntossa˜odisponibilizadosemarquivosnoformato“.shp”\nque e´ um tipo de arquivo comumente utilizado por sistemas de informac¸o˜es geogra´ficas.\nA informac¸a˜o contida dentro desse tipo de arquivo sa˜o descric¸o˜es de como desenhar de-\nterminadasregio˜esedepoisquaisasinformac¸o˜esrelacionadasadeterminadaregia˜o.",
+        "chunk_ids": [
+          "art-003-b0007-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 142,
+        "last_line": 146
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t11",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 5,
+        "section": "3.3. Modelos Utilizados",
+        "quote": "Outros modelos utilizados baseados em A´rvores de Decisa˜o sa˜o o XGBoost e o\nCatBoost. A diferenc¸a desses dois para o Random Forest e´ que eles utilizam te´cnicas\nmais robustas para a combinac¸a˜o dos resultados dos diferentes Weak Learners, cha-\nmada de descida de gradiente. Essa te´cnica usa ca´lculos matema´ticos para reajustar os\nparaˆmetros dos Weak Learner para tentar melhorar o valor da previsa˜o. Ale´m disso, as\ncapacidades de explicabilidade desses dois modelos sa˜o similares aos de Random Fo-\nrest[ChenandGuestrin2016][Dorogushetal. 2018]. Comoexemplo,naFigura1e´ mos-\ntradaumadasA´rvoresdeDecisa˜ousadasinternamentepelomodelodoCatBoost.",
+        "chunk_ids": [
+          "art-003-b0009-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 182,
+        "last_line": 189
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t12",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 4,
+        "section": "3.3. Modelos Utilizados",
+        "quote": "Durante esse estudo, foram realizados testes com diferentes modelos com a intenc¸a˜o de\nencontrar quais conseguiriam obter os melhores resultados. As caracter´ısticas mais de-\nseja´veisdosmodelose´ acapacidadedeencontrarcomportamentosna˜olinearesnosdados\ne de serem explica´veis, pois esse tipo de modelo oferece mecanismos para conseguirmos\ninterpretarseusresultadoseentendermosporquefoifeitadeterminadaprevisa˜o.",
+        "chunk_ids": [
+          "art-003-b0008-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 162,
+        "last_line": 166
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t13",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "O nome SHAP é literal. A expansão inglesa usada pelo artigo não foi validada externamente e não é necessária para a resposta.",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 4,
+        "section": "3.3. Modelos Utilizados",
+        "quote": "Ale´m disso, esse modelo tem grandes capacidades de explicabilidade. Com ele\ne´ poss´ıvel obter informac¸o˜es como a importaˆncia de cada paraˆmetro e exportar uma\nrepresentac¸a˜o visual de cada um dos Weak Learners. Isso possibilita visualizar os ca-\nminhos tomados pelo modelo para chegar em uma decisa˜o. Finalmente, pode-se utilizar\numa te´cnica conhecida como SHAP (sampling-based approximation approach) que per-\nmiteobservaroquantoumatributodosdadosesta´ impactandooresultadofinal.",
+        "chunk_ids": [
+          "art-003-b0008-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 173,
+        "last_line": 178
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t14",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 5,
+        "section": "3.3. Modelos Utilizados",
+        "quote": "OutromodeloutilizadonesteestudofoiaRedeNeuralpoistambe´mapresentaboa\ncapacidadedeencontrarpadro˜esna˜olinearesemdados,entretantoseufuncionamentona˜o\ne´ baseadoemA´rvoresdedecisa˜ocomoosanteriores. Asredesneuraisforamcriadaspen-",
+        "chunk_ids": [
+          "art-003-b0009-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 191,
+        "last_line": 193
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t15",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 5,
+        "section": "3.4. Passo a passo do treinamento",
+        "quote": "No nosso pipeline de treinamento de modelos, adotamos um processo de pre´-\nprocessamento de dados, incluindo a limpeza de duplicatas, a normalizac¸a˜o de colunas\ne a eliminac¸a˜o de valores faltantes, com o objetivo de garantir a qualidade dos dados uti-\nlizados no treinamento. Ale´m disso, o processo de pre´-processamento e´ responsa´vel pela\ncombinac¸a˜o das diferentes fontes de dados para enriquecer e ampliar a diversidade das\ninformac¸o˜es utilizadas no treinamento do modelo. Para otimizac¸a˜o de hiperparaˆmetros,",
+        "chunk_ids": [
+          "art-003-b0010-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 206,
+        "last_line": 211
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t16",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "3.4. Passo a passo do treinamento",
+        "quote": "utilizamos o me´todo de grid search, que nos permitiu explorar diversas combinac¸o˜es de\nhiperparaˆmetros e selecionar aquela que resultou no melhor desempenho. Vale ressaltar\nque a me´trica que utilizamos foi o Erro Quadra´tico Me´dio (RMSE), o qual nos forneceu\numamedidadaqualidadedonossomodeloempreverosvaloresdeseveridade.",
+        "chunk_ids": [
+          "art-003-b0011-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 215,
+        "last_line": 218
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t17",
+    "status": "AMBIGUOUS_EVIDENCE",
+    "observations": "O artigo chama a métrica de Erro Quadrático Médio (RMSE), e a explicação da seção 4 descreve média de diferenças quadráticas sem raiz. RMSE e MSE são conceitualmente diferentes; preservada a resposta que reproduz o artigo, exigindo adjudicação da nomenclatura sem inferir código externo.",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "3.4. Passo a passo do treinamento",
+        "quote": "utilizamos o me´todo de grid search, que nos permitiu explorar diversas combinac¸o˜es de\nhiperparaˆmetros e selecionar aquela que resultou no melhor desempenho. Vale ressaltar\nque a me´trica que utilizamos foi o Erro Quadra´tico Me´dio (RMSE), o qual nos forneceu\numamedidadaqualidadedonossomodeloempreverosvaloresdeseveridade.",
+        "chunk_ids": [
+          "art-003-b0011-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 215,
+        "last_line": 218
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t18",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "4. Resultados",
+        "quote": "No eixo Y e´ poss´ıvel observar valor do RMSE dos modelos estudados. Como no\nnosso trabalho estamos utilizando a te´cnica de regressa˜o, esse valor e´ calculado obtendo\na me´dia das diferenc¸as ao quadrado entre o valor previsto pelo modelo e o valor real, e\nquanto menor o valor, significa que o modelo esta´ melhor ajustado e que as previso˜es\nesta˜opro´ximasdosvaloresreais.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 237,
+        "last_line": 241
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t19",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "4. Resultados",
+        "quote": "Nosgra´ficosaseguir,“T”representaosdadosdopacotebrclimr,“S”representam\nos dados de solo retirados do IBGE, “C” representa a base de dados de caracter´ısticas\nclima´ticas retirados do IBGE, “A” representa a altitude da localidade da plantac¸a˜o e “B”\ne´ abasededadossemacre´scimos.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 232,
+        "last_line": 235
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-t20",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "4. Resultados",
+        "quote": "Ao analisar o gra´fico, percebemos que o acre´scimo dos dados provenientes do\npacotebrclimr melhoramsignificativamenteoerrodetodososmodelosutilizados. Ale´m",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ],
+        "required_group": null
+      }
+    ],
+    "groups": [],
+    "source_spans": [
+      {
+        "first_line": 244,
+        "last_line": 245
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-m01",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A identidade da árvore e a capacidade interpretativa estão na prosa e legenda. A pergunta não pede ler nós, valores ou caminhos específicos da imagem.",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 5,
+        "section": "3.3. Modelos Utilizados / Figura 1",
+        "quote": "Outros modelos utilizados baseados em A´rvores de Decisa˜o sa˜o o XGBoost e o\nCatBoost. A diferenc¸a desses dois para o Random Forest e´ que eles utilizam te´cnicas\nmais robustas para a combinac¸a˜o dos resultados dos diferentes Weak Learners, cha-\nmada de descida de gradiente. Essa te´cnica usa ca´lculos matema´ticos para reajustar os\nparaˆmetros dos Weak Learner para tentar melhorar o valor da previsa˜o. Ale´m disso, as\ncapacidades de explicabilidade desses dois modelos sa˜o similares aos de Random Fo-\nrest[ChenandGuestrin2016][Dorogushetal. 2018]. Comoexemplo,naFigura1e´ mos-\ntradaumadasA´rvoresdeDecisa˜ousadasinternamentepelomodelodoCatBoost.\nFigura1. Visualizac¸a˜odeumWeakLearner domodeloCatBoost",
+        "chunk_ids": [
+          "art-003-b0009-c000"
+        ],
+        "required_group": "q-003-m01-g1"
+      },
+      {
+        "doc_id": "art-003",
+        "page": 4,
+        "section": "3.3. Modelos Utilizados",
+        "quote": "Ale´m disso, esse modelo tem grandes capacidades de explicabilidade. Com ele\ne´ poss´ıvel obter informac¸o˜es como a importaˆncia de cada paraˆmetro e exportar uma\nrepresentac¸a˜o visual de cada um dos Weak Learners. Isso possibilita visualizar os ca-\nminhos tomados pelo modelo para chegar em uma decisa˜o. Finalmente, pode-se utilizar",
+        "chunk_ids": [
+          "art-003-b0008-c000"
+        ],
+        "required_group": "q-003-m01-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-003-m01-g1",
+        "question_id": "q-003-m01",
+        "required": true,
+        "description": "A árvore ilustrada na Figura 1 é um weak learner do CatBoost.",
+        "chunk_ids": [
+          "art-003-b0009-c000"
+        ]
+      },
+      {
+        "group_id": "q-003-m01-g2",
+        "question_id": "q-003-m01",
+        "required": true,
+        "description": "A visualização de weak learners permite interpretar caminhos até decisões.",
+        "chunk_ids": [
+          "art-003-b0008-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 182,
+        "last_line": 190
+      },
+      {
+        "first_line": 173,
+        "last_line": 176
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-m02",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "Eixo e legenda são explicados textualmente; nenhuma altura de barra foi inferida. A definição matemática de RMSE na fonte é imprecisa, como registrado em q-003-t17.",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "4. Resultados",
+        "quote": "No eixo Y e´ poss´ıvel observar valor do RMSE dos modelos estudados. Como no\nnosso trabalho estamos utilizando a te´cnica de regressa˜o, esse valor e´ calculado obtendo\na me´dia das diferenc¸as ao quadrado entre o valor previsto pelo modelo e o valor real, e\nquanto menor o valor, significa que o modelo esta´ melhor ajustado e que as previso˜es\nesta˜opro´ximasdosvaloresreais.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ],
+        "required_group": "q-003-m02-g1"
+      },
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "4. Resultados",
+        "quote": "Nosgra´ficosaseguir,“T”representaosdadosdopacotebrclimr,“S”representam\nos dados de solo retirados do IBGE, “C” representa a base de dados de caracter´ısticas\nclima´ticas retirados do IBGE, “A” representa a altitude da localidade da plantac¸a˜o e “B”\ne´ abasededadossemacre´scimos.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ],
+        "required_group": "q-003-m02-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-003-m02-g1",
+        "question_id": "q-003-m02",
+        "required": true,
+        "description": "O eixo Y representa RMSE.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ]
+      },
+      {
+        "group_id": "q-003-m02-g2",
+        "question_id": "q-003-m02",
+        "required": true,
+        "description": "T=brclimr, S=solo IBGE, C=clima IBGE, A=altitude.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 237,
+        "last_line": 241
+      },
+      {
+        "first_line": 232,
+        "last_line": 235
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-m03",
+    "status": "MANUAL_VISUAL_REVIEW_REQUIRED",
+    "observations": "A resposta pré-anotada diz uma localidade/outra sem atribuir a melhora a Campo Verde ou Maracaju. A prosa sustenta heterogeneidade e dificuldade de ajuste, mas a comparação cidade a cidade das Figuras 2/3 depende das barras não extraídas. Grupos textuais são candidatos parciais; confirmar atribuição visual antes de aprovar.",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "4. Resultados",
+        "quote": "A partir dos testes realizados, foi poss´ıvel realizar algumas ana´lises. A primeira delas e´\ncomparar os gra´ficos das diferentes combinac¸o˜es para algumas cidades e ver como cada\numa delas se comporta. Nas Figuras 2 e 3 podemos observar como variam os valores do\nRMSE para duas localidades diferentes, com uma delas obtendo uma melhora significa-\ntiva, principalmente quando adicionando os dados do pacote brclim e outra com pouca\nmelhora,mesmocomacombinac¸a˜odetodasasfontesdedados.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ],
+        "required_group": "q-003-m03-g1"
+      },
+      {
+        "doc_id": "art-003",
+        "page": 7,
+        "section": "4. Resultados",
+        "quote": "Outrasituac¸a˜orelevantee´ queomodeloparatodasascidadesna˜oapresentavalo-\nres ta˜o baixos como os mostrados em casos como o de Maracaju. Isso e´ por conta de um\nfenoˆmenocausadopeloscasoscomoodeCampoVerde,emqueomodeloapresentadifi-\nculdadesparaseajustaraalgumaspartesdoconjuntosdedados. Issoafetaaperformance\ngeral do modelo elevando o valor do RMSE. Tal fenoˆmeno e´ detalhadamente estudado\nem[Chungetal. 2019].",
+        "chunk_ids": [
+          "art-003-b0014-c000"
+        ],
+        "required_group": "q-003-m03-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-003-m03-g1",
+        "question_id": "q-003-m03",
+        "required": true,
+        "description": "Duas localidades respondem de forma diferente ao enriquecimento, sobretudo brclimr.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ]
+      },
+      {
+        "group_id": "q-003-m03-g2",
+        "question_id": "q-003-m03",
+        "required": true,
+        "description": "Dificuldade de ajuste em Campo Verde contrasta com erros mais baixos em Maracaju.",
+        "chunk_ids": [
+          "art-003-b0014-c000"
+        ]
+      },
+      {
+        "group_id": "q-003-m03-g3",
+        "question_id": "q-003-m03",
+        "required": true,
+        "description": "Atribuição visual da melhora por combinação a Campo Verde versus Maracaju nas Figuras 2 e 3.",
+        "chunk_ids": []
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 226,
+        "last_line": 231
+      },
+      {
+        "first_line": 254,
+        "last_line": 259
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-m04",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A prosa descreve diretamente o contraste perguntado; não se identificou arbitrariamente qual modelo ou valor da Figura 4. O segundo trecho é continuação literal da análise da página anterior.",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "4. Resultados",
+        "quote": "Ao analisar o gra´fico, percebemos que o acre´scimo dos dados provenientes do\npacotebrclimr melhoramsignificativamenteoerrodetodososmodelosutilizados. Ale´m",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ],
+        "required_group": "q-003-m04-g1"
+      },
+      {
+        "doc_id": "art-003",
+        "page": 7,
+        "section": "4. Resultados",
+        "quote": "disso, e´ poss´ıvel observar que em um dos casos, os dados do pacote brclimr sozinhos\ntiveram resultados melhores do que com todas as bases unidas, mostrando que alguns\ndadospodemestaratrapalhandoosmodelosseajustaremcorretamente.",
+        "chunk_ids": [
+          "art-003-b0014-c000"
+        ],
+        "required_group": "q-003-m04-g2"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-003-m04-g1",
+        "question_id": "q-003-m04",
+        "required": true,
+        "description": "brclimr reduz significativamente o erro dos modelos em geral.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ]
+      },
+      {
+        "group_id": "q-003-m04-g2",
+        "question_id": "q-003-m04",
+        "required": true,
+        "description": "Em um caso brclimr sozinho supera todas as bases combinadas.",
+        "chunk_ids": [
+          "art-003-b0014-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 244,
+        "last_line": 245
+      },
+      {
+        "first_line": 251,
+        "last_line": 253
+      }
+    ]
+  },
+  {
+    "question_id": "q-003-m05",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "observations": "A cadeia de dados e a variação qualitativa entre localidades são explicitadas na prosa. Diferentemente de m03, não é necessário atribuir uma barra/cidade específica.",
+    "evidence": [
+      {
+        "doc_id": "art-003",
+        "page": 4,
+        "section": "3.2. Tratamento de Dados",
+        "quote": "Os dados passaram por processos de tratamento, para que apenas os dados necessa´rios e\nrelacionadosa`slocalidadesdesejadasfossemobtidos. Apo´sisso,essasinformac¸o˜esforam\nfundidas com o conjunto de dados principal da Embrapa de forma que fossem mantidas\nas relac¸o˜es de localidade e ano, assim, ao final desse processo, e´ obtido um conjunto de\ndados que relacionam solo, dados clima´ticos e agroto´xicos utilizados com a severidade\ndaferrugemasia´tica.",
+        "chunk_ids": [
+          "art-003-b0007-c000"
+        ],
+        "required_group": "q-003-m05-g1"
+      },
+      {
+        "doc_id": "art-003",
+        "page": 4,
+        "section": "3.2. Tratamento de Dados",
+        "quote": "nic´ıpios(atribuidospeloIBGE)ondeasplantac¸o˜esocorreram. Foramseparadoosvalores\nde desvio padra˜o e valores ma´ximos, m´ınimos e me´dios para cada diferente combinac¸a˜o\ndemunic´ıpio,meˆseano. Foramselecionadososvaloresreferentesapre´-colheitadecada\nsafra, nos meses de novembro e dezembro, e os valores foram acrescentados ao conjunto\ndedadosdeseveridade.",
+        "chunk_ids": [
+          "art-003-b0007-c001"
+        ],
+        "required_group": "q-003-m05-g2"
+      },
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "4. Resultados",
+        "quote": "Nosgra´ficosaseguir,“T”representaosdadosdopacotebrclimr,“S”representam\nos dados de solo retirados do IBGE, “C” representa a base de dados de caracter´ısticas\nclima´ticas retirados do IBGE, “A” representa a altitude da localidade da plantac¸a˜o e “B”\ne´ abasededadossemacre´scimos.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ],
+        "required_group": "q-003-m05-g3"
+      },
+      {
+        "doc_id": "art-003",
+        "page": 6,
+        "section": "4. Resultados",
+        "quote": "A partir dos testes realizados, foi poss´ıvel realizar algumas ana´lises. A primeira delas e´\ncomparar os gra´ficos das diferentes combinac¸o˜es para algumas cidades e ver como cada\numa delas se comporta. Nas Figuras 2 e 3 podemos observar como variam os valores do\nRMSE para duas localidades diferentes, com uma delas obtendo uma melhora significa-\ntiva, principalmente quando adicionando os dados do pacote brclim e outra com pouca\nmelhora,mesmocomacombinac¸a˜odetodasasfontesdedados.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ],
+        "required_group": "q-003-m05-g4"
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "q-003-m05-g1",
+        "question_id": "q-003-m05",
+        "required": true,
+        "description": "Severidade, agroquímicos, solo e clima são integrados mantendo localidade e ano.",
+        "chunk_ids": [
+          "art-003-b0007-c000"
+        ]
+      },
+      {
+        "group_id": "q-003-m05-g2",
+        "question_id": "q-003-m05",
+        "required": true,
+        "description": "Dados meteorológicos brclimr são associados pelo código municipal e safra.",
+        "chunk_ids": [
+          "art-003-b0007-c001"
+        ]
+      },
+      {
+        "group_id": "q-003-m05-g3",
+        "question_id": "q-003-m05",
+        "required": true,
+        "description": "Combinações também incluem altitude da localidade.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ]
+      },
+      {
+        "group_id": "q-003-m05-g4",
+        "question_id": "q-003-m05",
+        "required": true,
+        "description": "Efeitos sobre RMSE variam entre localidades.",
+        "chunk_ids": [
+          "art-003-b0013-c000"
+        ]
+      }
+    ],
+    "source_spans": [
+      {
+        "first_line": 136,
+        "last_line": 141
+      },
+      {
+        "first_line": 156,
+        "last_line": 160
+      },
+      {
+        "first_line": 232,
+        "last_line": 235
+      },
+      {
+        "first_line": 226,
+        "last_line": 231
+      }
+    ]
+  }
+]

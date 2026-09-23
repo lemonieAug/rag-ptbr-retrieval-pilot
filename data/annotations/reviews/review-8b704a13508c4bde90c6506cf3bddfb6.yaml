@@ -1,0 +1,11 @@
+reviews:
+- review_id: review-8b704a13508c4bde90c6506cf3bddfb6
+  target_type: question
+  target_id: q-001-t20
+  status: rejected
+  reviewer: Augusto Lemonie Gilioli
+  comments: 'Rejeicao explicitamente confirmada pelo revisor na conversa: sim. A contribuicao
+    declarada aparece no artigo, mas nao tem suporte integral no texto dos chunks
+    do corpus congelado; nao ha qrel positivo valido. Questao excluida deste benchmark,
+    sem alterar corpus ou inventar evidencia.'
+  date: '2026-09-23T18:30:59.441318+00:00'

@@ -1,8 +1,8 @@
-"""Adaptadores reais dos quatro embeddings (carregamento sob demanda).
+"""Adaptadores reais dos três embeddings (carregamento sob demanda).
 
 Formatos implementados conforme os model cards consultados (ver ``docs/decisions.md``):
 
-- ``colibri`` e ``embeddinggemma``: SentenceTransformer com ``prompt_name``
+- ``colibri``: SentenceTransformer com ``prompt_name``
   oficial (query -> ``task: search result | query: ``; document ->
   ``title: none | text: ``). Pooling/normalização gerenciados pela própria ST.
 - ``e5``: transformers, instruction na consulta
@@ -12,8 +12,7 @@ Formatos implementados conforme os model cards consultados (ver ``docs/decisions
   (``Instruct: {task}\\nQuery:{query}``), documento sem instruction,
   last-token pooling (pooling oficial) + normalize.
 
-EmbeddingGemma usa FP32/BF16 (nunca FP16 — incompatibilidade documentada das
-ativações). Todos carregam de cache local e falham com instrução útil se ausente.
+Todos carregam de cache local e falham com instrução útil se ausente.
 """
 
 from __future__ import annotations
@@ -25,6 +24,7 @@ import numpy as np
 from ..errors import ConfigError, MissingArtifactError
 from .base import EmbeddingAdapter, resolve_device, resolve_dtype
 from .specs import EmbeddingSpec
+from .local import local_checkpoint
 from .tokenizers import count_document_tokens, count_query_tokens, load_tokenizer
 
 
@@ -58,7 +58,7 @@ def _import_missing() -> None:
 
 
 class SentenceTransformerEmbedding(EmbeddingAdapter):
-    """colibri / embeddinggemma — usa os prompt_name oficiais da ST."""
+    """colibri — usa os prompt_name oficiais da ST."""
 
     def load(self) -> None:
         try:
@@ -66,17 +66,17 @@ class SentenceTransformerEmbedding(EmbeddingAdapter):
         except ImportError:
             _import_missing()
 
+        checkpoint_path = local_checkpoint(self.checkpoint, self.cache_dir)
         device = resolve_device(self.device)
         dtype = resolve_dtype(self.dtype, device)
-        # EmbeddingGemma: garantir que nunca rode em FP16 (incompatibilidade
-        # documentada das ativações) — forçar BF16 com fallback para FP32.
-        if self.spec.fp16_incompatible and getattr(dtype, "__name__", "") == "float16":
+        # Respect precision restrictions declared by a model specification.
+        if self.spec.fp16_incompatible and str(dtype) == "torch.float16":
             dtype = resolve_dtype("bf16", device)
         model_kwargs: dict[str, Any] = {"local_files_only": True, "torch_dtype": dtype}
         tokenizer_kwargs: dict[str, Any] = {"local_files_only": True}
         try:
             self._model = SentenceTransformer(
-                self.checkpoint,
+                checkpoint_path,
                 cache_folder=self.cache_dir,
                 device=device,
                 local_files_only=True,
@@ -98,7 +98,6 @@ class SentenceTransformerEmbedding(EmbeddingAdapter):
 
             import torch
 
-            self._model.to("cpu")
             del self._model
             self._model = None
             if torch.cuda.is_available():
@@ -147,11 +146,13 @@ class HFTransformersEmbedding(EmbeddingAdapter):
         except ImportError:
             _import_missing()
 
+        checkpoint_path = local_checkpoint(self.checkpoint, self.cache_dir)
         device = resolve_device(self.device)
         dtype = resolve_dtype(self.dtype, device)
         model_kwargs: dict[str, Any] = {
             "local_files_only": True,
             "torch_dtype": dtype,
+            "low_cpu_mem_usage": True,
         }
         if self.cache_dir:
             model_kwargs["cache_dir"] = self.cache_dir
@@ -162,8 +163,8 @@ class HFTransformersEmbedding(EmbeddingAdapter):
             tok_kwargs["padding_side"] = "left"
 
         try:
-            self._tokenizer = AutoTokenizer.from_pretrained(self.checkpoint, **tok_kwargs)
-            self._model = AutoModel.from_pretrained(self.checkpoint, **model_kwargs)
+            self._tokenizer = AutoTokenizer.from_pretrained(checkpoint_path, **tok_kwargs)
+            self._model = AutoModel.from_pretrained(checkpoint_path, **model_kwargs)
         except Exception as exc:
             raise MissingArtifactError(
                 f"Falha ao carregar {self.checkpoint!r} do cache local. "
@@ -183,7 +184,6 @@ class HFTransformersEmbedding(EmbeddingAdapter):
 
             import torch
 
-            self._model.to("cpu")
             del self._model
             self._model = None
             if torch.cuda.is_available():
@@ -198,6 +198,16 @@ class HFTransformersEmbedding(EmbeddingAdapter):
         })
 
     def _encode(self, texts: list[str], template: str) -> np.ndarray:
+        if not texts:
+            return np.zeros((0, self.dimension or 0), dtype=np.float32)
+        # Bound activation memory independently of corpus size.
+        batch_size = 2
+        return np.concatenate([
+            self._encode_batch(texts[start:start + batch_size], template)
+            for start in range(0, len(texts), batch_size)
+        ], axis=0)
+
+    def _encode_batch(self, texts: list[str], template: str) -> np.ndarray:
         import torch
         import torch.nn.functional as F
 
@@ -225,13 +235,13 @@ class HFTransformersEmbedding(EmbeddingAdapter):
         )
         batch = {k: v.to(self._device) for k, v in batch.items()}
         with torch.no_grad():
-            outputs = self._model(**batch)
+            outputs = self._model(**batch, use_cache=False)
         if self.spec.pooling == "mean":
             emb = _mean_pool(outputs.last_hidden_state, batch["attention_mask"])
         else:
             emb = _last_token_pool(outputs.last_hidden_state, batch["attention_mask"])
         emb = F.normalize(emb, p=2, dim=1)
-        return emb.detach().cpu().numpy().astype(np.float32)
+        return emb.detach().float().cpu().numpy()
 
     def encode_queries(self, texts: list[str]) -> np.ndarray:
         return self._encode(texts, self.spec.query_template)
