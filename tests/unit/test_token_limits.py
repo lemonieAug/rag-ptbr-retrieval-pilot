@@ -14,7 +14,7 @@ from rag_ptbr_pilot.indexing.store import (
 
 def test_binding_limit_is_e5_512():
     specs = [get_embedding_spec(n) for n in
-             ["colibri", "embeddinggemma", "qwen_embedding", "e5"]]
+             ["colibri", "qwen_embedding", "e5"]]
     name, limit = compute_binding(specs)
     assert name == "e5"
     assert limit == 512

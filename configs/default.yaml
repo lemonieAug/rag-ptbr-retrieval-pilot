@@ -45,12 +45,14 @@ retrieval:
   cosine_similarity: true
 
 models:
-  embeddings: [colibri, embeddinggemma, qwen_embedding, e5]
+  # embeddinggemma removido: modelo gated (exige HF_TOKEN + aceite de termos),
+  # inviável para reprodução local sem dependência de autenticação externa.
+  # Só embeddings de acesso livre (download único, sem gate) são usados.
+  embeddings: [colibri, qwen_embedding, e5]
   cache_dir: artifacts/models
   device: auto                 # auto | cuda | cpu
   dtype:
     colibri: fp32
-    embeddinggemma: bf16        # NUNCA fp16 (incompatibilidade documentada)
     qwen_embedding: fp16
     e5: fp32
   reranker:

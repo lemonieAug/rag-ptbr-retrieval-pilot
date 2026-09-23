@@ -28,9 +28,10 @@ O reranker não recupera evidência ausente dos candidatos recebidos.
 - Revisão humana de 100% das perguntas/respostas/evidências usadas nas métricas.
 - Todo o corpus é de desenvolvimento; o estudo posterior usará teste separado.
 
-## 3. Matriz experimental (18 configurações)
+## 3. Matriz experimental (14 configurações)
 
-`2 + 4×4` com 4 embeddings. Baselines centrais e ablações:
+`2 + 3×4` com 3 embeddings (colibri, qwen_embedding, e5 — embeddinggemma
+removido por ser gated). Baselines centrais e ablações:
 
 | Recuperação inicial | Sem reranker | Com reranker |
 | --- | --- | --- |
@@ -66,7 +67,6 @@ Comparações (por embedding):
 | Nome config | Checkpoint | Template/pooling |
 | --- | --- | --- |
 | colibri | `tardellirs/colibri-embed-ptbr` | ST prompt_name query/document |
-| embeddinggemma | `google/embeddinggemma-300m` | ST prompt_name query/document; FP32/BF16 |
 | qwen_embedding | `Qwen/Qwen3-Embedding-4B` | instruction na consulta + last-token pool |
 | e5 | `intfloat/multilingual-e5-large-instruct` | instruction na consulta + mean pool; 512 tokens |
 

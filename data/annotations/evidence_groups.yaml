@@ -1,0 +1,130 @@
+# Grupos de evidencia obrigatorios (pre-anotacao v0) para as perguntas
+# multi_evidence do banco de perguntas v0. Cada grupo == 1 combinacao
+# texto+tabela/figura citada na coluna Evidencia original. chunk_ids fica
+# vazio ate o congelamento dos chunks (`rag-ptbr chunk`).
+evidence_groups:
+- group_id: q-001-m01-g1
+  question_id: q-001-m01
+  required: true
+  description: Seção 4.1 + Figura 1
+  chunk_ids: []
+- group_id: q-001-m02-g1
+  question_id: q-001-m02
+  required: true
+  description: Seção 5.1 + Tabela 1
+  chunk_ids: []
+- group_id: q-001-m03-g1
+  question_id: q-001-m03
+  required: true
+  description: Seções 5.1-5.2 + Tabela 2
+  chunk_ids: []
+- group_id: q-001-m04-g1
+  question_id: q-001-m04
+  required: true
+  description: Seção 6 + Tabela 3
+  chunk_ids: []
+- group_id: q-001-m05-g1
+  question_id: q-001-m05
+  required: true
+  description: Seções 6-7 + Tabela 3
+  chunk_ids: []
+- group_id: q-002-m01-g1
+  question_id: q-002-m01
+  required: true
+  description: Seção 3.4.2 + Tabela 2
+  chunk_ids: []
+- group_id: q-002-m02-g1
+  question_id: q-002-m02
+  required: true
+  description: Seção 4 + Tabela 3
+  chunk_ids: []
+- group_id: q-002-m03-g1
+  question_id: q-002-m03
+  required: true
+  description: Seção 4 + Figura 2 + Tabela 3
+  chunk_ids: []
+- group_id: q-002-m04-g1
+  question_id: q-002-m04
+  required: true
+  description: Seção 4 + Tabela 1
+  chunk_ids: []
+- group_id: q-002-m05-g1
+  question_id: q-002-m05
+  required: true
+  description: Seções 3.3-3.7 + Figura 1
+  chunk_ids: []
+- group_id: q-003-m01-g1
+  question_id: q-003-m01
+  required: true
+  description: Seção 3.3 + Figura 1
+  chunk_ids: []
+- group_id: q-003-m02-g1
+  question_id: q-003-m02
+  required: true
+  description: Seção 4 + Figura 2
+  chunk_ids: []
+- group_id: q-003-m03-g1
+  question_id: q-003-m03
+  required: true
+  description: Seção 4 + Figuras 2 e 3
+  chunk_ids: []
+- group_id: q-003-m04-g1
+  question_id: q-003-m04
+  required: true
+  description: Seção 4 + Figura 4
+  chunk_ids: []
+- group_id: q-003-m05-g1
+  question_id: q-003-m05
+  required: true
+  description: Seções 3.1-3.2 e 4 + Figuras 2-4
+  chunk_ids: []
+- group_id: q-004-m01-g1
+  question_id: q-004-m01
+  required: true
+  description: Seção 4 + Figura 1
+  chunk_ids: []
+- group_id: q-004-m02-g1
+  question_id: q-004-m02
+  required: true
+  description: Seção 2 + Tabela 1
+  chunk_ids: []
+- group_id: q-004-m03-g1
+  question_id: q-004-m03
+  required: true
+  description: Seção 5 + Figura 3
+  chunk_ids: []
+- group_id: q-004-m04-g1
+  question_id: q-004-m04
+  required: true
+  description: Seção 5 + Figura 4
+  chunk_ids: []
+- group_id: q-004-m05-g1
+  question_id: q-004-m05
+  required: true
+  description: Seção 5 + Tabela 4
+  chunk_ids: []
+- group_id: q-005-m01-g1
+  question_id: q-005-m01
+  required: true
+  description: Seção 3.1 + Tabela 2
+  chunk_ids: []
+- group_id: q-005-m02-g1
+  question_id: q-005-m02
+  required: true
+  description: Seção 3 + Figura 1
+  chunk_ids: []
+- group_id: q-005-m03-g1
+  question_id: q-005-m03
+  required: true
+  description: Seção 3.1 + Figura 2
+  chunk_ids: []
+- group_id: q-005-m04-g1
+  question_id: q-005-m04
+  required: true
+  description: Seção 3.3 + Figura 4
+  chunk_ids: []
+- group_id: q-005-m05-g1
+  question_id: q-005-m05
+  required: true
+  description: Seções 4-4.1 + Tabela 3
+  chunk_ids: []

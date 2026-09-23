@@ -51,6 +51,6 @@ def test_config_loading_without_models():
     assert cfg.retrieval.top_n == 50
     assert cfg.metrics.primary == "ndcg@10"
     assert set(cfg.effective_embeddings()) == {
-        "colibri", "embeddinggemma", "qwen_embedding", "e5"}
+        "colibri", "qwen_embedding", "e5"}
     for mod in ("torch", "transformers", "sentence_transformers"):
         assert mod not in sys.modules

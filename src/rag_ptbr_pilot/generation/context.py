@@ -103,6 +103,13 @@ def assemble_context(ranked_ids: list[str],
         used += cost
         asm.included_chunk_ids.append(cid)
 
+    if candidates and not asm.included_chunk_ids:
+        raise ConfigError(
+            "Orçamento de contexto insuficiente para incluir qualquer evidência "
+            f"do top-{top_k} (budget={budget}). Aumente context_budget_tokens ou "
+            "reduza response_reserve_tokens/prompt."
+        )
+
     asm.context_text = "\n".join(parts)
     asm.context_tokens = used
     asm.total_estimated_tokens = prompt_tokens + used + response_reserve_tokens

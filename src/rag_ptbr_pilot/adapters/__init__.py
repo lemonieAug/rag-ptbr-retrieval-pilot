@@ -5,7 +5,8 @@ Importar este módulo NÃO carrega torch/transformers (imports sob demanda).
 
 from __future__ import annotations
 
-from ..config import AppConfig
+from typing import TYPE_CHECKING
+
 from .base import EmbeddingAdapter, RerankerAdapter
 from .embeddings import build_embedding_adapter
 from .reranker import build_reranker
@@ -17,6 +18,9 @@ from .specs import (
     EmbeddingSpec,
     RerankerSpec,
 )
+
+if TYPE_CHECKING:
+    from ..config import AppConfig
 
 __all__ = [
     "EmbeddingAdapter",

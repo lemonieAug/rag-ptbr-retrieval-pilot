@@ -138,7 +138,7 @@ class ModelsConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     embeddings: list[str] = Field(
-        default_factory=lambda: ["colibri", "embeddinggemma", "qwen_embedding", "e5"]
+        default_factory=lambda: ["colibri", "qwen_embedding", "e5"]
     )
     cache_dir: str = "artifacts/models"
     device: str = "auto"         # auto | cuda | cpu

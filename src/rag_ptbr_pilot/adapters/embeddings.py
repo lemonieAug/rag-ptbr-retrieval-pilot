@@ -79,6 +79,7 @@ class SentenceTransformerEmbedding(EmbeddingAdapter):
                 self.checkpoint,
                 cache_folder=self.cache_dir,
                 device=device,
+                local_files_only=True,
                 model_kwargs=model_kwargs,
                 tokenizer_kwargs=tokenizer_kwargs,
             )

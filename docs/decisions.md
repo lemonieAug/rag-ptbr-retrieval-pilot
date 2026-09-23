@@ -14,13 +14,18 @@ resolvidos em `rag-ptbr prepare-models` e gravados no manifesto de execução.
   outra variável experimental).
 - Fonte: [model card](https://huggingface.co/tardellirs/colibri-embed-ptbr).
 
-### EmbeddingGemma — `google/embeddinggemma-300m`
-- Mesma convenção de prompts do Colibri (query/document) — confirmada na doc
-  oficial do Google: `query: "task: search result | query: "` e
-  `document: "title: none | text: "`.
-- **FP32 ou BF16** (o card informa incompatibilidade das ativações com FP16);
-  o adapter força BF16 com fallback para FP32 se o device não suportar BF16.
-- Modelo **gated** (licença Gemma): requer `HF_TOKEN` + aceite dos termos.
+### EmbeddingGemma — `google/embeddinggemma-300m` (REMOVIDO do piloto)
+- **Decisão revertida na primeira execução:** o modelo é **gated** (licença
+  Gemma, requer `HF_TOKEN` + aceite dos termos), e essa dependência de
+  autenticação externa se mostrou pouco confiável para reprodução offline —
+  o download inicial baixou só o `README.md` do repo e falhou silenciosamente
+  nos arquivos reais do modelo (erro 401 só apareceu depois, na etapa de
+  `index`). Trocado por usar apenas os 3 embeddings de acesso livre
+  (colibri, qwen_embedding, e5); ver `configs/default.yaml`.
+- Registro do formato original (não usado em execução): mesma convenção de
+  prompts do Colibri (query/document) — confirmada na doc oficial do Google:
+  `query: "task: search result | query: "` e `document: "title: none | text: "`.
+  FP32 ou BF16 (ativações incompatíveis com FP16).
 - Fontes: [model card](https://huggingface.co/google/embeddinggemma-300m) e
   [doc Google EmbeddingGemma + Sentence Transformers](https://ai.google.dev/gemma/docs/embeddinggemma/inference-embeddinggemma-with-sentence-transformers).
 
@@ -91,11 +96,8 @@ resolvidos em `rag-ptbr prepare-models` e gravados no manifesto de execução.
 ## 5. A resolver na preparação (quando você executar)
 
 - Revisões/hashes reais dos checkpoints (`prepare-models` grava `revisions.json`).
-- Verificação do `prompt_name` de documento do EmbeddingGemma (`document` vs
-  `passage`) contra `model.prompts` carregado — o código usa `document` (confirmado
-  na doc Google), com nota para conferir.
-- Limites de entrada de colibri/embeddinggemma (marcados `None`); o limite
-  vinculante é o do E5 (512), então o chunking não depende deles.
+- Limite de entrada do colibri (marcado `None`); o limite vinculante é o do E5
+  (512), então o chunking não depende dele.
 - Contagem exata de tokens na geração: o padrão usa o tokenizer de referência
   (aproximação documentada); troque por um contador com o tokenizer real do
   gerador se precisar de precisão.

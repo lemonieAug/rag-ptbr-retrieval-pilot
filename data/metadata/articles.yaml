@@ -1,0 +1,77 @@
+# Metadados dos artigos do corpus.
+# doc_id é estável (usado em chunks e evidências). pdf_filename é o arquivo em
+# data/raw/articles/. venue e pages a confirmar manualmente (não localizados
+# de forma confiável por extração automática do PDF nesta pré-anotação).
+articles:
+  - doc_id: art-001
+    title: "Reconhecimento de entidades nomeadas em documentos jurídicos em português utilizando redes neurais"
+    authors:
+      - "Caio C. R. Mota"
+      - "André C. A. Nascimento"
+      - "Péricles B. C. Miranda"
+      - "Rafael Ferreira Mello"
+      - "Isabel W. S. Maldonado"
+      - "José L. M. Coelho Filho"
+    year: 2021
+    venue: null
+    language: pt-BR
+    pdf_filename: art-001_ner_juridico_ptbr.pdf
+    pages: 11
+    notes: "Fonte original: 18247-949-14719-1-10-20211207.pdf. Venue/DOI não confirmados — verificar manualmente."
+
+  - doc_id: art-002
+    title: "Mortalidade em Unidades de Terapia Intensiva: uma Abordagem para Predição Explorando Aprendizado de Máquina"
+    authors:
+      - "Alexandre Renato Rodrigues de Souza"
+      - "Fabrício Neitzke Ferreira"
+      - "Rodrigo Blanke Lambrecht"
+      - "Leonardo Costa Reichow"
+      - "Rogério da Costa Albandes"
+      - "Adenauer Correa Yamin"
+    year: 2022
+    venue: null
+    language: pt-BR
+    pdf_filename: art-002_mortalidade_uti_ml.pdf
+    pages: 12
+    notes: "Fonte original: 21631-673-17571-1-10-20220908.pdf. Venue/DOI não confirmados — verificar manualmente."
+
+  - doc_id: art-003
+    title: "Utilizando Aprendizado de Máquina Explicável para Previsão de Severidade de Ferrugem Asiática da Soja"
+    authors:
+      - "Christofer Daniel"
+      - "Guilherme Maturana"
+      - "Eduardo H. M. Pena"
+    year: 2023
+    venue: null
+    language: pt-BR
+    pdf_filename: art-003_ferrugem_asiatica_soja.pdf
+    pages: 8
+    notes: "Fonte original: 26536-2162-21910-1-10-20231212.pdf. Venue/DOI não confirmados — verificar manualmente."
+
+  - doc_id: art-004
+    title: "Algoritmo Baseado em Aprendizado de Máquina para Alocação de Núcleo em Redes Ópticas Elásticas com Multiplexação Espacial"
+    authors:
+      - "Jurandir C. Lacerda Jr."
+      - "Adolfo V. T. Cartaxo"
+      - "André C. B. Soares"
+    year: 2022
+    venue: null
+    language: pt-BR
+    pdf_filename: art-004_alocacao_nucleo_sdm_eon.pdf
+    pages: 14
+    notes: "Fonte original: 21162-157-17136-1-10-20220805.pdf. Venue/DOI não confirmados — verificar manualmente."
+
+  - doc_id: art-005
+    title: "Redes DenseNet com Mecanismos de Atenção Múltipla aplicadas à Classificação Automática de Câncer Peniano em Imagens Histopatológicas"
+    authors:
+      - "João Guilherme Araujo do Vale"
+      - "Italo Francyles Santos da Silva"
+      - "Caio Eduardo Falcão Matos"
+      - "Geraldo Braz Júnior"
+      - "Marcos Gabriel Mendes Lauande"
+    year: 2024
+    venue: null
+    language: pt-BR
+    pdf_filename: art-005_densenet_cancer_peniano.pdf
+    pages: 12
+    notes: "Fonte original: 28843-673-23460-1-10-20240610.pdf. Venue/DOI não confirmados — verificar manualmente."

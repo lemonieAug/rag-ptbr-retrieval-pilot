@@ -3,9 +3,10 @@
 Nenhuma outra etapa baixa modelos silenciosamente: os adaptadores carregam
 com ``local_files_only=True`` e falham com instrução útil se o artefato faltar.
 
-``rag-ptbr prepare-models`` baixa os 4 embeddings + o reranker para o cache
-local e grava as revisões reais em ``artifacts/models/revisions.json`` (para o
-manifesto de execução). O EmbeddingGemma é gated e exige ``HF_TOKEN``.
+``rag-ptbr prepare-models`` baixa os embeddings ativos (config: colibri,
+qwen_embedding, e5 — todos de acesso livre) + o reranker para o cache local e
+grava as revisões reais em ``artifacts/models/revisions.json`` (para o
+manifesto de execução).
 """
 
 from __future__ import annotations

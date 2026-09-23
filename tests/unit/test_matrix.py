@@ -2,12 +2,12 @@
 
 from rag_ptbr_pilot.retrieval.matrix import build_matrix, select_matrix
 
-EMBEDDINGS = ["colibri", "embeddinggemma", "qwen_embedding", "e5"]
+EMBEDDINGS = ["colibri", "qwen_embedding", "e5"]
 
 
-def test_full_matrix_is_18_for_4_embeddings():
+def test_full_matrix_is_14_for_3_embeddings():
     specs = build_matrix(EMBEDDINGS)
-    assert len(specs) == 18  # 2 + 4*4
+    assert len(specs) == 14  # 2 + 3*4
     ids = [s.config_id for s in specs]
     assert "bm25" in ids
     assert "bm25_rerank" in ids

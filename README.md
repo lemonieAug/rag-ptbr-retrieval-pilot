@@ -43,10 +43,15 @@ busca densa exata (NumPy) → fusão híbrida (RRF) → reranker → métricas/r
 | Densa | `dense_<e>` | `dense_<e>_rerank` |
 | Híbrida (RRF) | `hybrid_<e>` | `hybrid_<e>_rerank` |
 
-Com 4 embeddings (colibri, embeddinggemma, qwen_embedding, e5), a matriz completa
-tem **18 configurações** (`2 + 4×4`). BM25 e BM25+reranker independem do
-embedding. Use `rag-ptbr matrix` para listar e `experiments.select` no YAML para
-escolher um subconjunto (por substring do id).
+Com 3 embeddings (colibri, qwen_embedding, e5), a matriz completa tem **14
+configurações** (`2 + 3×4`). BM25 e BM25+reranker independem do embedding. Use
+`rag-ptbr matrix` para listar e `experiments.select` no YAML para escolher um
+subconjunto (por substring do id).
+
+> **EmbeddingGemma removido do piloto:** o modelo é *gated* (exige `HF_TOKEN` +
+> aceite dos termos de licença) e essa dependência de autenticação externa
+> quebrou a reprodução offline. O piloto usa apenas embeddings de acesso livre,
+> sem necessidade de token/API para baixar ou carregar os checkpoints.
 
 ## 3. Preparação do ambiente
 
@@ -71,7 +76,7 @@ pip install -e ".[ingest,models,generate,dev]"
 Copie variáveis de ambiente (opcional, para credenciais/cache):
 
 ```bash
-cp .env.example .env   # preencha HF_TOKEN para o EmbeddingGemma (gated)
+cp .env.example .env   # HF_TOKEN não é necessário (nenhum checkpoint usado é gated)
 ```
 
 ## 4. Obtenção dos modelos (explícita)
@@ -89,13 +94,14 @@ revisões reais em `artifacts/models/revisions.json`.
 | Config | Checkpoint | Observação |
 | --- | --- | --- |
 | colibri | `tardellirs/colibri-embed-ptbr` | livre; derive de EmbeddingGemma |
-| embeddinggemma | `google/embeddinggemma-300m` | **gated** — aceite os termos no model card e use `HF_TOKEN` |
 | qwen_embedding | `Qwen/Qwen3-Embedding-4B` | livre |
 | e5 | `intfloat/multilingual-e5-large-instruct` | livre |
 | reranker | `Qwen/Qwen3-Reranker-0.6B` | livre |
 
-Atenção ao **EmbeddingGemma**: (a) requer login/aceite de termos no Hugging Face
-(licença Gemma); (b) ativações são incompatíveis com FP16 — o piloto usa BF16/FP32.
+> `google/embeddinggemma-300m` **não é usado** neste piloto: é um checkpoint
+> *gated* (exige login/aceite de termos + `HF_TOKEN`) e essa dependência de
+> autenticação externa não é confiável para reprodução offline. Todos os
+> checkpoints usados aqui são de acesso livre.
 
 Gerador opcional: **Qwen3 14B via Ollama local** (instale o Ollama e rode
 `ollama pull qwen3:14b`). Tag/digest/quantização reais são registrados no
@@ -233,7 +239,7 @@ nenhuma compatibilidade foi comprovada nesta entrega. A primeira execução é s
 python -m venv .venv && source .venv/bin/activate
 pip install torch --index-url https://download.pytorch.org/whl/cu121
 pip install -e ".[ingest,models,generate,dev]"
-cp .env.example .env        # HF_TOKEN para EmbeddingGemma
+cp .env.example .env        # nenhum token obrigatório (só embeddings livres)
 rag-ptbr prepare-models
 
 # 1) inserir PDFs em data/raw/articles/  e preencher data/metadata/articles.yaml

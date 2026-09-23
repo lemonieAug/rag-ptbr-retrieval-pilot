@@ -103,10 +103,12 @@ Verificada por leitura, ponto a ponto:
 
 - **Não executado**: compatibilidade de imports, schemas Pydantic, CLI e testes
   não foram validados em runtime — a primeira execução é do usuário.
-- **Prompt/templates de colibri/embeddinggemma**: `prompt_name="query"/"document"`
-  confirmados na documentação; conferir contra `model.prompts` no `prepare-models`.
-- **Limites de entrada de colibri/embeddinggemma** marcados `None` (resolver no
-  prep); o limite vinculante é o do E5 (512), então o chunking não depende deles.
+- **Prompt/templates de colibri**: `prompt_name="query"/"document"` confirmados
+  na documentação; conferir contra `model.prompts` no `prepare-models`.
+- **Limite de entrada de colibri** marcado `None` (resolver no prep); o limite
+  vinculante é o do E5 (512), então o chunking não depende dele.
+- **EmbeddingGemma removido** do piloto (gated, exige `HF_TOKEN` + aceite de
+  termos) — só embeddings de acesso livre são usados agora.
 - **Extraçor de PDF em múltiplas colunas** é aproximado (marcado para revisão).
 - **Contagem de tokens na geração** usa o tokenizer de referência (aproximação
   documentada); trocar por contador do tokenizer real do gerador se necessário.

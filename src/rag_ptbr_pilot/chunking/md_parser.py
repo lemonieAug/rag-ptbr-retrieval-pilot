@@ -118,7 +118,7 @@ def parse_blocks(md_text: str, doc_id: str) -> list[Block]:
             counter += 1
 
     def flush_table() -> None:
-        nonlocal table_lines, counter, in_table
+        nonlocal table_lines, counter, in_table, table_caption
         text = "\n".join(table_lines).strip()
         if text:
             blocks.append(_make_block(doc_id, counter, table_page,
