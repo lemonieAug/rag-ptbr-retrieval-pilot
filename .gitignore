@@ -45,6 +45,7 @@ uv-cache/
 # --- Saídas de experimentos ---
 results/*
 !results/.gitkeep
+/run-*.tar.gz
 
 # --- OS ---
 .DS_Store

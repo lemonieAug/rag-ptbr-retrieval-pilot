@@ -1,0 +1,4203 @@
+{
+  "per_question": {
+    "q-001-t01": {
+      "question_id": "q-001-t01",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t02": {
+      "question_id": "q-001-t02",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6309297535714575,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6309297535714575,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t03": {
+      "question_id": "q-001-t03",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6309297535714575,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6309297535714575,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t04": {
+      "question_id": "q-001-t04",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t05": {
+      "question_id": "q-001-t05",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.5,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.5,
+        "mrr@10": 0.3333333333333333
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t06": {
+      "question_id": "q-001-t06",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.43067655807339306,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.43067655807339306,
+        "mrr@10": 0.25
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t07": {
+      "question_id": "q-001-t07",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 0.5,
+        "final": 0.5
+      }
+    },
+    "q-001-t08": {
+      "question_id": "q-001-t08",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6309297535714575,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6309297535714575,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t09": {
+      "question_id": "q-001-t09",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.43067655807339306,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.43067655807339306,
+        "mrr@10": 0.25
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t10": {
+      "question_id": "q-001-t10",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t11": {
+      "question_id": "q-001-t11",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t12": {
+      "question_id": "q-001-t12",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t13": {
+      "question_id": "q-001-t13",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.43067655807339306,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.43067655807339306,
+        "mrr@10": 0.25
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t14": {
+      "question_id": "q-001-t14",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 0.40298313359773236,
+        "mrr@10": 0.16666666666666666
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t15": {
+      "question_id": "q-001-t15",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6309297535714575,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6309297535714575,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t16": {
+      "question_id": "q-001-t16",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t17": {
+      "question_id": "q-001-t17",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t18": {
+      "question_id": "q-001-t18",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-t19": {
+      "question_id": "q-001-t19",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-m01": {
+      "question_id": "q-001-m01",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.38685280723454163,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.38685280723454163,
+        "mrr@10": 0.2
+      },
+      "group_coverage": {
+        "covered": 1,
+        "total": 1,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-001-m01-g1"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-m02": {
+      "question_id": "q-001-m02",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 2,
+        "total": 2,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-001-m02-g1",
+          "q-001-m02-g2"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-m03": {
+      "question_id": "q-001-m03",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.5,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.17723928678404774,
+        "mrr@10": 0.1
+      },
+      "group_coverage": {
+        "covered": 2,
+        "total": 2,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-001-m03-g1",
+          "q-001-m03-g2"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 0.5,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-001-m04": {
+      "question_id": "q-001-m04",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 0.5,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6131471927654584,
+        "recall@10": 0.5,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6131471927654584,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 2,
+        "total": 2,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-001-m04-g1",
+          "q-001-m04-g2"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t01": {
+      "question_id": "q-002-t01",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6309297535714575,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6309297535714575,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t02": {
+      "question_id": "q-002-t02",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t03": {
+      "question_id": "q-002-t03",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t04": {
+      "question_id": "q-002-t04",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6309297535714575,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6309297535714575,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t05": {
+      "question_id": "q-002-t05",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.5,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.5,
+        "mrr@10": 0.3333333333333333
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t06": {
+      "question_id": "q-002-t06",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t07": {
+      "question_id": "q-002-t07",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t08": {
+      "question_id": "q-002-t08",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t09": {
+      "question_id": "q-002-t09",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t10": {
+      "question_id": "q-002-t10",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t11": {
+      "question_id": "q-002-t11",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t12": {
+      "question_id": "q-002-t12",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t13": {
+      "question_id": "q-002-t13",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t14": {
+      "question_id": "q-002-t14",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t15": {
+      "question_id": "q-002-t15",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t16": {
+      "question_id": "q-002-t16",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t17": {
+      "question_id": "q-002-t17",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t18": {
+      "question_id": "q-002-t18",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.5,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.38685280723454163,
+        "recall@10": 0.5,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.38685280723454163,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.5,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t19": {
+      "question_id": "q-002-t19",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-t20": {
+      "question_id": "q-002-t20",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.3333333333333333,
+        "mrr@10": 0.14285714285714285
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-m01": {
+      "question_id": "q-002-m01",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 1,
+        "total": 1,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-002-m01-g1"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-m02": {
+      "question_id": "q-002-m02",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6309297535714575,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6309297535714575,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 1,
+        "total": 1,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-002-m02-g1"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-m03": {
+      "question_id": "q-002-m03",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 0.8503449055347546,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 0.8503449055347546,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 2,
+        "total": 2,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-002-m03-g1",
+          "q-002-m03-g2"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-m04": {
+      "question_id": "q-002-m04",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 2,
+        "total": 2,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-002-m04-g1",
+          "q-002-m04-g2"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-002-m05": {
+      "question_id": "q-002-m05",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 1,
+        "total": 5,
+        "fraction": 0.2,
+        "covered_ids": [
+          "q-002-m05-g4"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 0.4,
+        "dense": 0.2,
+        "rrf_union": 0.4,
+        "rrf_topn": 0.2,
+        "final": 0.2
+      }
+    },
+    "q-003-t01": {
+      "question_id": "q-003-t01",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t02": {
+      "question_id": "q-003-t02",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 0.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t03": {
+      "question_id": "q-003-t03",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.3010299956639812,
+        "mrr@10": 0.1111111111111111
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t04": {
+      "question_id": "q-003-t04",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.5,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.5,
+        "mrr@10": 0.3333333333333333
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t05": {
+      "question_id": "q-003-t05",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t06": {
+      "question_id": "q-003-t06",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t07": {
+      "question_id": "q-003-t07",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t08": {
+      "question_id": "q-003-t08",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.43067655807339306,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.43067655807339306,
+        "mrr@10": 0.25
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t09": {
+      "question_id": "q-003-t09",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6309297535714575,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6309297535714575,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t10": {
+      "question_id": "q-003-t10",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t11": {
+      "question_id": "q-003-t11",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6309297535714575,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6309297535714575,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t12": {
+      "question_id": "q-003-t12",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t13": {
+      "question_id": "q-003-t13",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.3562071871080222,
+        "mrr@10": 0.16666666666666666
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t14": {
+      "question_id": "q-003-t14",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.3562071871080222,
+        "mrr@10": 0.16666666666666666
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t15": {
+      "question_id": "q-003-t15",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.5,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.5,
+        "mrr@10": 0.3333333333333333
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t16": {
+      "question_id": "q-003-t16",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t17": {
+      "question_id": "q-003-t17",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t18": {
+      "question_id": "q-003-t18",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t19": {
+      "question_id": "q-003-t19",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-t20": {
+      "question_id": "q-003-t20",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.3333333333333333,
+        "mrr@10": 0.14285714285714285
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-m01": {
+      "question_id": "q-003-m01",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.5,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.3065735963827292,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 0.5109559939712153,
+        "mrr@10": 0.3333333333333333
+      },
+      "group_coverage": {
+        "covered": 2,
+        "total": 2,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-003-m01-g1",
+          "q-003-m01-g2"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-m02": {
+      "question_id": "q-003-m02",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 2,
+        "total": 2,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-003-m02-g1",
+          "q-003-m02-g2"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-m04": {
+      "question_id": "q-003-m04",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 2,
+        "total": 2,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-003-m04-g1",
+          "q-003-m04-g2"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-003-m05": {
+      "question_id": "q-003-m05",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.3333333333333333,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 0.6666666666666666,
+        "hit@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 0.7653606369886217,
+        "recall@10": 0.6666666666666666,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 0.7653606369886217,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 4,
+        "total": 4,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-003-m05-g1",
+          "q-003-m05-g2",
+          "q-003-m05-g3",
+          "q-003-m05-g4"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 0.6666666666666666,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t01": {
+      "question_id": "q-004-t01",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 0.5,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6131471927654584,
+        "recall@10": 0.5,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6131471927654584,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.5,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t02": {
+      "question_id": "q-004-t02",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t03": {
+      "question_id": "q-004-t03",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.3333333333333333,
+        "mrr@10": 0.14285714285714285
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t04": {
+      "question_id": "q-004-t04",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t05": {
+      "question_id": "q-004-t05",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t06": {
+      "question_id": "q-004-t06",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 0.5,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6131471927654584,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 0.8315546295836225,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t07": {
+      "question_id": "q-004-t07",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t08": {
+      "question_id": "q-004-t08",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.5,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.19342640361727081,
+        "mrr@10": 0.125
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 0.5,
+        "rrf_union": 1.0,
+        "rrf_topn": 0.5,
+        "final": 0.5
+      }
+    },
+    "q-004-t09": {
+      "question_id": "q-004-t09",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t10": {
+      "question_id": "q-004-t10",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t11": {
+      "question_id": "q-004-t11",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 0.6509209298071326,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 0.6509209298071326,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t12": {
+      "question_id": "q-004-t12",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t13": {
+      "question_id": "q-004-t13",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 0.6240505200038379,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 0.6240505200038379,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t14": {
+      "question_id": "q-004-t14",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t15": {
+      "question_id": "q-004-t15",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 0.0,
+        "rrf_union": 0.0,
+        "rrf_topn": 0.0,
+        "final": 0.0
+      }
+    },
+    "q-004-t16": {
+      "question_id": "q-004-t16",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.43067655807339306,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.43067655807339306,
+        "mrr@10": 0.25
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t17": {
+      "question_id": "q-004-t17",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 0.5,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6131471927654584,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 0.8315546295836225,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t18": {
+      "question_id": "q-004-t18",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.5,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.23719771276929622,
+        "recall@10": 0.5,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.23719771276929622,
+        "mrr@10": 0.2
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t19": {
+      "question_id": "q-004-t19",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-t20": {
+      "question_id": "q-004-t20",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-m01": {
+      "question_id": "q-004-m01",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 1,
+        "total": 1,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-004-m01-g1"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-m02": {
+      "question_id": "q-004-m02",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.5,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.21840743681816419,
+        "mrr@10": 0.16666666666666666
+      },
+      "group_coverage": {
+        "covered": 2,
+        "total": 2,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-004-m02-g1",
+          "q-004-m02-g2"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-m03": {
+      "question_id": "q-004-m03",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 2,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 0.0,
+        "rrf_union": 0.0,
+        "rrf_topn": 0.0,
+        "final": 0.0
+      }
+    },
+    "q-004-m04": {
+      "question_id": "q-004-m04",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 0.5,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6131471927654584,
+        "recall@10": 0.5,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6131471927654584,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 4,
+        "total": 4,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-004-m04-g1",
+          "q-004-m04-g2",
+          "q-004-m04-g3",
+          "q-004-m04-g4"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 0.5,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-004-m05": {
+      "question_id": "q-004-m05",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 0.5,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6131471927654584,
+        "recall@10": 0.5,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6131471927654584,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 1,
+        "total": 3,
+        "fraction": 0.3333333333333333,
+        "covered_ids": [
+          "q-004-m05-g3"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 0.5,
+        "dense": 0.5,
+        "rrf_union": 0.5,
+        "rrf_topn": 0.5,
+        "final": 0.5
+      }
+    },
+    "q-005-t01": {
+      "question_id": "q-005-t01",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t02": {
+      "question_id": "q-005-t02",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t03": {
+      "question_id": "q-005-t03",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t04": {
+      "question_id": "q-005-t04",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t05": {
+      "question_id": "q-005-t05",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t06": {
+      "question_id": "q-005-t06",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t07": {
+      "question_id": "q-005-t07",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t08": {
+      "question_id": "q-005-t08",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t09": {
+      "question_id": "q-005-t09",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t10": {
+      "question_id": "q-005-t10",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t11": {
+      "question_id": "q-005-t11",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t12": {
+      "question_id": "q-005-t12",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t13": {
+      "question_id": "q-005-t13",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6309297535714575,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6309297535714575,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t14": {
+      "question_id": "q-005-t14",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.31546487678572877,
+        "mrr@10": 0.125
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t15": {
+      "question_id": "q-005-t15",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t16": {
+      "question_id": "q-005-t16",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t17": {
+      "question_id": "q-005-t17",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.6309297535714575,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.6309297535714575,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t18": {
+      "question_id": "q-005-t18",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t19": {
+      "question_id": "q-005-t19",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-t20": {
+      "question_id": "q-005-t20",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 0,
+        "total": 0,
+        "fraction": 0.0,
+        "covered_ids": []
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-m01": {
+      "question_id": "q-005-m01",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 0.8503449055347546,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 0.8503449055347546,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 3,
+        "total": 3,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-005-m01-g1",
+          "q-005-m01-g2",
+          "q-005-m01-g3"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-m02": {
+      "question_id": "q-005-m02",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.0,
+        "hit@5": 0.0,
+        "precision@5": 0.0,
+        "ndcg@5": 0.0,
+        "recall@10": 0.0,
+        "hit@10": 0.0,
+        "precision@10": 0.0,
+        "ndcg@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "group_coverage": {
+        "covered": 4,
+        "total": 4,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-005-m02-g1",
+          "q-005-m02-g2",
+          "q-005-m02-g3",
+          "q-005-m02-g4"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 0.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-m03": {
+      "question_id": "q-005-m03",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.5,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.4,
+        "ndcg@5": 0.9197207891481876,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.2,
+        "ndcg@10": 0.9197207891481876,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 2,
+        "total": 2,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-005-m03-g1",
+          "q-005-m03-g2"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-m04": {
+      "question_id": "q-005-m04",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 1.0,
+        "hit@1": 1.0,
+        "precision@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@5": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 1.0,
+        "recall@10": 1.0,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "group_coverage": {
+        "covered": 4,
+        "total": 4,
+        "fraction": 1.0,
+        "covered_ids": [
+          "q-005-m04-g1",
+          "q-005-m04-g2",
+          "q-005-m04-g3",
+          "q-005-m04-g4"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 1.0,
+        "dense": 1.0,
+        "rrf_union": 1.0,
+        "rrf_topn": 1.0,
+        "final": 1.0
+      }
+    },
+    "q-005-m05": {
+      "question_id": "q-005-m05",
+      "blocked": false,
+      "blocked_reason": "",
+      "metrics": {
+        "recall@1": 0.0,
+        "hit@1": 0.0,
+        "precision@1": 0.0,
+        "ndcg@1": 0.0,
+        "recall@5": 0.3333333333333333,
+        "hit@5": 1.0,
+        "precision@5": 0.2,
+        "ndcg@5": 0.2960819109658652,
+        "recall@10": 0.3333333333333333,
+        "hit@10": 1.0,
+        "precision@10": 0.1,
+        "ndcg@10": 0.2960819109658652,
+        "mrr@10": 0.5
+      },
+      "group_coverage": {
+        "covered": 2,
+        "total": 3,
+        "fraction": 0.6666666666666666,
+        "covered_ids": [
+          "q-005-m05-g2",
+          "q-005-m05-g3"
+        ]
+      },
+      "stage_recall": {
+        "bm25": 0.3333333333333333,
+        "dense": 0.6666666666666666,
+        "rrf_union": 0.6666666666666666,
+        "rrf_topn": 0.6666666666666666,
+        "final": 0.6666666666666666
+      }
+    }
+  },
+  "means": {
+    "recall@1": 0.49863387978142076,
+    "hit@1": 0.5573770491803278,
+    "precision@1": 0.5573770491803278,
+    "ndcg@1": 0.5573770491803278,
+    "recall@5": 0.733606557377049,
+    "hit@5": 0.7786885245901639,
+    "precision@5": 0.17213114754098335,
+    "ndcg@5": 0.647924547195492,
+    "recall@10": 0.8237704918032787,
+    "hit@10": 0.8688524590163934,
+    "precision@10": 0.09836065573770475,
+    "ndcg@10": 0.6804012912832605,
+    "mrr@10": 0.6587952120739006
+  },
+  "timings": {
+    "bm25": 0.004489190336393162,
+    "dense": 0.00016297619278374755,
+    "rrf": 8.991091573213945e-05
+  },
+  "per_article": {
+    "art-001": {
+      "recall@1": 0.41304347826086957,
+      "hit@1": 0.43478260869565216,
+      "precision@1": 0.43478260869565216,
+      "ndcg@1": 0.43478260869565216,
+      "recall@5": 0.8043478260869565,
+      "hit@5": 0.8260869565217391,
+      "precision@5": 0.16521739130434787,
+      "ndcg@5": 0.6224238560220003,
+      "recall@10": 0.8695652173913043,
+      "hit@10": 0.9130434782608695,
+      "precision@10": 0.09565217391304351,
+      "ndcg@10": 0.64765091777773,
+      "mrr@10": 0.5891304347826086
+    },
+    "art-002": {
+      "recall@1": 0.66,
+      "hit@1": 0.68,
+      "precision@1": 0.68,
+      "ndcg@1": 0.68,
+      "recall@5": 0.86,
+      "hit@5": 0.88,
+      "precision@5": 0.18400000000000005,
+      "ndcg@5": 0.7851994789393467,
+      "recall@10": 0.9,
+      "hit@10": 0.92,
+      "precision@10": 0.09600000000000003,
+      "ndcg@10": 0.79853281227268,
+      "mrr@10": 0.779047619047619
+    },
+    "art-003": {
+      "recall@1": 0.4930555555555556,
+      "hit@1": 0.5416666666666666,
+      "precision@1": 0.5416666666666666,
+      "ndcg@1": 0.5416666666666666,
+      "recall@5": 0.7569444444444445,
+      "hit@5": 0.7916666666666666,
+      "precision@5": 0.17500000000000004,
+      "ndcg@5": 0.6568529291078192,
+      "recall@10": 0.9444444444444445,
+      "hit@10": 0.9583333333333334,
+      "precision@10": 0.10833333333333338,
+      "ndcg@10": 0.7214845999745628,
+      "mrr@10": 0.6598875661375662
+    },
+    "art-004": {
+      "recall@1": 0.42,
+      "hit@1": 0.56,
+      "precision@1": 0.56,
+      "ndcg@1": 0.56,
+      "recall@5": 0.6,
+      "hit@5": 0.72,
+      "precision@5": 0.17600000000000005,
+      "ndcg@5": 0.5603432673792381,
+      "recall@10": 0.72,
+      "hit@10": 0.84,
+      "precision@10": 0.10800000000000003,
+      "ndcg@10": 0.607622549275442,
+      "mrr@10": 0.6353809523809523
+    },
+    "art-005": {
+      "recall@1": 0.5,
+      "hit@1": 0.56,
+      "precision@1": 0.56,
+      "ndcg@1": 0.56,
+      "recall@5": 0.6533333333333333,
+      "hit@5": 0.68,
+      "precision@5": 0.16,
+      "ndcg@5": 0.6131202845116689,
+      "recall@10": 0.6933333333333332,
+      "hit@10": 0.72,
+      "precision@10": 0.084,
+      "ndcg@10": 0.625738879583098,
+      "mrr@10": 0.625
+    }
+  },
+  "blocked_questions": [],
+  "group_coverage": {
+    "mean_fraction": 0.8782608695652173,
+    "questions_with_groups": 23,
+    "questions_all_covered": 19
+  },
+  "n_questions_evaluated": 122
+}

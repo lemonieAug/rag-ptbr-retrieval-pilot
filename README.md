@@ -5,11 +5,11 @@ Este repositório implementa um pipeline controlado para comparar **recuperaçã
 híbrida** e **reranking** sobre um corpus pequeno (3–5 artigos) com benchmark
 anotado por humano.
 
-> **Estado local verificado em 30/09/2026:** 5 documentos, corpus congelado de
-> 224 chunks, 125 perguntas (122 aprovadas, 3 rejeitadas, 0 drafts), 14
-> configurações e `ready_for_retrieval = true`. O retrieval oficial ainda não
-> foi executado e nenhuma métrica oficial foi produzida. Evidências:
-> `artifacts/review/` e `rag-ptbr status`.
+> **Estado em 30/09/2026:** 5 documentos, corpus congelado de 224 chunks,
+> 125 perguntas (122 aprovadas, 3 rejeitadas, 0 drafts). Uma execução oficial
+> das 14 configurações foi importada de um Pod RunPod com **NVIDIA A40**; veja
+> [resultados e proveniência](docs/results/run-20260930T165133+0000-8532bd1f/README.md).
+> O corpus e os rankings completos continuam fora do Git.
 
 ## RunPod / GPU execution
 
@@ -237,9 +237,11 @@ checkpoints/revisions, versões das bibliotecas, seed, hardware e parâmetros.
 
 Os testes e a validação estrutural foram executados localmente, com checkpoints
 existentes preservados. O carregamento fixa snapshots de `revisions.json` e usa
-somente arquivos locais. `retrieve` requer aprovação humana; `evaluate`, `report`
-e `generate` recusam resultados de corpus, configuração ou benchmark diferentes.
-Veja `artifacts/review/` para o histórico de auditoria e revisão do gold.
+somente arquivos locais. A execução importada está documentada em
+[docs/results](docs/results/run-20260930T165133+0000-8532bd1f/README.md).
+`evaluate`, `report` e `generate` recusam resultados de corpus, configuração ou
+benchmark diferentes. Veja `artifacts/review/` para o histórico de auditoria e
+revisão do gold.
 
 ---
 

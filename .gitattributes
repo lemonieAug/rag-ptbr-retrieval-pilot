@@ -1,0 +1,4 @@
+# O manifesto da execução calcula SHA-256 dos bytes destes arquivos.
+# Preservar LF também em checkouts Windows evita hashes diferentes do Pod Linux.
+data/annotations/questions.yaml text eol=lf
+data/annotations/evidence_groups.yaml text eol=lf
