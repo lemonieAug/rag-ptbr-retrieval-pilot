@@ -7,7 +7,7 @@ name = "rag-ptbr-pilot"
 version = "0.1.0"
 description = "Piloto de retrieval para RAG em artigos científicos em português brasileiro"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11,<3.14"
 license = { text = "MIT" }
 authors = [{ name = "Augusto" }]
 keywords = ["rag", "retrieval", "reranking", "bm25", "portuguese", "evaluation"]
@@ -37,8 +37,8 @@ ingest = [
 ]
 # Embeddings + reranker (pesado; instalação do PyTorch é documentada no README)
 models = [
-    "torch>=2.3",
-    "transformers>=4.51.0",
+    "torch==2.6.0",
+    "transformers>=4.51.0,<5",
     "sentence-transformers>=2.7.0",
     "accelerate>=0.30",
     "huggingface-hub>=0.23",
@@ -54,6 +54,17 @@ dev = [
 
 [project.scripts]
 rag-ptbr = "rag_ptbr_pilot.cli:main"
+
+[tool.uv]
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
 
 [tool.setuptools.packages.find]
 where = ["src"]

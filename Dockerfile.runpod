@@ -1,0 +1,16 @@
+FROM pytorch/pytorch:2.6.0-cuda12.4-cudnn9-runtime
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    HF_HOME=/workspace/hf-cache \
+    UV_CACHE_DIR=/workspace/uv-cache \
+    UV_PYTHON_INSTALL_DIR=/workspace/uv-python \
+    UV_PROJECT_ENVIRONMENT=/workspace/.venv-rag-ptbr \
+    PATH=/workspace/.venv-rag-ptbr/bin:$PATH
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates curl git bash && rm -rf /var/lib/apt/lists/*
+
+COPY --from=ghcr.io/astral-sh/uv:0.12.5 /uv /uvx /usr/local/bin/
+
+WORKDIR /workspace
+CMD ["bash"]

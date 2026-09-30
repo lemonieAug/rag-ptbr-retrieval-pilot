@@ -66,7 +66,7 @@ class SentenceTransformerEmbedding(EmbeddingAdapter):
         except ImportError:
             _import_missing()
 
-        checkpoint_path = local_checkpoint(self.checkpoint, self.cache_dir)
+        checkpoint_path = local_checkpoint(self.checkpoint, self.cache_dir, self.revisions_path)
         device = resolve_device(self.device)
         dtype = resolve_dtype(self.dtype, device)
         # Respect precision restrictions declared by a model specification.
@@ -100,9 +100,9 @@ class SentenceTransformerEmbedding(EmbeddingAdapter):
 
             del self._model
             self._model = None
+            gc.collect()
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
-            gc.collect()
 
     def _encode(self, texts: list[str], prompt_name: str | None) -> np.ndarray:
         if not texts:
@@ -111,7 +111,7 @@ class SentenceTransformerEmbedding(EmbeddingAdapter):
             "normalize_embeddings": True,
             "convert_to_numpy": True,
             "show_progress_bar": False,
-            "batch_size": 8,
+            "batch_size": self.batch_size,
         }
         if prompt_name is not None:
             kwargs["prompt_name"] = prompt_name
@@ -126,7 +126,8 @@ class SentenceTransformerEmbedding(EmbeddingAdapter):
 
     def _tokenizer(self):
         if getattr(self, "_tok", None) is None:
-            self._tok = load_tokenizer(self.checkpoint, self.cache_dir)
+            self._tok = load_tokenizer(self.checkpoint, self.cache_dir,
+                                       revisions_path=self.revisions_path)
         return self._tok
 
     def count_query_tokens(self, text: str) -> int:
@@ -146,7 +147,7 @@ class HFTransformersEmbedding(EmbeddingAdapter):
         except ImportError:
             _import_missing()
 
-        checkpoint_path = local_checkpoint(self.checkpoint, self.cache_dir)
+        checkpoint_path = local_checkpoint(self.checkpoint, self.cache_dir, self.revisions_path)
         device = resolve_device(self.device)
         dtype = resolve_dtype(self.dtype, device)
         model_kwargs: dict[str, Any] = {
@@ -186,9 +187,9 @@ class HFTransformersEmbedding(EmbeddingAdapter):
 
             del self._model
             self._model = None
+            gc.collect()
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
-            gc.collect()
 
     def _format(self, template: str, text: str) -> str:
         return template.format_map({
@@ -201,7 +202,7 @@ class HFTransformersEmbedding(EmbeddingAdapter):
         if not texts:
             return np.zeros((0, self.dimension or 0), dtype=np.float32)
         # Bound activation memory independently of corpus size.
-        batch_size = 2
+        batch_size = self.batch_size
         return np.concatenate([
             self._encode_batch(texts[start:start + batch_size], template)
             for start in range(0, len(texts), batch_size)
@@ -258,12 +259,15 @@ class HFTransformersEmbedding(EmbeddingAdapter):
 
 def build_embedding_adapter(name: str, cache_dir: str | None = None,
                             device: str = "auto",
-                            dtype: str | None = None) -> EmbeddingAdapter:
+                            dtype: str | None = None, batch_size: int | None = None,
+                            revisions_path: str | None = None) -> EmbeddingAdapter:
     from .specs import get_embedding_spec
 
     spec = get_embedding_spec(name)
     if spec.pooling == "sentence_transformers":
         return SentenceTransformerEmbedding(spec, cache_dir=cache_dir,
-                                            device=device, dtype=dtype)
+                                            device=device, dtype=dtype,
+                                            batch_size=batch_size, revisions_path=revisions_path)
     return HFTransformersEmbedding(spec, cache_dir=cache_dir,
-                                   device=device, dtype=dtype)
+                                   device=device, dtype=dtype,
+                                   batch_size=batch_size, revisions_path=revisions_path)

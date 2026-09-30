@@ -19,7 +19,8 @@ _SPECIALS = {
 
 
 def load_tokenizer(checkpoint: str, cache_dir: str | None = None,
-                   local_files_only: bool = True):
+                   local_files_only: bool = True,
+                   revisions_path: str | None = None):
     """Carrega um tokenizer do HF (leve). Importa transformers sob demanda."""
     try:
         from transformers import AutoTokenizer
@@ -33,7 +34,8 @@ def load_tokenizer(checkpoint: str, cache_dir: str | None = None,
     if cache_dir:
         kwargs["cache_dir"] = cache_dir
     try:
-        return AutoTokenizer.from_pretrained(local_checkpoint(checkpoint, cache_dir), **kwargs)
+        return AutoTokenizer.from_pretrained(
+            local_checkpoint(checkpoint, cache_dir, revisions_path), **kwargs)
     except Exception as exc:  # OSError/EnvironmentError quando falta no cache
         raise MissingArtifactError(
             f"Tokenizer de {checkpoint!r} não encontrado no cache local. "

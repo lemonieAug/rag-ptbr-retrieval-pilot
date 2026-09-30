@@ -2,9 +2,8 @@
 
 Cada spec registra o formato OFICIAL de consulta/documento/pooling/precisão,
 conforme os model cards consultados (ver ``docs/decisions.md`` para as fontes e
-as decisões tomadas). Revisões/hashes de checkpoint NÃO são inventados aqui:
-ficam como ``None`` e são resolvidos na preparação dos modelos (``prepare-models``)
-e gravados no manifesto de execução.
+as decisões tomadas). Revisões auditadas ficam em ``configs/model_revisions.yaml``;
+``prepare-models`` confere os snapshots e grava as revisões no manifesto.
 
 Nenhum destes módulos importa ``torch``/``transformers`` no topo — o carregamento
 é sempre sob demanda.

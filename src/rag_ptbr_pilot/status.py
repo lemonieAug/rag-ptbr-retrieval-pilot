@@ -9,18 +9,21 @@ import yaml
 
 from .adapters.local import local_checkpoint
 from .adapters.specs import get_embedding_spec
-from .benchmark.audit import audit_gold
+from .benchmark.audit import audit_gold, review_counts
+from .benchmark.loaders import load_questions
 from .config import load_config
+from .corpus_reference import REFERENCE_PATH, assert_official_corpus
 from .errors import PilotError
 from .io_utils import load_json
 from .persistence import load_frozen_corpus
 from .retrieval.matrix import build_matrix
 
 
-def checkpoint_available(checkpoint: str, cache_dir: Path) -> dict:
+def checkpoint_available(checkpoint: str, cache_dir: Path,
+                         revisions_path: Path | None = None) -> dict:
     """Inspect required local files and all declared shards; no HF/torch imports."""
     try:
-        snapshot = Path(local_checkpoint(checkpoint, cache_dir))
+        snapshot = Path(local_checkpoint(checkpoint, cache_dir, revisions_path))
         required = [snapshot / "config.json"]
         if not any((snapshot / p).is_file() for p in ("tokenizer.json", "tokenizer.model", "spiece.model")):
             raise ValueError("tokenizer ausente")
@@ -52,6 +55,8 @@ def collect_status(cfg) -> dict:
     reasons = []
     try:
         chunks, manifest = load_frozen_corpus(cfg)
+        if cfg.resolve(REFERENCE_PATH).is_file():
+            assert_official_corpus(cfg, manifest)
         result["corpus"] = {"documents": len(manifest.doc_ids), "chunks": len(chunks),
                             "frozen": manifest.frozen, "corpus_version": manifest.corpus_version,
                             "status": "valid"}
@@ -61,7 +66,8 @@ def collect_status(cfg) -> dict:
         reasons.append("CORPUS_INVALID")
     for name in cfg.effective_embeddings() + ["reranker"]:
         checkpoint = cfg.models.reranker.checkpoint if name == "reranker" else get_embedding_spec(name).checkpoint
-        result["models"][name] = checkpoint_available(checkpoint, cfg.resolve(cfg.models.cache_dir))
+        result["models"][name] = checkpoint_available(
+            checkpoint, cfg.resolve(cfg.models.cache_dir), cfg.resolve(cfg.models.revisions_path))
     if any(m["status"] != "available" for m in result["models"].values()):
         reasons.append("LOCAL_MODELS_UNAVAILABLE")
     for name in ["bm25"] + cfg.effective_embeddings():
@@ -82,12 +88,20 @@ def collect_status(cfg) -> dict:
     if any(i["status"] != "valid" for i in result["indexes"].values()):
         reasons.append("INDEXES_UNAVAILABLE_OR_INVALID")
     try:
-        gold = audit_gold(cfg)
-        result["benchmark"] = gold
-        if not gold["validation"]["valid"]:
-            reasons.append("BENCHMARK_STRUCTURAL_ERRORS")
-        if gold["draft_ready"] + gold["draft_pending"] or not gold["approved"]:
-            reasons.append("HUMAN_GOLD_REVIEW_REQUIRED")
+        if manifest is None:
+            counts = review_counts(load_questions(cfg.resolve(cfg.paths.questions_path)))
+            result["benchmark"] = {
+                **counts, "status": "pending_corpus",
+                "validation": {"valid": None, "errors": [], "warning_counts": {}},
+            }
+            reasons.append("BENCHMARK_PENDING_CORPUS")
+        else:
+            gold = audit_gold(cfg)
+            result["benchmark"] = gold
+            if not gold["validation"]["valid"]:
+                reasons.append("BENCHMARK_STRUCTURAL_ERRORS")
+            if gold["draft_ready"] + gold["draft_pending"] or not gold["approved"]:
+                reasons.append("HUMAN_GOLD_REVIEW_REQUIRED")
     except (PilotError, OSError, ValueError, KeyError, TypeError) as exc:
         result["benchmark"] = {"status": "invalid", "reason": str(exc)}
         reasons.append("BENCHMARK_STRUCTURAL_ERRORS")

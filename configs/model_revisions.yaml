@@ -1,0 +1,13 @@
+models:
+  colibri:
+    checkpoint: tardellirs/colibri-embed-ptbr
+    revision: 95a4d4f3a1c056ac19e0da196d0ab2b4289e3b3b
+  qwen_embedding:
+    checkpoint: Qwen/Qwen3-Embedding-4B
+    revision: 5cf2132abc99cad020ac570b19d031efec650f2b
+  e5:
+    checkpoint: intfloat/multilingual-e5-large-instruct
+    revision: 274baa43b0e13e37fafa6428dbc7938e62e5c439
+  reranker:
+    checkpoint: Qwen/Qwen3-Reranker-0.6B
+    revision: e61197ed45024b0ed8a2d74b80b4d909f1255473

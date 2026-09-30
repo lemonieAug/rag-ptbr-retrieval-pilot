@@ -37,6 +37,14 @@ def load_frozen_corpus(cfg):
     from .chunking.chunker import compute_corpus_version
     from .errors import ConfigError
 
+    missing = [str(cfg.resolve(path)) for path in
+               (cfg.paths.chunks_path, cfg.paths.corpus_manifest_path)
+               if not cfg.resolve(path).is_file()]
+    if missing:
+        raise ConfigError(
+            "Corpus auditado ausente: " + ", ".join(missing) +
+            ". Transfira os arquivos congelados para os caminhos esperados."
+        )
     chunks = load_chunks(cfg.resolve(cfg.paths.chunks_path))
     manifest = load_manifest(cfg.resolve(cfg.paths.corpus_manifest_path))
     actual = compute_corpus_version(chunks)

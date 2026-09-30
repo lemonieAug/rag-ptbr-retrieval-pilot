@@ -31,7 +31,7 @@ class Qwen3Reranker(RerankerAdapter):
                 "Instale: pip install -e '.[models]'"
             ) from None
 
-        checkpoint_path = local_checkpoint(self.spec.checkpoint, self.cache_dir)
+        checkpoint_path = local_checkpoint(self.spec.checkpoint, self.cache_dir, self.revisions_path)
         device = resolve_device(self.device)
         dtype = resolve_dtype(self.dtype, device)
         tok_kwargs: dict[str, Any] = {
@@ -78,9 +78,9 @@ class Qwen3Reranker(RerankerAdapter):
 
             del self._model
             self._model = None
+            gc.collect()
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
-            gc.collect()
 
     def _format(self, query: str, document: str) -> str:
         return (
@@ -116,7 +116,7 @@ class Qwen3Reranker(RerankerAdapter):
                 )
 
         scores: list[float] = []
-        batch_size = 8
+        batch_size = self.batch_size
         for start in range(0, len(formatted), batch_size):
             batch = formatted[start:start + batch_size]
             inputs = self._tokenizer(
@@ -147,6 +147,8 @@ class Qwen3Reranker(RerankerAdapter):
 
 def build_reranker(cache_dir: str | None = None, device: str = "auto",
                    dtype: str | None = None,
-                   max_length: int | None = None) -> RerankerAdapter:
+                   max_length: int | None = None, batch_size: int = 8,
+                   revisions_path: str | None = None) -> RerankerAdapter:
     return Qwen3Reranker(RERANKER_SPEC, cache_dir=cache_dir, device=device,
-                         dtype=dtype, max_length=max_length)
+                         dtype=dtype, max_length=max_length,
+                         batch_size=batch_size, revisions_path=revisions_path)

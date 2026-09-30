@@ -1,0 +1,24 @@
+# Hashes auditados do corpus desta edição; nenhum conteúdo do corpus é versionado aqui.
+corpus_version: 8532bd1f3284ec8ce5446943020b7c894b306fbf7b11795d4d891423c2dd9743
+chunks_sha256: bd025e6b5b1ce93f203fa1de10c25ccd20add4ef989ff35fa8388b118c1d4607
+documents:
+  art-001:
+    pdf_filename: art-001_ner_juridico_ptbr.pdf
+    pdf_sha256: 51851098c40681ca292d17d2190ad08b3d3265e968c3f5bf1cd8cf3a03aae77e
+    md_sha256: 7d14bb760f99cad9e2f7259c284838c6f13cd12b47506695ab9ffc6396571dfa
+  art-002:
+    pdf_filename: art-002_mortalidade_uti_ml.pdf
+    pdf_sha256: 57c432ef355c44d86da74606adcc7a98ce4f5841777fe85ab9941e7bc76841f2
+    md_sha256: 8a6be07da4d10260c288be9f6a1aa4665a668f5fbeae1e5fb16f16fed0e62195
+  art-003:
+    pdf_filename: art-003_ferrugem_asiatica_soja.pdf
+    pdf_sha256: ede3388ae4a77d343b0ec73244c8b2a6bdc7559e68ca2f76dbaa5974d2695896
+    md_sha256: daebb83687379c63b71a0b6cd0cf66696fa7c5f3003141eacc4e112127e3d8bf
+  art-004:
+    pdf_filename: art-004_alocacao_nucleo_sdm_eon.pdf
+    pdf_sha256: eb99b88bb8714736c84be155434d8233dbeb32a7649ad2247adab72755ed9f23
+    md_sha256: ab6a7219db7232fd7840b2b0b673f3e5d6a868fb9ffa3cf7f80200de5ecadab2
+  art-005:
+    pdf_filename: art-005_densenet_cancer_peniano.pdf
+    pdf_sha256: 54495003685d2dc3fcbd489ad85875ce9f548953aeaba1ff269b447dceeca83d
+    md_sha256: e3f0a7370b2c0ee9f262b450bc765a57f6bcdf3cc030d7a201b9340463f097bc

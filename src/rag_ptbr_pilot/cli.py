@@ -74,40 +74,20 @@ def _latest_run_id(results_dir: Path) -> str | None:
 
 
 def _collect_environment() -> dict:
-    import platform
-
-    env = {"python_version": platform.python_version(), "platform": platform.platform()}
-    libs = ["torch", "transformers", "sentence-transformers", "numpy", "pydantic",
-            "PyYAML", "pdfplumber", "pypdf", "requests", "huggingface-hub"]
-    versions: dict[str, str | None] = {}
-    try:
-        from importlib.metadata import PackageNotFoundError, version
-        for lib in libs:
-            try:
-                versions[lib] = version(lib)
-            except PackageNotFoundError:
-                versions[lib] = None
-    except Exception:
-        pass
-    env["library_versions"] = versions
-    gpu: dict = {}
-    try:
-        import torch
-
-        gpu["cuda_available"] = torch.cuda.is_available()
-        if torch.cuda.is_available():
-            gpu["device_name"] = torch.cuda.get_device_name(0)
-            gpu["device_count"] = torch.cuda.device_count()
-    except Exception:
-        gpu["cuda_available"] = None
-    env["gpu"] = gpu
-    return env
+    from .runtime import collect_environment
+    return collect_environment()
 
 
 def _load_revisions(cfg: AppConfig) -> dict:
     p = cfg.resolve(cfg.models.cache_dir) / "revisions.json"
     if p.exists():
-        return load_json(p).get("revisions", {})
+        revisions = load_json(p).get("revisions", {})
+        from .model_revisions import pinned_revisions
+        pins = pinned_revisions(cfg.resolve(cfg.models.revisions_path))
+        for repo, revision in revisions.items():
+            if repo in pins and revision != pins[repo]:
+                raise ConfigError(f"Revisão local incompatível para {repo}; rode prepare-models.")
+        return revisions
     return {}
 
 
@@ -254,8 +234,10 @@ def cmd_validate(args) -> None:
 
 def cmd_extract(args) -> None:
     from .ingest import extract_article
+    from .corpus_reference import assert_canonical_sources
 
     cfg = load_config(args.config)
+    assert_canonical_sources(cfg, include_markdown=False)
     articles = load_articles(cfg.resolve(cfg.paths.metadata_path))
     out_dir = cfg.resolve(cfg.paths.extracted_dir)
     for meta in articles:
@@ -270,9 +252,14 @@ def cmd_extract(args) -> None:
 
 def cmd_chunk(args) -> None:
     from .adapters.specs import get_embedding_spec
+    from .corpus_reference import assert_canonical_sources
     from .manifest import sha256_text
 
     cfg = load_config(args.config)
+    assert_canonical_sources(cfg, include_markdown=True)
+    if (cfg.resolve(cfg.paths.chunks_path).exists()
+            or cfg.resolve(cfg.paths.corpus_manifest_path).exists()):
+        raise ConfigError("Corpus congelado já presente; não sobrescrever chunks ou manifesto.")
     articles = load_articles(cfg.resolve(cfg.paths.metadata_path))
     specs = [get_embedding_spec(e) for e in cfg.effective_embeddings()]
     cache_dir = str(cfg.resolve(cfg.models.cache_dir))
@@ -293,8 +280,11 @@ def cmd_chunk(args) -> None:
 
         prov_path = extracted_dir / f"{meta.doc_id}.provenance.json"
         prov = load_json(prov_path) if prov_path.exists() else {}
+        pdf_hash = sha256_file(cfg.articles_dir() / meta.pdf_filename)
+        if prov.get("pdf_sha256") and prov["pdf_sha256"] != pdf_hash:
+            raise ConfigError(f"Proveniência do PDF incompatível para {meta.doc_id}.")
         doc_hashes[meta.doc_id] = {
-            "pdf_sha256": prov.get("pdf_sha256"),
+            "pdf_sha256": pdf_hash,
             "md_sha256": sha256_text(md_text),
         }
 
@@ -322,6 +312,7 @@ def cmd_prepare_models(args) -> None:
 
 def cmd_index(args) -> None:
     from .adapters import get_embedding_adapter
+    from .corpus_reference import assert_canonical_sources
 
     cfg = load_config(args.config)
     chunks, manifest = load_frozen_corpus(cfg)
@@ -330,12 +321,20 @@ def cmd_index(args) -> None:
 
     indexes_dir = cfg.resolve(cfg.reporting.artifacts_dir) / "indexes"
     indexes_dir.mkdir(parents=True, exist_ok=True)
+    sources_checked = False
+
+    def require_canonical_pdfs() -> None:
+        nonlocal sources_checked
+        if not sources_checked:
+            assert_canonical_sources(cfg, include_markdown=False)
+            sources_checked = True
 
     # Reuse only caches accepted by the exact retrieval loaders.
     try:
         _load_bm25(cfg, chunks, normalizer, corpus_version)
         print("[reuse] Índice BM25 compatível.")
     except (ConfigError, RuntimeError, ValueError, OSError, KeyError) as exc:
+        require_canonical_pdfs()
         print(f"[index] BM25: {exc}")
         bm25 = BM25Index(k1=cfg.retrieval.bm25.k1, b=cfg.retrieval.bm25.b)
         bm25.build(chunks, normalizer)
@@ -354,6 +353,7 @@ def cmd_index(args) -> None:
             print(f"[reuse] Índice denso de {embedding} compatível.")
             continue
         except (ConfigError, RuntimeError, ValueError, OSError, KeyError) as exc:
+            require_canonical_pdfs()
             print(f"[index] {embedding}: {exc}")
         adapter = get_embedding_adapter(embedding, cfg)
         print(f"[index] codificando documentos com {embedding} ...", flush=True)
@@ -379,9 +379,13 @@ def cmd_index(args) -> None:
 
 def cmd_retrieve(args) -> None:
     from .adapters import get_embedding_adapter, get_reranker_adapter
+    from .adapters.specs import get_embedding_spec
+    from .corpus_reference import assert_official_corpus
+    from .model_revisions import pinned_revisions, validate_local_revisions
 
     cfg = load_config(args.config)
     chunks, manifest = load_frozen_corpus(cfg)
+    assert_official_corpus(cfg, manifest)
     chunk_by_id = {c.chunk_id: c for c in chunks}
     normalizer = LexicalNormalizer(cfg.retrieval.lexical)
 
@@ -401,6 +405,11 @@ def cmd_retrieve(args) -> None:
     selected = select_matrix(matrix, cfg.experiments.select, cfg.experiments.include_reranker)
 
     needed_embeddings = {s.embedding for s in selected if s.embedding}
+    pins = pinned_revisions(cfg.resolve(cfg.models.revisions_path))
+    required_repos = {get_embedding_spec(e).checkpoint for e in needed_embeddings}
+    if any(s.rerank for s in selected):
+        required_repos.add(cfg.models.reranker.checkpoint)
+    validate_local_revisions(_load_revisions(cfg), {repo: pins[repo] for repo in required_repos})
     bm25 = _load_bm25(cfg, chunks, normalizer, manifest.corpus_version)
     dense_indices = {e: _load_dense_index(cfg, e, manifest.corpus_version) for e in needed_embeddings}
     adapters = {e: get_embedding_adapter(e, cfg) for e in needed_embeddings}
@@ -413,6 +422,7 @@ def cmd_retrieve(args) -> None:
     runner = RetrievalRunner(cfg.retrieval, chunk_by_id, bm25, normalizer,
                              dense_indices, adapters)
     runtime_devices = {}
+    runtime_dtypes = {}
     query_encoding_seconds = {}
     from .timing import Timer
     # Only query vectors remain resident when moving to the next model.
@@ -421,6 +431,8 @@ def cmd_retrieve(args) -> None:
         try:
             adapter.load()
             runtime_devices[embedding] = getattr(adapter, "_device", cfg.models.device)
+            runtime_dtypes[embedding] = str(
+                getattr(adapter, "_dtype", getattr(cfg.models.dtype, embedding)))
             for q in approved:
                 query_text = retrieval_query(q)
                 assert_no_leakage(query_text, q)
@@ -440,6 +452,8 @@ def cmd_retrieve(args) -> None:
         if reranker is not None:
             reranker.load()
             runtime_devices["reranker"] = getattr(reranker, "_device", cfg.models.reranker.device)
+            runtime_dtypes["reranker"] = str(
+                getattr(reranker, "_dtype", cfg.models.reranker.dtype))
         for spec in selected:
             results = []
             for q in approved:
@@ -461,6 +475,8 @@ def cmd_retrieve(args) -> None:
     if prompt_path.exists():
         prompts_hash = sha256_text(prompt_path.read_text(encoding="utf-8"))
     env = _collect_environment()
+    from .runtime import manifest_runtime_fields
+    runtime_fields = manifest_runtime_fields(cfg, env, runtime_devices, runtime_dtypes)
     manifest_run = RunManifest(
         run_id=run_id,
         config_hash=hash_json(config_to_dict(cfg)),
@@ -472,12 +488,12 @@ def cmd_retrieve(args) -> None:
         package_version=__version__,
         library_versions=env.get("library_versions", {}),
         python_version=env.get("python_version", ""),
-        hardware={**env.get("gpu", {}), "platform": env.get("platform"),
-                  "runtime_devices": runtime_devices},
+        hardware=runtime_fields["hardware"],
         seed=cfg.experiments.seed,
         parameters={"top_n": cfg.retrieval.top_n,
                     "bm25": cfg.retrieval.bm25.model_dump(mode="json"),
-                    "rrf": cfg.retrieval.rrf.model_dump(mode="json")},
+                    "rrf": cfg.retrieval.rrf.model_dump(mode="json"),
+                    **runtime_fields["parameters"]},
         configurations=[s.config_id for s in selected],
         ranking_hashes={p.name: sha256_file(p) for p in rankings_dir.glob("*.jsonl")},
     )

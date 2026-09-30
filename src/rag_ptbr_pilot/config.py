@@ -147,10 +147,18 @@ class ModelsConfig(BaseModel):
         default_factory=lambda: ["colibri", "qwen_embedding", "e5"]
     )
     cache_dir: str = "artifacts/models"
+    revisions_path: str = "configs/model_revisions.yaml"
     device: str = "auto"         # auto | cuda | cpu
     dtype: DtypeConfig = Field(default_factory=DtypeConfig)
     reranker: RerankerConfig = Field(default_factory=RerankerConfig)
     generator: GeneratorConfig = Field(default_factory=GeneratorConfig)
+
+    @field_validator("revisions_path")
+    @classmethod
+    def _fixed_revisions_path(cls, value: str) -> str:
+        if value != "configs/model_revisions.yaml":
+            raise ValueError("As revisões auditadas devem vir de configs/model_revisions.yaml.")
+        return value
 
     @field_validator("embeddings")
     @classmethod
@@ -179,6 +187,19 @@ class ExperimentsConfig(BaseModel):
     @classmethod
     def _known_embeddings(cls, value):
         return ModelsConfig._known_embeddings(value) if value is not None else None
+
+
+class EmbeddingBatchSizes(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    colibri: int = Field(default=8, gt=0)
+    qwen_embedding: int = Field(default=2, gt=0)
+    e5: int = Field(default=2, gt=0)
+
+
+class RuntimeConfig(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    embedding_batch_size: EmbeddingBatchSizes = Field(default_factory=EmbeddingBatchSizes)
+    reranker_batch_size: int = Field(default=8, gt=0)
 
 
 class GenerationConfig(BaseModel):
@@ -213,6 +234,7 @@ class AppConfig(BaseModel):
     chunking: ChunkingConfig = Field(default_factory=ChunkingConfig)
     retrieval: RetrievalConfig = Field(default_factory=RetrievalConfig)
     models: ModelsConfig = Field(default_factory=ModelsConfig)
+    runtime: RuntimeConfig = Field(default_factory=RuntimeConfig)
     metrics: MetricsConfig = Field(default_factory=MetricsConfig)
     experiments: ExperimentsConfig = Field(default_factory=ExperimentsConfig)
     generation: GenerationConfig = Field(default_factory=GenerationConfig)

@@ -50,6 +50,7 @@ models:
   # Só embeddings de acesso livre (download único, sem gate) são usados.
   embeddings: [colibri, qwen_embedding, e5]
   cache_dir: artifacts/models
+  revisions_path: configs/model_revisions.yaml
   device: auto                 # auto | cuda | cpu
   dtype:
     colibri: fp32
@@ -75,6 +76,13 @@ models:
 metrics:
   k_values: [1, 5, 10]
   primary: ndcg@10              # métrica primária de ordenamento (protocolo)
+
+runtime:
+  embedding_batch_size:
+    colibri: 8
+    qwen_embedding: 2
+    e5: 2
+  reranker_batch_size: 8
 
 experiments:
   select: null                  # null = todas; senão lista de padrões (substring do id)

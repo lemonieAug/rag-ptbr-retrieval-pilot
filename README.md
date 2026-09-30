@@ -5,10 +5,17 @@ Este repositório implementa um pipeline controlado para comparar **recuperaçã
 híbrida** e **reranking** sobre um corpus pequeno (3–5 artigos) com benchmark
 anotado por humano.
 
-> **Estado local verificado em 23/09/2026:** CLI, matriz de 14 configurações,
-> corpus congelado de 224 chunks e testes executados. O benchmark de 125
-> perguntas continua em `draft`, aguardando revisão humana. Nenhuma métrica
-> oficial foi produzida. Evidências e limitações: `artifacts/review/`.
+> **Estado local verificado em 30/09/2026:** 5 documentos, corpus congelado de
+> 224 chunks, 125 perguntas (122 aprovadas, 3 rejeitadas, 0 drafts), 14
+> configurações e `ready_for_retrieval = true`. O retrieval oficial ainda não
+> foi executado e nenhuma métrica oficial foi produzida. Evidências:
+> `artifacts/review/` e `rag-ptbr status`.
+
+## RunPod / GPU execution
+
+Para executar em RunPod Pod com GPU NVIDIA e volume persistente em `/workspace`,
+veja o [guia RunPod](docs/runpod.md). A imagem, o `uv.lock`, os snapshots
+pinados, o setup e o smoke test estão descritos lá.
 
 ---
 
@@ -55,22 +62,15 @@ subconjunto (por substring do id).
 
 ## 3. Preparação do ambiente
 
-Requer **Python ≥ 3.10**. Recomendado: ambiente virtual.
+Requer **Python ≥ 3.11 e < 3.14**. O ambiente científico RunPod fixa Python
+3.11.16, PyTorch CUDA 12.4 e todas as dependências em `uv.lock`. Use o
+[setup RunPod](docs/runpod.md) para instalá-lo no Pod.
 
 ```bash
-# 1. Crie e ative um ambiente (exemplo com venv)
+# Ambiente leve local para testes sem modelos
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
-
-# 2. Instale o PyTorch compatível com seu hardware ANTES do resto.
-#    GPU NVIDIA (A40, CUDA 12.x):
-pip install torch --index-url https://download.pytorch.org/whl/cu121
-#    CPU apenas:
-# pip install torch --index-url https://download.pytorch.org/whl/cpu
-
-# 3. Instale o pacote com os extras que for usar.
-pip install -e ".[ingest,models,generate,dev]"
-#    mínimo (sem modelos/PDFs): pip install -e ".[dev]"
+pip install -e ".[dev]"
 ```
 
 Copie variáveis de ambiente (opcional, para credenciais/cache):
@@ -88,8 +88,9 @@ vez, explicitamente:
 rag-ptbr prepare-models
 ```
 
-Isso baixa os 3 embeddings + o reranker para `artifacts/models/` e grava as
-revisões reais em `artifacts/models/revisions.json`.
+Isso baixa os 3 embeddings + o reranker para `artifacts/models/` nas revisões
+fixadas em `configs/model_revisions.yaml`, confere os snapshots e grava
+`artifacts/models/revisions.json`.
 
 | Config | Checkpoint | Observação |
 | --- | --- | --- |
@@ -131,26 +132,17 @@ Use `doc_id` (ex.: `art-001`) nos metadados, nas evidências e nos chunks.
 ## 7. Perguntas, evidências e aprovação do gold
 
 Consulte `rag-ptbr status` para verificar corpus, snapshots locais, índices e
-pendências do benchmark sem carregar modelos. `rag-ptbr status --json` inclui
+estado do benchmark sem carregar modelos. `rag-ptbr status --json` inclui
 o inventário de evidências/qrels/grupos e os erros/avisos da validação. O estado
 `ready_for_retrieval` exige decisões humanas para todos os drafts e pelo menos
 uma pergunta aprovada, além de corpus, modelos e índices válidos.
 
-Use `rag-ptbr review-gold --summary` para acompanhar a revisão e
-`rag-ptbr review-gold --next` para inspecionar o próximo draft, priorizando os
-candidatos prontos. Esses comandos são somente leitura; a decisão humana exige
-o ID explícito conforme o [guia de anotação](docs/annotation_guide.md).
-
-1. `cp configs/templates/questions.yaml data/annotations/questions.yaml` e preencha
-   (~25–40 perguntas no total; factuais e multi-evidência do mesmo artigo).
-2. `cp configs/templates/qrels.yaml data/annotations/qrels.yaml`.
-3. (multi-evidência) `cp configs/templates/evidence_groups.yaml data/annotations/evidence_groups.yaml`.
-4. **Depois de congelar os chunks** (seção 8), preencha `chunk_ids` nos qrels e
-   grupos. Relevância = **suporte efetivo à resposta** (não basta coincidir
-   artigo/página).
-5. Exija **revisão humana de 100%** das perguntas/respostas/evidências usadas nas
-   métricas: marque `review_status: approved`. `draft` fica fora da avaliação.
-6. Valide: `rag-ptbr validate` (sem carregar modelos).
+O gold desta edição já foi revisado: 122 perguntas aprovadas, 3 rejeitadas,
+nenhum draft. Os arquivos em `data/annotations/` são a referência oficial;
+consulte `rag-ptbr review-gold --summary` para o histórico e rode
+`rag-ptbr validate` para conferir a estrutura. O
+[guia de anotação](docs/annotation_guide.md) documenta o processo para edições
+futuras do benchmark.
 
 > `origin_doc_id` é **somente** para anotação/avaliação — nunca é enviado aos
 > métodos nem aparece no prompt de recuperação. Toda busca consulta o **corpus
@@ -159,10 +151,15 @@ o ID explícito conforme o [guia de anotação](docs/annotation_guide.md).
 ## 8. Congelar chunks e benchmark
 
 ```bash
-rag-ptbr chunk
+python scripts/check_artifacts.py
 ```
 
-Gera `data/processed/chunks/chunks.jsonl` + `corpus_manifest.json` (congelado).
+Esta edição já tem `data/processed/chunks/chunks.jsonl` e
+`corpus_manifest.json` congelados; transfira os arquivos auditados ao Pod.
+O comando `rag-ptbr chunk` criaria uma nova versão do corpus e não faz parte
+da reprodução oficial. Se a transferência do corpus congelado for impossível,
+use somente o procedimento explícito de reconstrução com PDFs canônicos e
+Markdown revisado descrito em [docs/runpod.md](docs/runpod.md).
 O alvo é **350 tokens / 50 de sobreposição** (tokenizer de referência), validado
 contra os tokenizers reais dos embeddings; blocos que estouram o limite mais
 restritivo (E5 = 512) são **subdivididos uma única vez**. O `corpus_version`
@@ -242,46 +239,20 @@ Os testes e a validação estrutural foram executados localmente, com checkpoint
 existentes preservados. O carregamento fixa snapshots de `revisions.json` e usa
 somente arquivos locais. `retrieve` requer aprovação humana; `evaluate`, `report`
 e `generate` recusam resultados de corpus, configuração ou benchmark diferentes.
-Veja `artifacts/review/gold_review.md` para revisar os candidatos de gold e
-`artifacts/review/technical_audit.md` para os comandos efetivamente executados.
+Veja `artifacts/review/` para o histórico de auditoria e revisão do gold.
 
 ---
 
-### Caminho principal (sequencial)
+### Caminho principal (corpus oficial já congelado)
 
 ```bash
-# 0) ambiente + modelos
-python -m venv .venv && source .venv/bin/activate
-pip install torch --index-url https://download.pytorch.org/whl/cu121
-pip install -e ".[ingest,models,generate,dev]"
-cp .env.example .env        # nenhum token obrigatório (só embeddings livres)
-rag-ptbr prepare-models
-
-# 1) inserir PDFs em data/raw/articles/  e preencher data/metadata/articles.yaml
-
-# 2) extrair e revisar
-rag-ptbr extract            # revise data/processed/extracted/<doc_id>.md
-
-# 3) gerar e congelar chunks
-rag-ptbr chunk
-
-# 4) anotar e validar benchmark (preencher data/annotations/*.yaml)
+python scripts/check_artifacts.py
 rag-ptbr validate
-
-# 5) indexar
 rag-ptbr index
-
-# 6) recuperar/reranquear
-rag-ptbr retrieve           # anote o RUN_ID
-
-# 7) avaliar
+rag-ptbr retrieve           # anote o RUN_ID emitido
 rag-ptbr evaluate --run-id <RUN_ID>
-
-# 8) gerar (opcional)
-rag-ptbr generate --run-id <RUN_ID>
-
-# 9) relatório
 rag-ptbr report --run-id <RUN_ID>
+# geração opcional separada: rag-ptbr generate --run-id <RUN_ID>
 ```
 
 Todos os comandos são executados a partir da **raiz do repositório**

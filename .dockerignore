@@ -1,0 +1,12 @@
+.git
+.venv
+.uv-cache
+.uv-python
+artifacts/models
+artifacts/indexes
+artifacts/embeddings
+results
+data/raw/articles
+data/processed/extracted
+data/processed/chunks
+.env

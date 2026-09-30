@@ -43,6 +43,8 @@ def get_embedding_adapter(name: str, cfg: AppConfig) -> EmbeddingAdapter:
         cache_dir=cfg.resolve(cfg.models.cache_dir),
         device=cfg.models.device,
         dtype=dtype,
+        batch_size=getattr(cfg.runtime.embedding_batch_size, name),
+        revisions_path=cfg.resolve(cfg.models.revisions_path),
     )
 
 
@@ -52,4 +54,6 @@ def get_reranker_adapter(cfg: AppConfig) -> RerankerAdapter:
         device=cfg.models.reranker.device,
         dtype=cfg.models.reranker.dtype,
         max_length=cfg.models.reranker.max_length,
+        batch_size=cfg.runtime.reranker_batch_size,
+        revisions_path=cfg.resolve(cfg.models.revisions_path),
     )

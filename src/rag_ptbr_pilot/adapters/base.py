@@ -23,11 +23,14 @@ class EmbeddingAdapter(ABC):
     """
 
     def __init__(self, spec: EmbeddingSpec, cache_dir: str | None = None,
-                 device: str = "auto", dtype: str | None = None) -> None:
+                 device: str = "auto", dtype: str | None = None,
+                 batch_size: int | None = None, revisions_path: str | None = None) -> None:
         self.spec = spec
         self.cache_dir = cache_dir
         self.device = device
         self.dtype = dtype or spec.default_dtype
+        self.batch_size = batch_size or (8 if spec.name == "colibri" else 2)
+        self.revisions_path = revisions_path
         self.dimension: int | None = None
 
     @property
@@ -68,12 +71,15 @@ class RerankerAdapter(ABC):
 
     def __init__(self, spec: RerankerSpec, cache_dir: str | None = None,
                  device: str = "auto", dtype: str | None = None,
-                 max_length: int | None = None) -> None:
+                 max_length: int | None = None, batch_size: int = 8,
+                 revisions_path: str | None = None) -> None:
         self.spec = spec
         self.cache_dir = cache_dir
         self.device = device
         self.dtype = dtype or spec.default_dtype
         self.max_length = max_length or spec.max_length
+        self.batch_size = batch_size
+        self.revisions_path = revisions_path
 
     @property
     def name(self) -> str:
@@ -112,7 +118,7 @@ def resolve_dtype(dtype: str, device: str) -> Any:
     import torch  # import sob demanda
 
     if dtype == "fp16":
-        return torch.float16
+        return torch.float16 if device == "cuda" else torch.float32
     if dtype == "bf16":
         if device == "cuda" and torch.cuda.is_bf16_supported():
             return torch.bfloat16
